@@ -1,5 +1,6 @@
 import React, {ReactNode} from 'react';
 import styles from './Button.module.css'
+import Image from 'next/image'
 
 type ButtonProps = {
   children: ReactNode;
@@ -21,7 +22,13 @@ const Button = ({children, variant, icon, alt, className, ...props}: ButtonProps
       {...props}
     >
       {children}
-      {icon && <img src={icon} alt={alt}/>
+      {icon &&
+        <Image
+          src={icon}
+          width={24}
+          height={24}
+          alt={alt ? alt : ""}
+        />
       }
     </button>
   );
