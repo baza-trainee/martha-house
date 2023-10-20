@@ -1,0 +1,46 @@
+
+.button {
+  display: inline-flex;
+  padding: 10px 16px;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: var(--shadowS);
+  color: var(--grey900);
+  font-family: var(--font-manrope);
+  font-size: var(--body-medium-semiibold-fs);
+  font-style: normal;
+  font-weight: var(--body-medium-semiibold-fw);
+  line-height: var(--body-medium-semiibold-lh);
+  cursor: pointer;
+  height: 44px;
+  width: 100%;
+}
+
+.button.white {
+  background: var(--white);
+}
+
+.button.yellow {
+  gap: 4px;
+  background: var(--yellow500);
+}
+
+.button:hover {
+  border-radius: 14px;
+}
+
+.button:hover {
+  border-radius: 14px;
+}
+
+.button:active {
+  border-radius: 14px;
+}
+
+.button.yellow:active {
+  background: var(--yellow700);
+}
+
+.button.white:active {
+  background: var(--grey100);
+}
