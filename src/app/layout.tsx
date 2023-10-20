@@ -1,8 +1,23 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
+import { Manrope, Mulish } from 'next/font/google'
+import './styles/globals.css'
+import './styles/_normalize.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const manrope = Manrope(
+  {
+    subsets: ['latin'],
+    display: 'swap',
+    variable: '--font-manrope',
+  }
+)
+
+const mulish = Mulish(
+  {
+    subsets: ['latin'],
+    display: 'swap',
+    variable: '--font-mulish',
+  }
+)
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -15,8 +30,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className={`${mulish.variable} ${manrope.variable} font-sans`}>
+      <body>{children}</body>
     </html>
   )
 }
