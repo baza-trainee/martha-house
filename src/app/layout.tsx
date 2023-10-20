@@ -5,13 +5,11 @@ import "./styles/_normalize.css";
 
 const manrope = Manrope({
   subsets: ["latin"],
-  display: "swap",
   variable: "--font-manrope",
 });
 
 const mulish = Mulish({
   subsets: ["latin"],
-  display: "swap",
   variable: "--font-mulish",
 });
 
@@ -26,11 +24,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="en"
-      className={`${mulish.variable} ${manrope.variable} font-sans`}
-    >
-      <body>{children}</body>
+    <html lang="en">
+      <body className={`${mulish.variable} ${manrope.variable} font-sans`}>
+        {children}
+      </body>
     </html>
   );
 }
