@@ -14,13 +14,19 @@ export const Button: FC<IProps> = (props) => {
     white: styles.white,
     yellow: styles.yellow,
   };
+
   return (
     <button
       className={`${styles.button} ${buttonStyles[variant]} ${className || ""}`}
       {...rest}
     >
       {children}
-      {icon && <Image src={icon} width={24} height={24} alt={alt || ""} />}
+      {icon && <Image
+          src={icon}
+          width={24}
+          // @ts-ignore
+          height={24}
+          alt={alt || ""} />}
     </button>
   );
 };

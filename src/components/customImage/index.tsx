@@ -1,6 +1,7 @@
 "use client";
 
 import React, { FC } from "react";
+// @ts-ignore
 import Image, { ImageProps } from "next/image";
 import { rgbDataURL } from "./rgbDataURL";
 
