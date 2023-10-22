@@ -1,11 +1,13 @@
-import React, { FC, ButtonHTMLAttributes } from "react";
+import React, { FC, ComponentPropsWithoutRef, ReactNode } from "react";
 import Image from "next/image";
 import styles from "./Button.module.css";
 
-interface IProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+interface IProps extends ComponentPropsWithoutRef<"button"> {
   variant: "white" | "yellow";
   icon?: string;
   alt?: string;
+  children: ReactNode | ReactNode[];
+  className?: string;
 }
 
 export const Button: FC<IProps> = (props) => {
@@ -21,14 +23,7 @@ export const Button: FC<IProps> = (props) => {
       {...rest}
     >
       {children}
-      {icon && (
-        <Image
-          src={icon}
-          width={24}
-            // @ts-ignore
-          height={24}
-          alt={alt || ""} />
-      )}
+      {icon && <Image src={icon} width={24} height={24} alt={alt || ""} />}
     </button>
   );
 };
