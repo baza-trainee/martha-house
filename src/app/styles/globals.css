@@ -79,5 +79,21 @@
   --title4-fs: 48px;
   --title4-fw: 800;
   --title4-lh: normal;
-}
 
+  /* breakpoints */
+  --breakpoint-xs: 320px; /* Mobile devices (mostly older smartphones) */
+  --breakpoint-sm: 481px; /* Larger smartphones and phablets */
+  --breakpoint-md: 769px; /* Small tablets (in portrait mode) and very small laptops */
+  --breakpoint-lg: 1025px; /* Tablets in landscape mode, and medium-sized laptops */
+  --breakpoint-xl: 1401px; /* Larger laptops and standard desktop screens */
+  --breakpoint-xxl: 2001px; /* Extra large desktop monitors, TVs, and ultra-wide screens */
+
+  /* paddings */
+  --padding-xs: 8px;
+  --padding-sm: 16px;
+  --padding-md: 24px;
+  --padding-lg: 32px;
+  --padding-xl: 40px;
+  --padding-xxl: 64px;
+  --padding-xxxl: 80px;
+}
