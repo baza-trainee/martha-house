@@ -1,8 +1,5 @@
-import { NextPage } from 'next';
+import { NextPage } from "next";
 
-const HomePage: NextPage = () => {
-
-  return null;
-};
+const HomePage: NextPage = () => null;
 
 export default HomePage;

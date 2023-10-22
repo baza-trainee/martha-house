@@ -14,24 +14,14 @@
     "jest": true,
     "es6": true
   },
-  "extends": [
-    "airbnb",
-    "next",
-    "next/core-web-vitals"
-  ],
-  "plugins": [
-    "prefer-arrow"
-  ],
+  "extends": ["airbnb", "next", "next/core-web-vitals", "prettier"],
+  "plugins": ["prefer-arrow"],
   "settings": {
     "react": {
       "version": "detect"
     }
   },
   "rules": {
-    "indent": [
-      "error",
-      4
-    ],
     "react/function-component-definition": "off",
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
@@ -56,31 +46,16 @@
     "react/jsx-closing-bracket-location": "off",
     "padded-blocks": "off",
     "react/no-unescaped-entities": "off",
-    "react/jsx-indent": [
-      "warn",
-      4,
-      {
-        "checkAttributes": false
-      }
-    ],
-    "react/jsx-indent-props": [
-      "error",
-      4
-    ],
+    "react/jsx-indent": "off",
+    "react/jsx-indent-props": "off",
     "max-len": [
       "warn",
       {
         "code": 120
       }
     ],
-    "quote-props": [
-      "error",
-      "as-needed"
-    ],
-    "jsx-quotes": [
-      "error",
-      "prefer-single"
-    ],
+    "quote-props": ["error", "as-needed"],
+    "jsx-quotes": "off",
     "prefer-arrow/prefer-arrow-functions": [
       "warn",
       {

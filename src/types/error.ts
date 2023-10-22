@@ -1,11 +1,10 @@
 export interface IErrorPage {
-    statusCode: number;
-    title: string;
+  statusCode: number;
+  title: string;
 }
 
-
 export interface IErrorResponse {
-    error: string;
-    message: string;
-    status: number;
+  error: string;
+  message: string;
+  status: number;
 }
