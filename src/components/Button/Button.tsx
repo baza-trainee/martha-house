@@ -21,12 +21,14 @@ export const Button: FC<IProps> = (props) => {
       {...rest}
     >
       {children}
-      {icon && <Image
+      {icon && (
+        <Image
           src={icon}
           width={24}
-          // @ts-ignore
+            // @ts-ignore
           height={24}
-          alt={alt || ""} />}
+          alt={alt || ""} />
+      )}
     </button>
   );
 };
