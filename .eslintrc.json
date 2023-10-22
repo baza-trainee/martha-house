@@ -48,6 +48,10 @@
     "react/no-unescaped-entities": "off",
     "react/jsx-indent": "off",
     "react/jsx-indent-props": "off",
+    "no-bitwise": "off",
+    "react/require-default-props": "off",
+    "react/button-has-type": "off",
+    "consistent-return": "off",
     "max-len": [
       "warn",
       {

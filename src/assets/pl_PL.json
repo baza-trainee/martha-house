@@ -1,13 +1,13 @@
 {
   "nav": {
-    "main_page": "GŁÓWNY",
+    "mainPage": "GŁÓWNY",
     "blog": "BLOG",
     "news": "AKTUALNOŚCI"
   },
   "header": {
     "title": "MIASTO JEST DOBRE",
     "subtitle": "Międzynarodowe Centrum Wsparcia Kobiet i Dzieci.\nMiasto, w którym matka jest blisko swojego dziecka.",
-    "support_btm": "Wesprzyj projekt"
+    "supportBtn": "Wesprzyj projekt"
   },
   "blog": {
     "title": "Blog"
@@ -18,6 +18,6 @@
   "footer": {
     "email": "E-mail",
     "phones": "Telefony",
-    "social_net": "Podążać"
+    "socialNet": "Podążać"
   }
 }

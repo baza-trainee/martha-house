@@ -1,9 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
-import { Locales, Locale } from "./types";
 import Negotiator from "negotiator";
+import { Locales, Locale } from "./types";
 
-export async function middleware(request: NextRequest) {
-  const pathname = request.nextUrl.pathname;
+export const middleware = async (request: NextRequest) => {
   const headers = {
     "accept-language": request.headers.get("accept-language"),
   };
@@ -26,7 +25,7 @@ export async function middleware(request: NextRequest) {
       new URL(`/${supportedLanguage}/${request.nextUrl.pathname}`, request.url),
     );
   }
-}
+};
 
 export const config = {
   matcher: [

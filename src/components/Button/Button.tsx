@@ -1,25 +1,15 @@
-/* eslint-disable react/button-has-type */
-/* eslint-disable react/require-default-props */
-import React, { ReactNode } from "react";
+import React, { FC, ButtonHTMLAttributes } from "react";
 import Image from "next/image";
 import styles from "./Button.module.css";
 
-type ButtonProps = {
-  children: ReactNode;
+interface IProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant: "white" | "yellow";
   icon?: string;
   alt?: string;
-  className?: string;
-};
+}
 
-const Button = ({
-  children,
-  variant,
-  icon,
-  alt,
-  className,
-  ...props
-}: ButtonProps) => {
+export const Button: FC<IProps> = (props) => {
+  const { variant, alt, icon, children, className, ...rest } = props;
   const buttonStyles = {
     white: styles.white,
     yellow: styles.yellow,
@@ -27,12 +17,10 @@ const Button = ({
   return (
     <button
       className={`${styles.button} ${buttonStyles[variant]} ${className || ""}`}
-      {...props}
+      {...rest}
     >
       {children}
       {icon && <Image src={icon} width={24} height={24} alt={alt || ""} />}
     </button>
   );
 };
-
-export default Button;

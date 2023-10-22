@@ -16,6 +16,5 @@ export const getAllTranslations = async (locale: Locales) => {
   return result;
 };
 
-export const getTranslation = (language: any) => (path: string) => {
-  return get(language, path);
-};
+export const getTranslation = (language: any) => (path: string) =>
+  get(language, path);
