@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "main_page": "MAIN",
+    "blog": "BLOG",
+    "news": "NEWS"
+  },
+  "header": {
+    "title": "THE CITY IS GOOD",
+    "subtitle": "International Center for Support of Women and Children.\nA city where a mother is close to her child.",
+    "support_btm": "Support the project"
+  },
+  "blog": {
+    "title": "Blog Page"
+  },
+  "news": {
+    "title": "News Page"
+  },
+  "footer": {
+    "email": "Email",
+    "phones": "Phones",
+    "social_net": "Follow"
+  }
+}

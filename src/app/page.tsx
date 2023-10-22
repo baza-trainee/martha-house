@@ -1,8 +1,8 @@
+import { NextPage } from 'next';
 
-export default function Home() {
-  return (
-    <main>
+const HomePage: NextPage = () => {
 
-    </main>
-  )
-}
+  return null;
+};
+
+export default HomePage;
