@@ -46,14 +46,8 @@
     "react/jsx-closing-bracket-location": "off",
     "padded-blocks": "off",
     "react/no-unescaped-entities": "off",
-    "react/jsx-indent": [
-      "warn",
-      4,
-      {
-        "checkAttributes": false
-      }
-    ],
-    "react/jsx-indent-props": ["error", 4],
+    "react/jsx-indent": "off",
+    "react/jsx-indent-props": "off",
     "max-len": [
       "warn",
       {
@@ -61,7 +55,7 @@
       }
     ],
     "quote-props": ["error", "as-needed"],
-    "jsx-quotes": ["error", "prefer-single"],
+    "jsx-quotes": "off",
     "prefer-arrow/prefer-arrow-functions": [
       "warn",
       {
