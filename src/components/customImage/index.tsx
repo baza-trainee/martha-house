@@ -12,7 +12,7 @@ export const CustomImage: FC<ImageProps> = (props) => {
     <Image
       {...rest}
       src={src}
-      alt={alt ||'some image'}
+      alt={alt || "some image"}
       placeholder="blur"
       blurDataURL={rgbDataURL(248, 248, 248)}
     />
