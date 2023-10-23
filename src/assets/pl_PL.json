@@ -9,6 +9,14 @@
     "subtitle": "Międzynarodowe Centrum Wsparcia Kobiet i Dzieci.\nMiasto, w którym matka jest blisko swojego dziecka.",
     "supportBtn": "Wesprzyj projekt"
   },
+  "howToHelp": {
+    "title": "Як допомогти?",
+    "paragraph": "Новий будинок “Міста Добра” вже відкрив свої двері для своїх мешканців. Та аби зробити його насправді незалежним і успішним, нам потрібна ваша допомога!",
+    "bankTransfer": "Банківський переказ",
+    "onlinePayment": "Онлайн платіж",
+    "monobank": "",
+    "payPal": ""
+  },
   "blog": {
     "title": "Blog"
   },
