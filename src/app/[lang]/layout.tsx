@@ -6,8 +6,8 @@ import { Container, Footer } from "@/components";
 import "../styles/globals.css";
 import "../styles/_normalize.css";
 import { Locales } from "@/types";
-import Header from "@/components/Header/Header";
 import { getAllTranslations, getTranslation } from "@/utils/dictionary";
+import Header from "@/components/Header";
 
 const manrope = Manrope({
   subsets: ["latin"],
