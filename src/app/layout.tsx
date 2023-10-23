@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import { NextPage } from "next";
 import type { Metadata } from "next";
 import { Manrope, Mulish } from "next/font/google";
+import { Container } from "../components";
 import "./styles/globals.css";
 import "./styles/_normalize.css";
 
@@ -31,7 +32,9 @@ const RootLayout: NextPage<IProps> = ({ children }) => (
     lang="en"
     className={`${mulish.variable} ${manrope.variable} font-sans`}
   >
-    <body>{children}</body>
+    <body>
+      <Container>{children}</Container>
+    </body>
   </html>
 );
 

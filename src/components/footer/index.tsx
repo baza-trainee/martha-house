@@ -8,10 +8,10 @@ interface IProps {
   };
 }
 
-// eslint-disable-next-line no-unused-vars
 export const Footer: FC<IProps> = ({ data: { email, phones, socialNet } }) => (
   <footer>
-    {/* eslint-disable-next-line react/self-closing-comp */}
-    <div></div>
+    <div>{email}</div>
+    <div>{phones}</div>
+    <div>{socialNet}</div>
   </footer>
 );

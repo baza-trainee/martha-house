@@ -9,7 +9,6 @@ interface IProps {
   };
 }
 
-// @ts-ignore
 const HomePage: NextPage<IProps> = async ({ params: { lang } }) => {
   const language = await getAllTranslations(lang);
   const t = getTranslation(language);
