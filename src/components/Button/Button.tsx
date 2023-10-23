@@ -1,4 +1,4 @@
-import React, { FC, ComponentPropsWithoutRef, ReactNode } from "react";
+import React, { FC, ComponentPropsWithoutRef } from "react";
 import Image from "next/image";
 import styles from "./Button.module.css";
 
@@ -6,8 +6,6 @@ interface IProps extends ComponentPropsWithoutRef<"button"> {
   variant: "white" | "yellow";
   icon?: string;
   alt?: string;
-  children: ReactNode | ReactNode[];
-  className?: string;
 }
 
 export const Button: FC<IProps> = (props) => {
@@ -19,8 +17,8 @@ export const Button: FC<IProps> = (props) => {
 
   return (
     <button
-      className={`${styles.button} ${buttonStyles[variant]} ${className || ""}`}
       {...rest}
+      className={`${styles.button} ${buttonStyles[variant]} ${className || ""}`}
     >
       {children}
       {icon && <Image src={icon} width={24} height={24} alt={alt || ""} />}
