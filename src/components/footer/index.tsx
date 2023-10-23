@@ -1,6 +1,7 @@
-import { FC } from "react";
+import { NextPage } from "next";
+import IconsBar from "@/components/IconsBar";
 
-interface IProps {
+interface FooterProps {
   data: {
     email: string;
     phones: string;
@@ -8,10 +9,8 @@ interface IProps {
   };
 }
 
-export const Footer: FC<IProps> = ({ data: { email, phones, socialNet } }) => (
+export const Footer: NextPage<FooterProps> = async ({ data }) => (
   <footer>
-    <div>{email}</div>
-    <div>{phones}</div>
-    <div>{socialNet}</div>
+    <IconsBar data={data} />
   </footer>
 );

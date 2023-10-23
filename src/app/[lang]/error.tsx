@@ -1,8 +1,8 @@
 "use client";
 
 import { NextPage } from "next";
-import { ErrorElement } from "../../components";
-import { IErrorResponse } from "../../types";
+import { ErrorElement } from "@/components";
+import { IErrorResponse } from "@/types";
 
 interface IPtrops {
   error: IErrorResponse;
