@@ -1,7 +1,6 @@
 import { NextPage } from "next";
-import { Locales } from "../../../types";
-import { getTranslation, getAllTranslations } from "../../../utils/dictionary";
-import { Footer, Nav } from "../../../components";
+import { Locales } from "@/types";
+import { getTranslation, getAllTranslations } from "@/utils/dictionary";
 
 interface IProps {
   params: {
@@ -15,9 +14,7 @@ const NewsPage: NextPage<IProps> = async ({ params: { lang } }) => {
 
   return (
     <main>
-      <Nav data={t("nav")} locale={lang} />
       <h1>{t("news.title")}</h1>
-      <Footer data={t("footer")} />
     </main>
   );
 };

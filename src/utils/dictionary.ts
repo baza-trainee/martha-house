@@ -1,6 +1,6 @@
 import "server-only";
 import { get } from "lodash";
-import { Locale, Locales } from "../types";
+import { Locale, Locales } from "@/types";
 
 const languages = {
   [Locale.en]: () =>

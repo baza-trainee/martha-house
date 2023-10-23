@@ -1,5 +1,5 @@
 import { usePathname } from "next/navigation";
-import { Locale } from "../../types";
+import { Locale } from "@/types";
 
 export const useNav = () => {
   const pathname = usePathname();

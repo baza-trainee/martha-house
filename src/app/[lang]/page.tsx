@@ -1,7 +1,5 @@
 import { NextPage } from "next";
-import { Locales } from "../../types";
-import { getTranslation, getAllTranslations } from "../../utils/dictionary";
-import { Footer, Nav } from "../../components";
+import { Locales } from "@/types";
 
 interface IProps {
   params: {
@@ -9,17 +7,18 @@ interface IProps {
   };
 }
 
-const HomePage: NextPage<IProps> = async ({ params: { lang } }) => {
-  const language = await getAllTranslations(lang);
-  const t = getTranslation(language);
-
-  return (
-    <main>
-      <Nav data={t("nav")} locale={lang} />
-      <h1>{t("header.title")}</h1>
-      <Footer data={t("footer")} />
-    </main>
-  );
-};
+const HomePage: NextPage<IProps> = () => (
+  <div style={{ display: "flex ", flexDirection: "column" }}>
+    <div>Hero Section</div>
+    <div>War Need Help Section</div>
+    <div>Що таке Місто Добра?</div>
+    <div>
+      Ми звертаємося до всіх небайдужих – простягніть руку допомоги Україні у
+      цей страшний час, простягніть руку допомоги українським дітям!
+    </div>
+    <div>Чому Місто Добра потрібне?</div>
+    <div>і так далі</div>
+  </div>
+);
 
 export default HomePage;

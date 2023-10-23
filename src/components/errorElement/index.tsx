@@ -3,7 +3,7 @@
 import { FC, useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { IErrorPage, Locale, Locales } from "../../types";
+import { IErrorPage, Locale, Locales } from "@/types";
 
 export const ErrorElement: FC<IErrorPage> = ({ statusCode, title }) => {
   const [locale, setLocale] = useState("");

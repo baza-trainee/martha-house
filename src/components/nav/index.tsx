@@ -2,8 +2,8 @@
 
 import { FC } from "react";
 import Link from "next/link";
+import { Locales } from "@/types";
 import { useNav } from "../hooks";
-import { Locales } from "../../types";
 
 interface IProps {
   data: {
