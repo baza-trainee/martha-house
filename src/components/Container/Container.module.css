@@ -10,28 +10,28 @@
 }
 
 /* iPads, Tablets */
-@media screen and (min-width: var(--breakpoint-sm)) {
+@media screen and (min-width: 481px) {
   .container {
     padding: var(--padding-xl) var(--padding-md);
   }
 }
 
 /* Small tablets (in portrait mode) and small laptops */
-@media screen and (min-width: var(--breakpoint-md)) {
+@media screen and (min-width: 769px) {
   .container {
     padding: var(--padding-xl) var(--padding-lg);
   }
 }
 
 /* Tablets in landscape mode, and medium laptops */
-@media screen and (min-width: var(--breakpoint-lg)) {
+@media screen and (min-width: 1025px) {
   .container {
     padding: var(--padding-xxl) var(--padding-xxxl);
   }
 }
 
 /* Large laptops and standard desktop screens */
-@media screen and (min-width: var(--breakpoint-xl)) {
+@media screen and (min-width: 1401px) {
   .container {
     padding: 96px var(--padding-xxl);
     box-sizing: unset;
@@ -43,7 +43,7 @@
 }
 
 /* Extra large desktop monitors, TVs, and ultra-wide screens */
-@media screen and (min-width: var(--breakpoint-xxl)) {
+@media screen and (min-width: 2001px) {
   .container {
     padding: 96px var(--padding-xxxl);
   }
