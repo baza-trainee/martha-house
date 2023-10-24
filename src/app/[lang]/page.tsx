@@ -17,7 +17,7 @@ const HomePage: NextPage<IHomePageProps> = async ({ params: { lang } }) => {
   return (
     <>
       <HeroComponent data={t("hero")} />
-      <NeedHelp />
+      <NeedHelp data={t("needHelp")} />
     </>
   );
 };

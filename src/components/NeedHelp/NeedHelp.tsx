@@ -1,42 +1,39 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { FC, useState } from "react";
 import { CustomImage } from "@/components/customImage";
+import DropDown from "@/components/NeedHelp/DropDown/DropDown";
+import { NeedHelpProps } from "@/components/NeedHelp/NeedHelp.types";
+import { Container } from "@/components";
 import styles from "./NeedHelp.module.css";
 
-const NeedHelp = () => {
+const NeedHelp: FC<NeedHelpProps> = ({ data }) => {
   const [isOpen, setIsOpen] = useState(false);
-
   const expandMoreHandler = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div
-      className={styles.help}
-      style={{
-        backgroundImage:
-          "linear-gradient(0deg, rgba(38, 38, 38, 0.6), #262626), url(/images/pictures/war_image.jpg)",
-      }}
-    >
-      <div className={styles.main}>
-        <div className={styles.title}>
-          <h2>Війна</h2>
-          <p>Потрібна допомога!</p>
+    <section className={styles.wrapper}>
+      <Container className={`${styles.help} ${isOpen ? styles.opened : ""}`}>
+        <div className={styles.main}>
+          <div className={styles.title}>
+            <h2>{data.title}</h2>
+            <p>{data.subtitle}</p>
+          </div>
+          {!isOpen && (
+            <CustomImage
+              src="/images/icons/expand_more.svg"
+              width={32}
+              height={32}
+              alt="expand"
+              style={{ filter: "invert(100%) brightness(150%)" }}
+              onClick={expandMoreHandler}
+            />
+          )}
         </div>
-        <CustomImage
-          src={
-            isOpen
-              ? "/images/icons/expend_less.svg"
-              : "/images/icons/expand_more.svg"
-          }
-          width={32}
-          height={32}
-          alt="expand"
-          style={{ filter: "invert(100%) brightness(150%)" }}
-          onClick={expandMoreHandler}
-        />
-      </div>
-    </div>
+        {isOpen && <DropDown data={data} handler={expandMoreHandler} />}
+      </Container>
+    </section>
   );
 };
 
