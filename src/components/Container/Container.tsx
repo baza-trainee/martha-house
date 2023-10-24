@@ -1,10 +1,17 @@
 import React, { ReactNode } from "react";
+import clsx from "clsx";
 import styles from "./Container.module.css";
 
 interface ContainerProps {
   children: ReactNode;
+  className?: string;
 }
 
-export const Container: React.FC<ContainerProps> = ({ children }) => (
-  <div className={styles.container}>{children}</div>
+export const Container: React.FC<ContainerProps> = ({
+  children,
+  className,
+}) => (
+  <div className={clsx(styles.container, className && className)}>
+    {children}
+  </div>
 );
