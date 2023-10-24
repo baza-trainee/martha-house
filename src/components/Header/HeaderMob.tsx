@@ -1,21 +1,12 @@
 import React, { useState } from "react";
 import styles from "@/components/Header/Header.module.css";
 import { Nav } from "@/components";
-import { Locales } from "@/types";
 import { NextPage } from "next";
 import { CustomImage } from "@/components/customImage";
 import Link from "next/link";
+import { HeaderProps } from "@/components/Header/Header.types";
 
-interface HeaderMobProps {
-  data: {
-    mainPage: string;
-    blog: string;
-    news: string;
-  };
-  lang: Locales;
-}
-
-export const HeaderMob: NextPage<HeaderMobProps> = ({ lang, data }) => {
+export const HeaderMob: NextPage<HeaderProps> = ({ lang, data }) => {
   const [isOpen, setIsOpen] = useState(false);
   const handleToggle = () => {
     setIsOpen((prevIsOpen) => !prevIsOpen);
