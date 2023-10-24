@@ -1,8 +1,8 @@
 import { NextPage } from "next";
-import HeroSection from "@/components/HeroSection/HeroSection";
+import HeroSection from "@/components/HeroSection";
+import NeedHelp from "@/components/NeedHelp";
 import { getAllTranslations, getTranslation } from "@/utils/dictionary";
 import { Locales } from "@/types";
-import NeedHelp from "@/components/NeedHelp/NeedHelp";
 
 interface IHomePageProps {
   params: {

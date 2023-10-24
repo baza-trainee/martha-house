@@ -3,7 +3,7 @@ import styles from "@/components/Header/Header.module.css";
 import { Nav } from "@/components";
 import { Locales } from "@/types";
 import { NextPage } from "next";
-import { CustomImage } from "@/components/customImage";
+import { CustomImage } from "@/components/CustomImage";
 import Link from "next/link";
 
 interface HeaderMobProps {
@@ -26,10 +26,10 @@ export const HeaderMob: NextPage<HeaderMobProps> = ({ lang, data }) => {
       <div className={styles.main}>
         <Link href={`/${lang}`}>
           <CustomImage
-            src="/images/logo/Logo.png"
+            src='/images/logo/Logo.png'
             width={65}
             height={36}
-            alt="logo"
+            alt='logo'
           />
         </Link>
         <CustomImage
@@ -39,7 +39,7 @@ export const HeaderMob: NextPage<HeaderMobProps> = ({ lang, data }) => {
           }
           width={32}
           height={32}
-          alt="logo"
+          alt='logo'
           className={styles.close}
         />
       </div>

@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { Locales } from "@/types";
 import { NextPage } from "next";
-import { useMedia } from "@/components/hooks/useMedia";
+import { useMedia } from "@/hooks/useMedia";
 import HeaderDesc from "@/components/Header/HeaderDesc";
 import { HeaderMob } from "@/components/Header/HeaderMob";
 

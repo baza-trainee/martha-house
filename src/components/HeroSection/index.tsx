@@ -1,6 +1,6 @@
 import React from "react";
-import { Container } from "@/components/Container/Container";
-import { Button } from "@/components/Button/Button";
+import Container from "@/components/Container";
+import { Button } from "@/components/Button";
 import styles from "./HeroSection.module.css";
 
 interface HeroProps {
@@ -11,7 +11,7 @@ interface HeroProps {
   };
 }
 
-const HeroSection: React.FC<HeroProps> = async ({ data }) => (
+const HeroSection: React.FC<HeroProps> = ({ data }) => (
   <section className={styles.heroSection}>
     <Container className={styles.styledContainer}>
       <div className={styles.infoContainer}>
