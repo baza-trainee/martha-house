@@ -1,17 +1,17 @@
 .button {
-  display: inline-flex;
+  display: flex;
   padding: 10px 16px;
+  justify-content: center;
   align-items: center;
   border-radius: 8px;
   box-shadow: var(--shadowS);
   color: var(--grey900);
   font-family: var(--font-manrope);
-  font-size: var(--body-medium-semiibold-fs);
+  font-size: var(--body-medium-semibold-fs);
   font-style: normal;
-  font-weight: var(--body-medium-semiibold-fw);
-  line-height: var(--body-medium-semiibold-lh);
+  font-weight: var(--body-medium-semibold-fw);
+  line-height: var(--body-medium-semibold-lh);
   cursor: pointer;
-  height: 44px;
   width: 100%;
 }
 
