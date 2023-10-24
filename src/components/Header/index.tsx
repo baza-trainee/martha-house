@@ -5,7 +5,7 @@ import { NextPage } from "next";
 import { useMedia } from "@/components/hooks/useMedia";
 import HeaderDesc from "@/components/Header/HeaderDesc";
 import { HeaderMob } from "@/components/Header/HeaderMob";
-import { HeaderProps } from "@/components/Header/Header.types";
+import { HeaderProps } from "@/components/Header/Types/Header.types";
 import styles from "./Header.module.css";
 
 const Header: NextPage<HeaderProps> = ({ lang, data }) => {

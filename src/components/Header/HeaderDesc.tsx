@@ -4,7 +4,7 @@ import { Nav } from "@/components";
 import { NextPage } from "next";
 import { CustomImage } from "@/components/customImage";
 import Link from "next/link";
-import { HeaderProps } from "@/components/Header/Header.types";
+import { HeaderProps } from "@/components/Header/Types/Header.types";
 
 const HeaderDesc: NextPage<HeaderProps> = ({ lang, data }) => (
   <div className={styles.container}>
