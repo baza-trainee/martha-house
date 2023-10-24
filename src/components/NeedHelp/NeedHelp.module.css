@@ -1,0 +1,36 @@
+.help {
+  display: flex;
+  padding: 32px 16px;
+  flex-direction: column;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--white);
+  height: 118px;
+}
+
+.help img {
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-self: stretch;
+}
+.title h2 {
+  font-family: var(--font-mulish);
+  font-size: var(--subtitle-bold-fs);
+  font-style: normal;
+  font-weight: var(--subtitle-bold-fw);
+  line-height: var(--subtitle-bold-lh);
+}
+
+.title p {
+  font-family: var(--font-manrope);
+  font-size: var(--body-lg-fs);
+  font-style: normal;
+  font-weight: var(--body-lg-fw);
+  line-height: var(--body-lg-lh);
+}

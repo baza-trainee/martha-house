@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 import { NextPage } from "next";
 import type { Metadata } from "next";
 import { Manrope, Mulish } from "next/font/google";
-import { Container, Footer } from "@/components";
+import { Footer } from "@/components";
 import "../styles/globals.css";
 import "../styles/_normalize.css";
 import { Locales } from "@/types";
@@ -44,9 +44,7 @@ const RootLayout: NextPage<IProps> = async ({ params: { lang }, children }) => {
     >
       <body>
         <Header data={t("nav")} lang={lang} />
-        <main>
-          <Container>{children}</Container>
-        </main>
+        <main>{children}</main>
         <Footer data={t("footer")} />
       </body>
     </html>

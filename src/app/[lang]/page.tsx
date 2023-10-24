@@ -1,5 +1,6 @@
 import { NextPage } from "next";
 import { Locales } from "@/types";
+import NeedHelp from "@/components/NeedHelp/NeedHelp";
 
 interface IProps {
   params: {
@@ -10,7 +11,7 @@ interface IProps {
 const HomePage: NextPage<IProps> = () => (
   <div style={{ display: "flex ", flexDirection: "column" }}>
     <div>Hero Section</div>
-    <div>War Need Help Section</div>
+    <NeedHelp />
     <div>Що таке Місто Добра?</div>
     <div>
       Ми звертаємося до всіх небайдужих – простягніть руку допомоги Україні у
