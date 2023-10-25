@@ -4,11 +4,11 @@ import { Locale, Locales } from "@/types";
 
 const languages = {
   [Locale.en]: () =>
-    import("../assets/en_US.json").then((module) => module.default),
+    import("@/assets/en_US.json").then((module) => module.default),
   [Locale.ua]: () =>
-    import("../assets/uk_UA.json").then((module) => module.default),
+    import("@/assets/uk_UA.json").then((module) => module.default),
   [Locale.pl]: () =>
-    import("../assets/pl_PL.json").then((module) => module.default),
+    import("@/assets/pl_PL.json").then((module) => module.default),
 };
 
 export const getAllTranslations = async (locale: Locales) => {
