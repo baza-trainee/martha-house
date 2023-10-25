@@ -1,5 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { FC } from "react";
+import Image from "next/image";
+import Accordion from "@/components/HowToHelp/Accordion";
 import styles from "./HowToHelp.module.css";
 
 interface IHowToHelpProps {
@@ -21,5 +23,6 @@ export const HowToHelp: FC<IHowToHelpProps> = ({
       <h2 className={styles.title}>{title}</h2>
       <p className={styles.paragraph}>{paragraph}</p>
     </div>
+    <Accordion />
   </section>
 );
