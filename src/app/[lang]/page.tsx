@@ -1,5 +1,6 @@
 import { NextPage } from "next";
-import HeroComponent from "@/components/HeroComponent/HeroComponent";
+import HeroSection from "@/components/HeroSection";
+import NeedHelp from "@/components/NeedHelp";
 import { getAllTranslations, getTranslation } from "@/utils/dictionary";
 import { Locales } from "@/types";
 
@@ -13,7 +14,12 @@ const HomePage: NextPage<IHomePageProps> = ({ params: { lang } }) => {
   const language = getAllTranslations(lang);
   const t = getTranslation(language);
 
-  return <HeroComponent data={t("hero")} />;
+  return (
+    <>
+      <HeroSection data={t("hero")} />
+      <NeedHelp data={t("needHelp")} />
+    </>
+  );
 };
 
 export default HomePage;

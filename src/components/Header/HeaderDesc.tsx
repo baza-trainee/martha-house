@@ -1,21 +1,12 @@
 import React from "react";
 import styles from "@/components/Header/Header.module.css";
 import { Nav } from "@/components";
-import { Locales } from "@/types";
 import { NextPage } from "next";
-import { CustomImage } from "@/components/customImage";
+import { CustomImage } from "@/components/CustomImage";
 import Link from "next/link";
+import { HeaderProps } from "@/components/Header/Types/Header.types";
 
-interface HeaderDescProps {
-  data: {
-    mainPage: string;
-    blog: string;
-    news: string;
-  };
-  lang: Locales;
-}
-
-const HeaderDesc: NextPage<HeaderDescProps> = ({ lang, data }) => (
+const HeaderDesc: NextPage<HeaderProps> = ({ lang, data }) => (
   <div className={styles.container}>
     <div className={styles.wrapper}>
       <Link href={`/${lang}`}>

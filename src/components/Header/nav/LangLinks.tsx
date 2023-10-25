@@ -1,6 +1,6 @@
 import React from "react";
 import { usePathname } from "next/navigation";
-import { useNav } from "@/components/hooks";
+import { useNav } from "@/hooks";
 import Link from "next/link";
 import styles from "../Header.module.css";
 

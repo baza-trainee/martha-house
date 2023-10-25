@@ -1,6 +1,9 @@
-export { ErrorElement } from "./errorElement";
-export { Footer } from "./footer";
-export { Nav } from "./Header/nav";
-export { Container } from "./Container/Container";
-export { Button } from "./Button/Button";
-export { HowToHelp } from "./HowToHelp/HowToHelp";
+export * from "./ErrorElement";
+export * from "./CustomImage";
+export * from "./Footer";
+export * from "./Header/nav";
+export * from "./Container";
+export * from "./Button";
+export * from "./HowToHelp";
+export * from "./NeedHelp";
+export * from "./HeroSection";

@@ -1,3 +1,8 @@
+.header {
+  position: sticky;
+  top: 0;
+  height: 72px;
+}
 .container {
   display: flex;
   justify-content: center;
@@ -7,7 +12,6 @@
   padding: 16px 18px;
   margin: 0 auto;
   background: rgba(53, 53, 53, 0.6);
-  position: sticky;
   height: 72px;
 }
 
@@ -76,8 +80,16 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .header {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    height: 72px;
+  }
+
   .container {
     padding: 12px 120px;
+    background: rgba(53, 53, 53, 0.6);
   }
 
   .wrapper {

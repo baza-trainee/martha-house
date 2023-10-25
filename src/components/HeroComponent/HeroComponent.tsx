@@ -1,6 +1,6 @@
 import React from "react";
-import { Container } from "@/components/Container/Container";
-import { Button } from "@/components/Button/Button";
+import Container from "@/components/Container/index";
+import { Button } from "@/components/Button/index";
 import styles from "./HeroComponent.module.css";
 
 interface HeroProps {

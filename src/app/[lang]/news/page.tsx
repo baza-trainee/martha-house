@@ -8,8 +8,8 @@ interface IProps {
   };
 }
 
-const NewsPage: NextPage<IProps> = async ({ params: { lang } }) => {
-  const language = await getAllTranslations(lang);
+const NewsPage: NextPage<IProps> = ({ params: { lang } }) => {
+  const language = getAllTranslations(lang);
   const t = getTranslation(language);
 
   return (
