@@ -31,6 +31,23 @@
   "news": {
     "title": "AKTUALNOŚCI"
   },
+  "values": [
+    {
+      "title": "NIEPODLEGŁOŚĆ",
+      "subtitle": "Miejsce, gdzie nie będą miały znaczenia biurokratyczne przepisy, wyznanie religijne, przynależność narodowa.",
+      "imagePath": "hands_one.svg"
+    },
+    {
+      "title": "WSPIERANIE",
+      "subtitle": "Miejsce wsparcia dla dzieci i matek, które będą mogły tu mieszkać, dopóki nie przezwyciężą kryzysu.",
+      "imagePath": "hands_two.svg"
+    },
+    {
+      "title": "MOŻLIWOŚCI",
+      "subtitle": "Możliwość znalezienia pracy, dzięki której mama może sama opiekować się i zapewniać dziecku odpowiednie warunki.",
+      "imagePath": "hand_flower.svg"
+    }
+  ],
   "footer": {
     "email": "E-mail",
     "phones": "Telefony",
