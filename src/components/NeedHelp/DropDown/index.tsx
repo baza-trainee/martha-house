@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import styles from "@/components/NeedHelp/NeedHelp.module.css";
 import { NeedHelpProps } from "@/components/NeedHelp/NeedHelp.types";
 import { Button } from "@/components";
-import { CustomImage } from "@/components/customImage";
+import { CustomImage } from "@/components/CustomImage";
 import Ellipses from "@/components/NeedHelp/EllipsesBlock/Ellipses";
 import { useMedia } from "@/hooks/useMedia";
 

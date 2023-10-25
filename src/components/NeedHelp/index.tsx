@@ -1,7 +1,7 @@
 "use client";
 
 import React, { FC, useState } from "react";
-import { CustomImage } from "@/components/customImage";
+import { CustomImage } from "@/components/CustomImage";
 import DropDown from "@/components/NeedHelp/DropDown";
 import { NeedHelpProps } from "@/components/NeedHelp/NeedHelp.types";
 import Container from "@/components/Container";

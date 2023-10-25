@@ -3,7 +3,7 @@ import styles from "@/components/Header/Header.module.css";
 import { Nav } from "@/components";
 import { Locales } from "@/types";
 import { NextPage } from "next";
-import { CustomImage } from "@/components/customImage";
+import { CustomImage } from "@/components/CustomImage";
 import Link from "next/link";
 
 interface HeaderMobProps {
