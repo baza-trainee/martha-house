@@ -9,7 +9,7 @@ interface FooterProps {
   };
 }
 
-export const Footer: NextPage<FooterProps> = async ({ data }) => (
+export const Footer: NextPage<FooterProps> = ({ data }) => (
   <footer>
     <IconsBar data={data} />
   </footer>

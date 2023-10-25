@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import NeedHelp from "@/components/NeedHelp";
 import { getAllTranslations, getTranslation } from "@/utils/dictionary";
 import { Locales } from "@/types";
+import { HowToHelp } from "@/components";
 
 interface IHomePageProps {
   params: {
@@ -18,6 +19,7 @@ const HomePage: NextPage<IHomePageProps> = ({ params: { lang } }) => {
     <>
       <HeroSection data={t("hero")} />
       <NeedHelp data={t("needHelp")} />
+      <HowToHelp data={t("howToHelp")} />
     </>
   );
 };
