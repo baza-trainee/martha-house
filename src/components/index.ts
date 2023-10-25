@@ -1,5 +1,5 @@
 export * from "./ErrorElement";
-export * from "./CustomImage";
+export * from "./customImage";
 export * from "./Footer";
 export * from "./Header/nav";
 export * from "./Container";
