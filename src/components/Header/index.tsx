@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { NextPage } from "next";
-import { useMedia } from "@/components/hooks/useMedia";
+import { useMedia } from "@/hooks/useMedia";
 import HeaderDesc from "@/components/Header/HeaderDesc";
 import { HeaderMob } from "@/components/Header/HeaderMob";
 import { HeaderProps } from "@/components/Header/Types/Header.types";

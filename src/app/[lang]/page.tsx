@@ -1,8 +1,8 @@
 import { NextPage } from "next";
-import HeroComponent from "@/components/HeroComponent/HeroComponent";
+import HeroSection from "@/components/HeroSection";
+import NeedHelp from "@/components/NeedHelp";
 import { getAllTranslations, getTranslation } from "@/utils/dictionary";
 import { Locales } from "@/types";
-import NeedHelp from "@/components/NeedHelp/NeedHelp";
 
 interface IHomePageProps {
   params: {
@@ -16,7 +16,7 @@ const HomePage: NextPage<IHomePageProps> = async ({ params: { lang } }) => {
 
   return (
     <>
-      <HeroComponent data={t("hero")} />
+      <HeroSection data={t("hero")} />
       <NeedHelp data={t("needHelp")} />
     </>
   );

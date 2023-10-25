@@ -2,9 +2,9 @@ import React, { FC } from "react";
 import styles from "@/components/NeedHelp/NeedHelp.module.css";
 import { NeedHelpProps } from "@/components/NeedHelp/NeedHelp.types";
 import { Button } from "@/components";
-import { CustomImage } from "@/components/customImage";
+import { CustomImage } from "@/components/CustomImage";
 import Ellipses from "@/components/NeedHelp/EllipsesBlock/Ellipses";
-import { useMedia } from "@/components/hooks/useMedia";
+import { useMedia } from "@/hooks/useMedia";
 
 interface DropDownProps extends NeedHelpProps {
   handler: () => void;
@@ -24,18 +24,18 @@ const DropDown: FC<DropDownProps> = ({ data, handler }) => {
         <p className={styles["paragraph-five"]}>{data.text[3]}</p>
         {isDesktop && (
           <div className={styles["support-btn"]}>
-            <Button variant="yellow">{data.button}</Button>
+            <Button variant='yellow'>{data.button}</Button>
           </div>
         )}
       </div>
       {!isDesktop ? (
         <div className={styles.support}>
-          <Button variant="yellow">{data.button}</Button>
+          <Button variant='yellow'>{data.button}</Button>
           <CustomImage
-            src="/images/icons/expend_less.svg"
+            src='/images/icons/expend_less.svg'
             width={32}
             height={32}
-            alt="expand"
+            alt='expand'
             style={{ filter: "invert(100%) brightness(150%)" }}
             onClick={handler}
           />{" "}
@@ -43,10 +43,10 @@ const DropDown: FC<DropDownProps> = ({ data, handler }) => {
       ) : (
         <div className={styles.toggle}>
           <CustomImage
-            src="/images/icons/expend_less.svg"
+            src='/images/icons/expend_less.svg'
             width={32}
             height={32}
-            alt="expand"
+            alt='expand'
             style={{ filter: "invert(100%) brightness(150%)" }}
             onClick={handler}
           />
