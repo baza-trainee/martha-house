@@ -31,6 +31,23 @@
   "news": {
     "title": "News Page"
   },
+  "values": [
+    {
+      "title": "INDEPENDENCE",
+      "subtitle": "A place where bureaucratic directives, religious beliefs, and national affiliation will not be important",
+      "imagePath": "hands_one.svg"
+    },
+    {
+      "title": "SUPPORT",
+      "subtitle": "Support point for children and mothers, who will be able to live here until they overcome the crisis.",
+      "imagePath": "hands_two.svg"
+    },
+    {
+      "title": "OPPORTUNITIES",
+      "subtitle": "The opportunity to get a job, so that the mother can take care of and provide for the child in proper conditions.",
+      "imagePath": "hand_flower.svg"
+    }
+  ],
   "footer": {
     "email": "Email",
     "phones": "Phones",
