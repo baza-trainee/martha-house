@@ -9,15 +9,11 @@ interface IHomePageProps {
   };
 }
 
-const HomePage: NextPage<IHomePageProps> = async ({ params: { lang } }) => {
-  const language = await getAllTranslations(lang);
+const HomePage: NextPage<IHomePageProps> = ({ params: { lang } }) => {
+  const language = getAllTranslations(lang);
   const t = getTranslation(language);
 
-  return (
-    <>
-      <HeroComponent data={t("hero")} />
-    </>
-  );
+  return <HeroComponent data={t("hero")} />;
 };
 
 export default HomePage;

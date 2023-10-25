@@ -15,10 +15,10 @@
     "supportBtn": "Support the project"
   },
   "howToHelp": {
-    "title": "Як допомогти?",
-    "paragraph": "Новий будинок “Міста Добра” вже відкрив свої двері для своїх мешканців. Та аби зробити його насправді незалежним і успішним, нам потрібна ваша допомога!",
-    "bankTransfer": "Банківський переказ",
-    "onlinePayment": "Онлайн платіж",
+    "title": "How to help?",
+    "paragraph": "The new 'City of Good' building has already opened its doors to its residents. But to make it truly independent and successful, we need your help!",
+    "bankTransfer": "Bank transfer",
+    "onlinePayment": "Online payment",
     "monobank": "",
     "payPal": ""
   },

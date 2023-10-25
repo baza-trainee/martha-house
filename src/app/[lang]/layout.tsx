@@ -39,7 +39,7 @@ const RootLayout: NextPage<IProps> = async ({ params: { lang }, children }) => {
 
   return (
     <html
-      lang='en'
+      lang="en"
       className={`${mulish.variable} ${manrope.variable} font-sans`}
     >
       <body>
