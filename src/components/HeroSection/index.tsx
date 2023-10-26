@@ -17,7 +17,7 @@ const HeroSection: React.FC<HeroProps> = ({ data }) => (
       <div className={styles.infoContainer}>
         <h1 className={styles.heroTitle}>{data.title}</h1>
         <p className={styles.heroSubtitle}>{data.subtitle}</p>
-        <Button variant='yellow' className={styles.supportButton}>
+        <Button variant="yellow" className={styles.supportButton}>
           {data.supportBtn}
         </Button>
       </div>
