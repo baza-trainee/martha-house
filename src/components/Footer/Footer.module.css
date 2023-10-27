@@ -1,0 +1,94 @@
+.footer {
+  background: var(--grey900);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  color: var(--white);
+}
+
+.captions {
+  color: var(--grey300);
+  font-family: var(--font-manrope);
+  font-size: var(--captions--fs);
+  font-style: normal;
+  font-weight: var(--captions--fw);
+  line-height: var(--captions--lh);
+  letter-spacing: var(--captions--ls);
+}
+
+.logo {
+  position: relative;
+  width: 137px;
+  height: 76px;
+}
+
+.map {
+  position: relative;
+  min-width: 343px;
+  height: 239px;
+}
+
+.contactWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--white);
+  font-family: var(--font-manrope);
+  font-size: var(--body-medium-web-fs);
+  font-style: normal;
+  font-weight: var(--body-medium-web-fw);
+  line-height: var(--body-medium-web-lh);
+}
+.phones {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.socialBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.social {
+  display: flex;
+  gap: 24px;
+}
+
+.rules {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: var(--grey300);
+  font-family: var(--font-manrope);
+  font-size: var(--body-small-fs);
+  font-style: normal;
+  font-weight: var(--body-small-fw);
+  line-height: var(--body-small-lh);
+}
+
+.rules span {
+  white-space: nowrap;
+}
+
+.rules span:nth-child(1) {
+  position: relative;
+}
+
+.rules span:nth-child(1)::after {
+  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="5" height="5"><circle cx="2.5" cy="2.5" r="2" fill="%23D9D9D9"/></svg>');
+  position: absolute;
+  right: -6px;
+  top: -1px;
+}
