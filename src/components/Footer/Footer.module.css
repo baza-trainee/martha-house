@@ -101,15 +101,22 @@
   top: -1px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .wrapper {
     padding: var(--padding-xxl) var(--padding-xxxl);
+    justify-content: center;
+    align-items: center;
   }
 
   .contactWrapper {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     gap: 44px;
+  }
+
+  .rules {
+    align-self: center;
   }
 }
 
@@ -122,17 +129,21 @@
     width: 888px;
     padding: 96px var(--padding-xxl);
     box-sizing: unset;
+    gap: normal;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
   }
 
   .logo {
     grid-area: logo;
     width: 144px;
     height: 80px;
+    align-self: flex-start;
   }
 
   .contactWrapper {
     grid-area: contactWrapper;
-    gap: normal;
+    gap: 50px;
     justify-content: space-between;
   }
 
@@ -141,6 +152,7 @@
     flex-direction: column;
     align-items: flex-start;
     width: 175px;
+    align-self: flex-end;
   }
 
   .map {
@@ -150,9 +162,10 @@
 
   .getTouch {
     width: 244px;
+    gap: 32px;
   }
 
   .rules span:nth-child(1) {
-    position: static;
+    position: relative;
   }
 }
