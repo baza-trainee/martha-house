@@ -25,6 +25,10 @@
     "bankTransfer": "Przelew bankowy",
     "onlinePayment": "Płatność online"
   },
+  "support": {
+    "text": "Zwracamy się do wszystkich, którym nie jest obojętne – wyciągnijcie pomocną dłoń do Ukrainy w tych strasznych czasach, wyciągnijcie pomocną dłoń do ukraińskich dzieci!",
+    "buttonText": "Wspierać projekt"
+  },
   "blog": {
     "title": "Blog"
   },

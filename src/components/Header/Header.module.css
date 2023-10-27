@@ -84,6 +84,7 @@
     width: 100vw;
     top: 0;
     height: 72px;
+    z-index: 3;
   }
 
   .container {

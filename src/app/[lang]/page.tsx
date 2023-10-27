@@ -5,6 +5,7 @@ import CoreValuesSection from "@/components/CoreValuesSection";
 import { getAllTranslations, getTranslation } from "@/utils/dictionary";
 import { Locales } from "@/types";
 import { HowToHelp } from "@/components";
+import Support from "@/components/SupportProject/Support";
 
 interface IHomePageProps {
   params: {
@@ -20,6 +21,7 @@ const HomePage: NextPage<IHomePageProps> = async ({ params: { lang } }) => {
     <>
       <HeroSection data={t("hero")} />
       <NeedHelp data={t("needHelp")} />
+      <Support data={t("support")} />
       <HowToHelp data={t("howToHelp")} />
       <CoreValuesSection data={t("values")} />
     </>

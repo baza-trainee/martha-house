@@ -25,6 +25,10 @@
     "bankTransfer": "Bank transfer",
     "onlinePayment": "Online payment"
   },
+  "support": {
+    "text": "We appeal to all who care – extend a helping hand to Ukraine during these terrifying times, extend a helping hand to Ukrainian children!",
+    "buttonText": "Support the project"
+  },
   "blog": {
     "title": "Blog Page"
   },
