@@ -19,6 +19,38 @@
       "PL Окрім цього Фонд намагається підтримати дитячі лікарні і бідні родини по всій країні. Тисячі дітей із складними діагнозами в умовах війни залишилися сам на сам із своєю бідою. А лікарні потребують найнеобхіднішого – чистої води, їжі, медичних препаратів та витратиників."
     ]
   },
+  "history": {
+    "title": "Jak powstało Miasto Dobra?",
+    "sliderOne": {
+      "text": [
+        "Schronisko dla matek z dziećmi powstało z pilnej potrzeby. Coraz więcej kobiet zwracało się do fundacji prosząc o schronienie i ratunek dla siebie i swoich dzieci. Początkowo działał w wynajmowanym budynku. W ciągu kilku lat działalności w nim 'Miasto Dobra' pomogło prawie 600 dzieciom. Ale w 2018 roku pojawiło się przekonanie, że 'Miasto Dobra' potrzebuje własnego budynku. Po pierwsze, żaden wynajęty dom nie mógł pomieścić wszystkich, którzy szukali pomocy z całej Ukrainy. Po drugie, budynki nie były przystosowane do zamieszkania przez dużą liczbę dzieci w różnym wieku jednocześnie, nie uwzględniono zasad inkluzji, które były potrzebne matkom i dzieciom w różnych stanach fizycznych i zdrowia. Tak rozpoczęła się nasza wielka budowa."
+      ],
+      "img": "/images/history/slider-one.jpg",
+      "alt": "Schronisko dla matek z dziećmi"
+    },
+    "sliderTwo": {
+      "text": [
+        "Obecnie 'Miasto Dobra' to prawdziwy kompleks charytatywny. Kilka budynków, teren przybudynkowy. Wszystko zostało zaprojektowane i przystosowane specjalnie dla potrzeb centrum kryzysowego.",
+        "A co ważniejsze, cała budowa została sfinansowana wyłącznie z darowizn. 'Miasto Dobra' nie będzie finansowane przez państwo, istnieje dzięki ludziom, którzy troszczą się o życie biednych dzieci! Przez cały okres budowy zwykli ludzie, przedstawiciele biznesu i organizacje społeczne wspierali nasz pomysł swoim wkładem - fizycznym, materialnym, twórczym, informacyjnym czy emocjonalnym."
+      ],
+      "img": "/images/history/slider-two.jpg",
+      "alt": "Kompleks z terenem przybudynkowym"
+    },
+    "sliderThree": {
+      "text": [
+        "Ale nasza działalność się nie kończy. Do codziennego funkcjonowania 'Miasto Dobra' potrzebuje wsparcia ludzi - na opłaty komunalne, zakup żywności, lekarstw, środków higieny i wszystkiego innego, czego potrzebują nasi podopieczni. Większość z nich trafia do centrum tylko w ubraniach, które mają na sobie. Dlatego zwracamy się do każdej osoby o sercu - wesprzyj 'Miasto Dobra'! Pomóż nam przekształcić je w terytorium absolutnej miłości, akceptacji i pomocy tym, którzy stracili wiarę w ludzką dobroć. Nawet najmniejszy Twój wkład staje się cegiełką czyjegoś szczęśliwego dzieciństwa!"
+      ],
+      "img": "/images/history/slider-three.jpg",
+      "alt": "Pokój dla matki z dzieckiem"
+    },
+    "sliderFour": {
+      "text": [
+        "W tym Mieście każdy może stać się misjonarzem dobra, opiekować się dziećmi i dbać o nie. Imiona darczyńców, którzy pomogli w zakupie, budowie i urządzeniu terenu 'Miasta Dobra', na zawsze pozostaną na fasadzie, gdzie cegła po cegle będą wbudowywane imiona ludzi z sercem pełnym dobroci!"
+      ],
+      "img": "/images/history/slider-four.jpg",
+      "alt": "Każdy może zostać wolontariuszem"
+    }
+  },
   "howToHelp": {
     "title": "Jak pomóc?",
     "paragraph": "Nowy budynek „Miasta Dobra” otworzył już swoje podwoje dla swoich mieszkańców. Ale aby był naprawdę niezależny i skuteczny, potrzebujemy Twojej pomocy!",
