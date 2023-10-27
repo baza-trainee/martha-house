@@ -19,6 +19,38 @@
       "en Окрім цього Фонд намагається підтримати дитячі лікарні і бідні родини по всій країні. Тисячі дітей із складними діагнозами в умовах війни залишилися сам на сам із своєю бідою. А лікарні потребують найнеобхіднішого – чистої води, їжі, медичних препаратів та витратиників."
     ]
   },
+  "history": {
+    "title": "How did the City of Goodness originate?",
+    "sliderOne": {
+      "text": [
+        "The shelter for mothers and their children emerged out of an urgent need. An increasing number of women were reaching out to the foundation, seeking shelter and rescue for themselves and their children. Initially, it operated in a rented building. Over a few years of its operation there, the 'City of Goodness' assisted nearly 600 children. However, by 2018, it became clear that the 'City of Goodness' required its own building. Firstly, no rented house could accommodate all those who sought help from across Ukraine. Secondly, the houses weren't designed to house a large number of children of various ages simultaneously, nor did they take into consideration the principles of inclusivity required for mothers and children in different physical states and health conditions. This is when our major construction project began."
+      ],
+      "img": "/images/history/slider-one.jpg",
+      "alt": "Shelter for mothers with children"
+    },
+    "sliderTwo": {
+      "text": [
+        "Now, the 'City of Goodness' is a real charitable complex. Multiple buildings, surrounding territory. All of this is fully designed and equipped specifically for the needs of the crisis center.",
+        "Moreover, the entire construction was fully funded by charitable donations. The 'City of Goodness' will not be state-funded; it exists solely due to the caring individuals who are concerned about the lives of underprivileged children. Throughout the construction, ordinary people, business representatives, and non-profit organizations supported our idea with their contributions – whether physical, material, creative, informational, or emotional."
+      ],
+      "img": "/images/history/slider-two.jpg",
+      "alt": "Complex with surrounding territory"
+    },
+    "sliderThree": {
+      "text": [
+        "But our mission isn't over. For its daily operations, the 'City of Goodness' constantly requires the support of caring individuals – to pay utility bills, buy food, medicines, hygiene products, and everything else our beneficiaries need. Most of them come to the center with only the clothes they are wearing. So, we call upon every kind-hearted individual – support the 'City of Goodness'! Help us transform it into a realm of absolute love, acceptance, and assistance for those who've lost faith in human kindness. Even your smallest contribution becomes a building block of someone's happy childhood."
+      ],
+      "img": "/images/history/slider-three.jpg",
+      "alt": "Room for a mother and child"
+    },
+    "sliderFour": {
+      "text": [
+        "In this City, everyone can become a missionary of goodness, look after the children, and care for them. The names of the benefactors who helped in the purchase, construction, and equipping of the 'City of Goodness' charity territory will forever remain on the facade wall, where brick by brick, the names of kind-hearted individuals will be embedded."
+      ],
+      "img": "/images/history/slider-four.jpg",
+      "alt": "Anyone can become a volunteer"
+    }
+  },
   "howToHelp": {
     "title": "How to help?",
     "paragraph": "The new 'City of Good' building has already opened its doors to its residents. But to make it truly independent and successful, we need your help!",
