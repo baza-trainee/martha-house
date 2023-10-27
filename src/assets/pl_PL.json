@@ -10,14 +10,47 @@
     "supportBtn": "Wesprzyj projekt"
   },
   "needHelp": {
-    "title": "PL",
-    "subtitle": "PL",
+    "title": "Wojna",
+    "subtitle": "Potrzebna pomoc!",
     "text": [
-      " PL В Україні війна. 24 лютого армія Росії розпочала повномасштабний військовий наступ на нашу країну. Десятки українських міст та містечок бомблять та обстрілюють із всіх видів зброї. Снаряди влучають у дитячі лікарні, садочки, школи, житлові будинки. Мирні люди ховаються у підвалах, метро та бомбосховищах. Наш Фонд не може і не буде стояти осторонь.",
-      "PL Зараз ми приймаємо жінок із дітьми та стареньких зі всієї країни у своєму центрі. Ми приймаємо родини із хатніми улюбленцями і без жодних обмежень, селимо їх, годуємо, лікуємо та намагаємося зробити цей час хоч трохи не таким травматичним для малечі. Також ми прийняли три евакуйовані дитячі будинки з Півдня України. Це діти від народження до 7 років. Тому ми ЕКСТРЕНО потребуємо вашої допомоги та підтримки!",
-      "PL У авральному темпі, саме зараз, закінчуємо будівництво четвертої та п’ятої будівлі із бомбосховищем! Що дасть нам можливість розмістити ще дві сотні евакуйованих дітей, які постраждали від війни. Для цього необхідні кошти та будівельні матеріали. Також є постійна потреба у харчах, ліках, прzzzедметах гігієни, подушках, дитячому харчуванні та одязі.",
-      "PL Окрім цього Фонд намагається підтримати дитячі лікарні і бідні родини по всій країні. Тисячі дітей із складними діагнозами в умовах війни залишилися сам на сам із своєю бідою. А лікарні потребують найнеобхіднішого – чистої води, їжі, медичних препаратів та витратиників."
-    ]
+      "W Ukrainie wojna. 24 lutego armia Rosji rozpoczęła pełnoskalową ofensywę wojskową przeciwko naszemu krajowi. Dziesiątki ukraińskich miast i miejscowości są bombardowane i ostrzeliwane ze wszystkich rodzajów broni. Pociski trafiają w dziecięce szpitale, przedszkola, szkoły i budynki mieszkalne. Pokojowi ludzie chowają się w piwnicach, metrze i schronach. Nasza Fundacja nie może i nie będzie stać z boku.",
+      "Obecnie przyjmujemy kobiety z dziećmi oraz osoby starsze z całego kraju w naszym centrum. Akceptujemy rodziny z domowymi zwierzętami i bez żadnych ograniczeń, zakwaterowujemy je, karmimy, leczymy i staramy się uczynić ten czas choć trochę mniej traumatycznym dla najmłodszych. Przyjęliśmy również trzy ewakuowane domy dziecka z południa Ukrainy. To dzieci od narodzin do 7 lat. Dlatego PILNIE potrzebujemy waszej pomocy i wsparcia!",
+      "W trybie pilnym, właśnie teraz, kończymy budowę czwartej i piątej budowli z schronem! Pozwoli nam to zakwaterować kolejne dwieście ewakuowanych dzieci, które ucierpiały z powodu wojny. Potrzebujemy na to funduszy i materiałów budowlanych. Istnieje także stałe zapotrzebowanie na żywność, leki, artykuły higieniczne, poduszki, jedzenie dla dzieci i odzież.",
+      "Poza tym Fundacja stara się wspierać dziecięce szpitale i biedne rodziny w całym kraju. Tysiące dzieci z trudnymi diagnozami w warunkach wojny zostały same z ich nieszczęściem. Szpitale potrzebują najbardziej podstawowych rzeczy – czystej wody, jedzenia, leków i materiałów eksploatacyjnych."
+    ],
+    "button": "Wpłać darowiznę"
+  },
+  "history": {
+    "title": "Jak powstało Miasto Dobra?",
+    "sliderOne": {
+      "text": [
+        "Schronisko dla matek z dziećmi powstało z pilnej potrzeby. Coraz więcej kobiet zwracało się do fundacji prosząc o schronienie i ratunek dla siebie i swoich dzieci. Początkowo działał w wynajmowanym budynku. W ciągu kilku lat działalności w nim 'Miasto Dobra' pomogło prawie 600 dzieciom. Ale w 2018 roku pojawiło się przekonanie, że 'Miasto Dobra' potrzebuje własnego budynku. Po pierwsze, żaden wynajęty dom nie mógł pomieścić wszystkich, którzy szukali pomocy z całej Ukrainy. Po drugie, budynki nie były przystosowane do zamieszkania przez dużą liczbę dzieci w różnym wieku jednocześnie, nie uwzględniono zasad inkluzji, które były potrzebne matkom i dzieciom w różnych stanach fizycznych i zdrowia. Tak rozpoczęła się nasza wielka budowa."
+      ],
+      "img": "/images/history/slider-one.jpg",
+      "alt": "Schronisko dla matek z dziećmi"
+    },
+    "sliderTwo": {
+      "text": [
+        "Obecnie 'Miasto Dobra' to prawdziwy kompleks charytatywny. Kilka budynków, teren przybudynkowy. Wszystko zostało zaprojektowane i przystosowane specjalnie dla potrzeb centrum kryzysowego.",
+        "A co ważniejsze, cała budowa została sfinansowana wyłącznie z darowizn. 'Miasto Dobra' nie będzie finansowane przez państwo, istnieje dzięki ludziom, którzy troszczą się o życie biednych dzieci! Przez cały okres budowy zwykli ludzie, przedstawiciele biznesu i organizacje społeczne wspierali nasz pomysł swoim wkładem - fizycznym, materialnym, twórczym, informacyjnym czy emocjonalnym."
+      ],
+      "img": "/images/history/slider-two.jpg",
+      "alt": "Kompleks z terenem przybudynkowym"
+    },
+    "sliderThree": {
+      "text": [
+        "Ale nasza działalność się nie kończy. Do codziennego funkcjonowania 'Miasto Dobra' potrzebuje wsparcia ludzi - na opłaty komunalne, zakup żywności, lekarstw, środków higieny i wszystkiego innego, czego potrzebują nasi podopieczni. Większość z nich trafia do centrum tylko w ubraniach, które mają na sobie. Dlatego zwracamy się do każdej osoby o sercu - wesprzyj 'Miasto Dobra'! Pomóż nam przekształcić je w terytorium absolutnej miłości, akceptacji i pomocy tym, którzy stracili wiarę w ludzką dobroć. Nawet najmniejszy Twój wkład staje się cegiełką czyjegoś szczęśliwego dzieciństwa!"
+      ],
+      "img": "/images/history/slider-three.jpg",
+      "alt": "Pokój dla matki z dzieckiem"
+    },
+    "sliderFour": {
+      "text": [
+        "W tym Mieście każdy może stać się misjonarzem dobra, opiekować się dziećmi i dbać o nie. Imiona darczyńców, którzy pomogli w zakupie, budowie i urządzeniu terenu 'Miasta Dobra', na zawsze pozostaną na fasadzie, gdzie cegła po cegle będą wbudowywane imiona ludzi z sercem pełnym dobroci!"
+      ],
+      "img": "/images/history/slider-four.jpg",
+      "alt": "Każdy może zostać wolontariuszem"
+    }
   },
   "howToHelp": {
     "title": "Jak pomóc?",
