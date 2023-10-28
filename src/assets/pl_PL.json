@@ -56,6 +56,15 @@
     "text": "Nowy budynek \"Miasta Dobroci\" już otworzył swoje drzwi dla swoich mieszkańców. Ale aby naprawdę uczynić go niezależnym i udanym, potrzebujemy waszej pomocy!",
     "buttonText": "Pomóc"
   },
+  "about": {
+    "subtitle": "Czym jest Miasto Dobroci?",
+    "textQuote": "Miasto Dobroci to dziecko przy boku matki!",
+    "text": [
+      "Miasto Dobroci to ukraiński projekt dobroczynny, duży kompleks usług społecznych i schronienie dla matek z dziećmi, które znalazły się w trudnych sytuacjach życiowych. Stały się ofiarami przemocy domowej, mają ryzyko znalezienia się na ulicy, potrzebują wsparcia w socjalizacji i reintegracji, i żyją poniżej granicy ubóstwa. Działamy, aby zachować dziecko w rodzinie.",
+      "W 'Mieście Dobroci' walczymy o każdą matkę i jej dziecko. Tutaj bezdomne matki, sieroty i absolwentki domów dziecka, matki rozdzielone przemocą domową i obojętnością, znajdą schronienie i wsparcie.",
+      "Każda matka otrzyma indywidualny plan swojego rozwoju osobistego, z planami na przyszłe wykształcenie i zdobycie zawodu. Niezbędny czas pobytu w 'Mieście' będzie określany w zależności od zadań i celów."
+    ]
+  },
   "howToHelp": {
     "title": "Jak pomóc?",
     "paragraph": "Nowy budynek „Miasta Dobra” otworzył już swoje podwoje dla swoich mieszkańców. Ale aby był naprawdę niezależny i skuteczny, potrzebujemy Twojej pomocy!",
