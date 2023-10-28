@@ -16,16 +16,18 @@ export const AboutComponent: React.FC<AboutComponentProps> = ({ data }) => (
   <section className={styles.about}>
     <Container className={styles.styledContainer}>
       <div>
+        <h2 className={styles.subtitle}>{data.subtitle}</h2>
         <div className={styles.infoContainer}>
-          <h2 className={styles.subtitle}>{data.subtitle}</h2>
           <CustomImage
             src={aboutImage}
             alt="About Image"
             className={styles.image}
           />
-          <p className={`${styles.text} ${styles.text1}`}>{data.text[0]}</p>
-          <p className={`${styles.text} ${styles.text2}`}>{data.text[1]}</p>
-          <p className={`${styles.text} ${styles.text3}`}>{data.text[2]}</p>
+          <div className={styles.mainText}>
+            <p className={`${styles.text} ${styles.text1}`}>{data.text[0]}</p>
+            <p className={`${styles.text} ${styles.text2}`}>{data.text[1]}</p>
+            <p className={`${styles.text} ${styles.text3}`}>{data.text[2]}</p>
+          </div>
         </div>
         <p className={styles.textQuote}>{data.textQuote}</p>
       </div>
