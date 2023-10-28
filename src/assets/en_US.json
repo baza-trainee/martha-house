@@ -56,6 +56,15 @@
     "text": "The new \"City of Good\" building has already opened its doors for its residents. But to truly make it independent and successful, we need your help!",
     "buttonText": "Help"
   },
+  "about": {
+    "subtitle": "What is City of Goodness?",
+    "textQuote": "City of Goodness is a child by their mother's side!",
+    "text": [
+      "City of Goodness is a charitable all-Ukrainian project, a large complex of social services and shelter for mothers with children who have found themselves in difficult life situations. They have become victims of domestic violence, are at risk of ending up on the street, need support in socialization and reintegration, and live below the poverty line. We act to preserve the child within the family.",
+      "In 'City of Goodness,' we fight for every mother for her child. Here, homeless mothers, orphaned mothers, and graduates of orphanages, mothers torn apart by domestic violence and indifference, will find shelter and support.",
+      "Each mother will receive an individual plan for her personal growth, with plans for future education and the acquisition of a profession. The necessary duration of stay in the 'City' will be determined according to the tasks and goals set."
+    ]
+  },
   "howToHelp": {
     "title": "How to help?",
     "paragraph": "The new 'City of Good' building has already opened its doors to its residents. But to make it truly independent and successful, we need your help!",
