@@ -52,6 +52,10 @@
       "alt": "Każdy może zostać wolontariuszem"
     }
   },
+  "help": {
+    "text": "Nowy budynek \"Miasta Dobroci\" już otworzył swoje drzwi dla swoich mieszkańców. Ale aby naprawdę uczynić go niezależnym i udanym, potrzebujemy waszej pomocy!",
+    "buttonText": "Pomóc"
+  },
   "howToHelp": {
     "title": "Jak pomóc?",
     "paragraph": "Nowy budynek „Miasta Dobra” otworzył już swoje podwoje dla swoich mieszkańców. Ale aby był naprawdę niezależny i skuteczny, potrzebujemy Twojej pomocy!",

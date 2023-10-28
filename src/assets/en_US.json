@@ -52,6 +52,10 @@
       "alt": "Anyone can become a volunteer"
     }
   },
+  "help": {
+    "text": "The new \"City of Good\" building has already opened its doors for its residents. But to truly make it independent and successful, we need your help!",
+    "buttonText": "Help"
+  },
   "howToHelp": {
     "title": "How to help?",
     "paragraph": "The new 'City of Good' building has already opened its doors to its residents. But to make it truly independent and successful, we need your help!",
