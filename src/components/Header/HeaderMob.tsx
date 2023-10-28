@@ -17,7 +17,7 @@ export const HeaderMob: NextPage<HeaderProps> = ({ lang, data }) => {
       <div className={styles.main}>
         <Link href={`/${lang}`}>
           <CustomImage
-            src="/images/logo/logo.png"
+            src="/images/logo/site_logo.png"
             width={65}
             height={36}
             alt="logo"
