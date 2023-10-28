@@ -13,11 +13,48 @@
     "title": "War",
     "subtitle": "Need help!",
     "text": [
-      " en В Україні війна. 24 лютого армія Росії розпочала повномасштабний військовий наступ на нашу країну. Десятки українських міст та містечок бомблять та обстрілюють із всіх видів зброї. Снаряди влучають у дитячі лікарні, садочки, школи, житлові будинки. Мирні люди ховаються у підвалах, метро та бомбосховищах. Наш Фонд не може і не буде стояти осторонь.",
-      "en Зараз ми приймаємо жінок із дітьми та стареньких зі всієї країни у своєму центрі. Ми приймаємо родини із хатніми улюбленцями і без жодних обмежень, селимо їх, годуємо, лікуємо та намагаємося зробити цей час хоч трохи не таким травматичним для малечі. Також ми прийняли три евакуйовані дитячі будинки з Півдня України. Це діти від народження до 7 років. Тому ми ЕКСТРЕНО потребуємо вашої допомоги та підтримки!",
-      "en У авральному темпі, саме зараз, закінчуємо будівництво четвертої та п’ятої будівлі із бомбосховищем! Що дасть нам можливість розмістити ще дві сотні евакуйованих дітей, які постраждали від війни. Для цього необхідні кошти та будівельні матеріали. Також є постійна потреба у харчах, ліках, предметах гігієни, подушках, дитячому харчуванні та одязі.",
-      "en Окрім цього Фонд намагається підтримати дитячі лікарні і бідні родини по всій країні. Тисячі дітей із складними діагнозами в умовах війни залишилися сам на сам із своєю бідою. А лікарні потребують найнеобхіднішого – чистої води, їжі, медичних препаратів та витратиників."
-    ]
+      "The situation in Ukraine is dire. On February 24th, the Russian army launched a full-scale military offensive against our country. Dozens of Ukrainian cities and towns are being bombed and shelled from all types of weapons. Missiles hit children's hospitals, kindergartens, schools, and residential buildings. Civilians are hiding in basements, metro stations, and bomb shelters. Our Foundation cannot and will not stand by.",
+      "Currently, we are accommodating women with children and the elderly from all over the country in our center. We accept families with household pets and with no restrictions, we settle them, feed them, provide medical care, and try to make this time a little less traumatic for the little ones. We have also taken in three evacuated children's homes from the South of Ukraine. These are children from birth to 7 years old. Therefore, we URGENTLY need your help and support!",
+      "We are urgently finishing the construction of the fourth and fifth buildings with bomb shelters right now! This will allow us to accommodate an additional two hundred evacuated children who have been affected by the war. For this, we need funds and construction materials. We also have a constant need for food, medicine, hygiene items, pillows, baby food, and clothing.",
+      "In addition, the Foundation is trying to support children's hospitals and impoverished families throughout the country. Thousands of children with complex diagnoses have been left on their own amidst the war. Hospitals urgently need essentials – clean water, food, medical supplies, and consumables."
+    ],
+    "button": "Support"
+  },
+  "history": {
+    "title": "How did the City of Goodness originate?",
+    "sliderOne": {
+      "text": [
+        "The shelter for mothers and their children emerged out of an urgent need. An increasing number of women were reaching out to the foundation, seeking shelter and rescue for themselves and their children. Initially, it operated in a rented building. Over a few years of its operation there, the 'City of Goodness' assisted nearly 600 children. However, by 2018, it became clear that the 'City of Goodness' required its own building. Firstly, no rented house could accommodate all those who sought help from across Ukraine. Secondly, the houses weren't designed to house a large number of children of various ages simultaneously, nor did they take into consideration the principles of inclusivity required for mothers and children in different physical states and health conditions. This is when our major construction project began."
+      ],
+      "img": "/images/history/slider-one.jpg",
+      "alt": "Shelter for mothers with children"
+    },
+    "sliderTwo": {
+      "text": [
+        "Now, the 'City of Goodness' is a real charitable complex. Multiple buildings, surrounding territory. All of this is fully designed and equipped specifically for the needs of the crisis center.",
+        "Moreover, the entire construction was fully funded by charitable donations. The 'City of Goodness' will not be state-funded; it exists solely due to the caring individuals who are concerned about the lives of underprivileged children. Throughout the construction, ordinary people, business representatives, and non-profit organizations supported our idea with their contributions – whether physical, material, creative, informational, or emotional."
+      ],
+      "img": "/images/history/slider-two.jpg",
+      "alt": "Complex with surrounding territory"
+    },
+    "sliderThree": {
+      "text": [
+        "But our mission isn't over. For its daily operations, the 'City of Goodness' constantly requires the support of caring individuals – to pay utility bills, buy food, medicines, hygiene products, and everything else our beneficiaries need. Most of them come to the center with only the clothes they are wearing. So, we call upon every kind-hearted individual – support the 'City of Goodness'! Help us transform it into a realm of absolute love, acceptance, and assistance for those who've lost faith in human kindness. Even your smallest contribution becomes a building block of someone's happy childhood."
+      ],
+      "img": "/images/history/slider-three.jpg",
+      "alt": "Room for a mother and child"
+    },
+    "sliderFour": {
+      "text": [
+        "In this City, everyone can become a missionary of goodness, look after the children, and care for them. The names of the benefactors who helped in the purchase, construction, and equipping of the 'City of Goodness' charity territory will forever remain on the facade wall, where brick by brick, the names of kind-hearted individuals will be embedded."
+      ],
+      "img": "/images/history/slider-four.jpg",
+      "alt": "Anyone can become a volunteer"
+    }
+  },
+  "help": {
+    "text": "The new \"City of Good\" building has already opened its doors for its residents. But to truly make it independent and successful, we need your help!",
+    "buttonText": "Help"
   },
   "howToHelp": {
     "title": "How to help?",
@@ -55,6 +92,6 @@
   "footer": {
     "email": "Email",
     "phones": "Phones",
-    "socialNet": "Follow"
+    "socialNet": "Follow Us"
   }
 }
