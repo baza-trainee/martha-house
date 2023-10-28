@@ -1,5 +1,8 @@
 .header {
   height: 72px;
+  position: sticky;
+  inset: 0 0 0 0;
+  z-index: 9999;
 }
 
 .container {
@@ -84,7 +87,7 @@
     width: 100vw;
     top: 0;
     height: 72px;
-    z-index: 3;
+    z-index: 5;
   }
 
   .container {
