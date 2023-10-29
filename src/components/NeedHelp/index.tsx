@@ -1,10 +1,10 @@
 "use client";
 
 import React, { FC, useState } from "react";
-import { CustomImage } from "@/components/CustomImage";
 import DropDown from "@/components/NeedHelp/DropDown";
 import { NeedHelpProps } from "@/components/NeedHelp/NeedHelp.types";
 import Container from "@/components/Container";
+import Image from "next/image";
 import styles from "./NeedHelp.module.css";
 
 const NeedHelp: FC<NeedHelpProps> = ({ data }) => {
@@ -21,7 +21,7 @@ const NeedHelp: FC<NeedHelpProps> = ({ data }) => {
             <p>{data.subtitle}</p>
           </div>
           {!isOpen && (
-            <CustomImage
+            <Image
               src="/images/icons/expand_more.svg"
               width={32}
               height={32}
