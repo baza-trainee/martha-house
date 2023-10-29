@@ -1,23 +1,19 @@
-/* eslint-disable no-unused-vars */
-import { FC } from "react";
-import Accordion from "@/components/HowToHelp/Accordion";
+import { NextPage } from "next";
+// import Accordion from "@/components/HowToHelp/Accordion";
+import { IHowToHelpProps } from "@/components/HowToHelp/Types/IHowToHelp.types";
+import Container from "../Container";
 import styles from "./HowToHelp.module.css";
 
-interface IHowToHelpProps {
-  data: {
-    title: string;
-    paragraph: string;
-  };
-}
-
-export const HowToHelp: FC<IHowToHelpProps> = ({
-  data: { title, paragraph },
-}) => (
+export const HowToHelp: NextPage<IHowToHelpProps> = ({ data }) => (
   <section className={styles.howToHelp}>
-    <div>
-      <h2 className={styles.title}>{title}</h2>
-      <p className={styles.paragraph}>{paragraph}</p>
-    </div>
-    <Accordion />
+    <Container>
+      <div>
+        <div>
+          <h2 className={styles.title}>{data.title}</h2>
+          <p className={styles.paragraph}>{data.paragraph}</p>
+        </div>
+        {/* <Accordion data={data} /> */}
+      </div>
+    </Container>
   </section>
 );

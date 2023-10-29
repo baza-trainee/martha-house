@@ -1,7 +1,5 @@
 .howToHelp {
   background-color: var(--yellow500);
-  display: flex;
-  flex-direction: column;
 }
 
 .title {
