@@ -9,6 +9,7 @@
 }
 
 .styledContainer {
+  display: flex;
   align-self: self-start;
   position: relative;
   top: -168px;
@@ -71,6 +72,7 @@
   .heroSection .styledContainer {
     justify-content: flex-end;
     padding-top: 120px;
+    align-items: flex-end;
   }
 
   .heroSection .infoContainer {
