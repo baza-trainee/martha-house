@@ -2,6 +2,11 @@
   background-color: var(--yellow500);
 }
 
+.howToHelp-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .title {
   font-family: var(--font-mulish), sans-serif;
   font-size: var(--subtitle-bold-fs);
@@ -16,5 +21,7 @@
   font-weight: var(--body-medium-web-fw);
   line-height: var(--body-medium-web-lh);
   margin-bottom: 16px;
+  max-width: 434px;
   width: 100%;
+  text-align: justify;
 }
