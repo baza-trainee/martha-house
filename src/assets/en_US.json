@@ -5,7 +5,7 @@
     "news": "NEWS"
   },
   "hero": {
-    "title": "THE CITY IS GOOD",
+    "title": "THE CITY OF GOODNESS",
     "subtitle": "International Center for Support of Women and Children.\nA city where a mother is close to her child.",
     "supportBtn": "Support the project"
   },
@@ -53,7 +53,7 @@
     }
   },
   "help": {
-    "text": "The new \"City of Good\" building has already opened its doors for its residents. But to truly make it independent and successful, we need your help!",
+    "text": "The new \"City of Goodness\" building has already opened its doors for its residents. But to truly make it independent and successful, we need your help!",
     "buttonText": "Help"
   },
   "about": {
@@ -67,7 +67,7 @@
   },
   "howToHelp": {
     "title": "Як допомогти?",
-    "paragraph": "Новий будинок “Міста Добра” вже відкрив свої двері для своїх мешканців. Та аби зробити його насправді незалежним і успішним, нам потрібна ваша допомога!",
+    "paragraph": "Новий будинок “The City of Goodness” вже відкрив свої двері для своїх мешканців. Та аби зробити його насправді незалежним і успішним, нам потрібна ваша допомога!",
     "accordionItemOne": {
       "img": "/images/howtohelp/monobank.svg",
       "icon": "/images/howtohelp/arrow.svg",
