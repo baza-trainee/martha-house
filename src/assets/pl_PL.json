@@ -98,6 +98,55 @@
       "imagePath": "hand_flower.svg"
     }
   ],
+  "faqSection": {
+    "title": "Pytania i odpowiedzi",
+    "items": [
+      {
+        "query": "Kogo przyjmujemy?",
+        "description": "Centrum przyjmuje kobiety i dzieci wszystkich wyznań i jest przystosowane dla osób z różnymi rodzajami niepełnosprawności.",
+        "responses": [
+          "Kobiety z dziećmi cierpiące z powodu przemocy domowej;",
+          "Kobiety z dziećmi, które są bezdomne i nie mają schronienia;",
+          "Kobiety na skraju utraty praw rodzicielskich z powodu niewłaściwych warunków opieki spowodowanych bezdomnością, ubóstwem lub brakiem wykształcenia;",
+          "Kobiety z dziećmi mające problemy z dokumentacją, które dlatego nie mogą znaleźć pracy i mieszkania;",
+          "Kobiety z dziećmi ze wszystkich regionów Ukrainy oraz obywatelki innych krajów, które potrzebują pomocy na terytorium Ukrainy;",
+          "Starsze, samotne babcie, które nie mają gdzie mieszkać lub cierpią z powodu przemocy domowej."
+        ]
+      },
+      {
+        "query": "Jakie dokumenty są wymagane, aby zostać przyjętym do ośrodka?",
+        "description": null,
+        "responses": [
+          "wcześniejsze uzgodnienie z ośrodkiem telefonicznie lub e-mailem;",
+          "fluorografia;",
+          "analiza infekcji Torch."
+        ]
+      },
+      {
+        "query": "Czy pobyt w centrum jest płatny?",
+        "description": "Pobyt w Centrum jest całkowicie BEZPŁATNY.",
+        "responses": []
+      },
+      {
+        "query": "Co ośrodek zapewnia swoim podopiecznym?",
+        "description": "Misto Dobra” posiada 27 pokoi mieszkalnych i może pomieścić 80 osób. Ośrodek wyposażony jest we wszystko, co niezbędne do zakwaterowania i opieki nad dziećmi w różnym wieku. Rodzinom zamieszkującym ośrodek zapewniamy niezbędne rzeczy, środki higieniczne i produkty.",
+        "responses": [
+          "pomoc psychologiczna;",
+          "pomoc prawna;",
+          "Opieka medyczna;",
+          "pomoc pedagogiczna;",
+          "uczymy jak prowadzić gospodarkę;",
+          "uczymy podążać za dzieckiem;",
+          "pomagamy Ci zdobyć wykształcenie i pracę."
+        ]
+      },
+      {
+        "query": "Jaki jest cel istnienia „Miasta Dobra”?",
+        "description": "„Miasto Dobra” to nie tylko schronisko i miejsce do życia, to kompleksowy program socjalizacji kobiet. Naszym ostatecznym celem jest kobieta, która potrafi utrzymać siebie i swoje dzieci, jest samodzielna i niezależna. Program rozwoju jest spersonalizowany i opiera się wyłącznie na pragnieniach i potencjale samej kobiety. W trakcie resocjalizacji rodziny będziemy w kontakcie z pracownikiem socjalnym, który skierował rodzinę do ośrodka i będziemy go informować o postępach rodziny, jej stanie i sytuacji.Każda kobieta, która do nas przychodzi, musi być gotowa do pracy nad swoim rozwojem , wykształcenie, a w razie konieczności zdobycie zawodu.",
+        "responses": []
+      }
+    ]
+  },
   "footer": {
     "email": "E-mail",
     "phones": "Telefony",

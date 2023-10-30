@@ -98,6 +98,50 @@
       "imagePath": "hand_flower.svg"
     }
   ],
+  "faqSection": {
+    "title": "Questions and Answers",
+    "items": [
+      {
+        "query": "Who do we accept?",
+        "responses": [
+          "Women with children suffering from domestic violence;",
+          "Women with children who are homeless and without shelter;",
+          "Women on the verge of losing parental rights due to inadequate care conditions caused by homelessness, poverty, or lack of education;",
+          "Women with children who have documentation issues and therefore cannot find work and housing;",
+          "Women with children from all regions of Ukraine and citizens of other countries who need help in Ukraine;",
+          "Elderly, lonely grandmothers who have nowhere to live or suffer from domestic violence.",
+          "The center accepts women and children of all religions and is adapted for people with different types of physical disabilities."
+        ]
+      },
+      {
+        "query": "What documents are required for admission to the center?",
+        "description": null,
+        "responses": [
+          "prior agreement with the center by phone or e-mail;",
+          "fluorography;",
+          "analysis for Torch infection."
+        ]
+      },
+      {
+        "query": "Is there a fee to stay in the center?",
+        "description": "Staying at the Center is absolutely FREE.",
+        "responses": []
+      },
+      {
+        "query": "What does the center provide for its wards?",
+        "description": "Misto Dobra has 27 living rooms and can accommodate 80 people. The center is equipped with everything necessary for the accommodation and care of children of different ages. Families living in the center are provided with necessary things, hygiene products and products.",
+        "responses": [
+          "psychological help;",
+          "legal aid;",
+          "medical assistance;",
+          "pedagogical help;",
+          "we teach how to run an economy;",
+          "we teach to follow the child;",
+          "we help to get an education and a job."
+        ]
+      }
+    ]
+  },
   "footer": {
     "email": "Email",
     "phones": "Phones",
