@@ -11,7 +11,7 @@
 }
 
 .accordion-subtitle {
-  font-family: var(--font-manrope);
+  font-family: var(--font-manrope), sans-serif;
   font-size: var(--body-lg-fs);
   font-weight: var(--body-lg-fw);
   line-height: var(--body-lg-lh);
@@ -29,7 +29,12 @@
 
 .accordion-img {
   width: auto;
-  height: auto;
+  height: 24px;
+}
+
+.bitcoin-img {
+  width: auto;
+  height: 20px;
 }
 
 .accordion-arrow-transform {
@@ -65,7 +70,7 @@
 
 .accordion-paragraph:nth-child(odd) {
   margin-bottom: 2px;
-  font-family: var(--font-manrope);
+  font-family: var(--font-manrope), sans-serif;
   font-size: var(--captions-fs);
   font-weight: var(--captions-fw);
   line-height: var(--captions-lh);
@@ -75,9 +80,21 @@
 
 .accordion-paragraph:nth-child(even) {
   margin-bottom: 8px;
-  font-family: var(--font-manrope);
+  font-family: var(--font-manrope), sans-serif;
   font-size: var(--body-small-fs);
   font-weight: var(--body-small-fw);
   line-height: var(--body-small-lh);
   color: var(--grey900);
+}
+
+@media screen and (min-width: 1280px) {
+  .accordion-wrapper {
+    max-width: 580px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .accordion-wrapper {
+    max-width: 580px;
+  }
 }

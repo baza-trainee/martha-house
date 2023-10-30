@@ -1,6 +1,7 @@
 "use client";
 
 import React, { FC, useState } from "react";
+import Image from "next/image";
 
 import { CustomImage } from "@/components/CustomImage";
 import { Button } from "@/components/Button";
@@ -49,7 +50,11 @@ const AccordionSection: FC<AccordionSectionProps> = ({
         alt={section.alt}
         width={100}
         height={24}
-        className={styles["accordion-img"]}
+        className={
+          section.alt === "bitcoin"
+            ? styles["bitcoin-img"]
+            : styles["accordion-img"]
+        }
       />
     );
   }
@@ -58,12 +63,11 @@ const AccordionSection: FC<AccordionSectionProps> = ({
     <div className={styles["accordion-section"]}>
       <div className={styles["accordion-header"]} onClick={toggleSection}>
         {accordionHeader}
-        <CustomImage
+        <Image
           src={section.icon}
           alt="icon"
           width={24}
           height={24}
-          placeholder="empty"
           className={
             isActiveSection
               ? styles["accordion-arrow-transform"]
