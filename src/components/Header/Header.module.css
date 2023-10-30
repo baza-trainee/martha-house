@@ -1,8 +1,10 @@
 .header {
-  position: sticky;
-  top: 0;
   height: 72px;
+  position: sticky;
+  inset: 0 0 0 0;
+  z-index: 9999;
 }
+
 .container {
   display: flex;
   justify-content: center;
@@ -27,7 +29,7 @@
   justify-content: space-between;
   padding: 18px 16px 20px 16px;
   float: right;
-  height: 100vh;
+  height: 80vh;
   gap: 32px;
 }
 
@@ -85,6 +87,7 @@
     width: 100vw;
     top: 0;
     height: 72px;
+    z-index: 5;
   }
 
   .container {

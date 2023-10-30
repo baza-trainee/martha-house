@@ -12,7 +12,6 @@
   font-weight: var(--body-medium-semibold-fw);
   line-height: var(--body-medium-semibold-lh);
   cursor: pointer;
-  width: 100%;
 }
 
 .button.white {

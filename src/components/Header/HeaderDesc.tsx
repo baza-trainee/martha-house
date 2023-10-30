@@ -11,7 +11,7 @@ const HeaderDesc: NextPage<HeaderProps> = ({ lang, data }) => (
     <div className={styles.wrapper}>
       <Link href={`/${lang}`}>
         <CustomImage
-          src="/images/logo/Logo.png"
+          src="/images/logo/site_logo.png"
           width={86}
           height={48}
           alt="logo"

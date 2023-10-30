@@ -6,6 +6,10 @@ import { getAllTranslations, getTranslation } from "@/utils/dictionary";
 import FAQSection from "@/components/FAQSection";
 import { Locales } from "@/types";
 import { HowToHelp } from "@/components";
+import Support from "@/components/SupportProject/Support";
+import Help from "@/components/Help/Help";
+import History from "@/components/CreationHistory/History";
+import { AboutComponent } from "@/components/About/AboutComponent";
 
 interface IHomePageProps {
   params: {
@@ -21,9 +25,13 @@ const HomePage: NextPage<IHomePageProps> = async ({ params: { lang } }) => {
     <>
       <HeroSection data={t("hero")} />
       <NeedHelp data={t("needHelp")} />
-      <HowToHelp data={t("howToHelp")} />
+      <Support data={t("support")} />
+      <AboutComponent data={t("about")} />
+      <Help data={t("help")} />
+      <History data={t("history")} />
       <CoreValuesSection data={t("values")} />
       <FAQSection data={t("faqSection")} />
+      <HowToHelp data={t("howToHelp")} />
     </>
   );
 };
