@@ -1,6 +1,7 @@
 "use client";
 
 import React, { FC, useEffect, useState } from "react";
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { useSwipeable } from "react-swipeable";
 import Container from "@/components/Container";
 import SliderCard from "@/components/CreationHistory/SliderCard";

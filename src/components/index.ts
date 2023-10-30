@@ -7,3 +7,4 @@ export * from "./Button";
 export * from "./HowToHelp";
 export * from "./NeedHelp";
 export * from "./HeroSection";
+export * from "./AngelDoll";

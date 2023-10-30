@@ -1,8 +1,5 @@
 /* mobile */
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   box-sizing: border-box;
   padding: var(--padding-lg) var(--padding-sm);

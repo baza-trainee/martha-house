@@ -16,7 +16,7 @@ export const Footer: NextPage<FooterProps> = ({ data }) => (
   <footer className={styles.footer}>
     <div className={styles.wrapper}>
       <div className={styles.logo}>
-        <CustomImage src="/images/logo/logo.png" fill alt="logo" />
+        <CustomImage src="/images/logo/site_logo.png" fill alt="logo" />
       </div>
       <div className={styles.contactWrapper}>
         <div className={styles.map}>

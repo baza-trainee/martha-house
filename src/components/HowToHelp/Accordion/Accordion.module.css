@@ -1,0 +1,102 @@
+.accordion-wrapper {
+  max-width: 424px;
+  width: 100%;
+  background-color: var(--gray-light);
+  border-radius: 8px;
+}
+
+.accordion-section {
+  padding: 16px;
+  border-bottom: 1px solid var(--grey700);
+}
+
+.accordion-subtitle {
+  font-family: var(--font-manrope), sans-serif;
+  font-size: var(--body-lg-fs);
+  font-weight: var(--body-lg-fw);
+  line-height: var(--body-lg-lh);
+  color: var(--grey900);
+}
+
+.accordion-section:last-child {
+  border-bottom: none;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion-img {
+  width: auto;
+  height: 24px;
+}
+
+.bitcoin-img {
+  width: auto;
+  height: 20px;
+}
+
+.accordion-arrow-transform {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.accordion-arrow-back {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.accordion-description-p {
+  padding-top: 16px;
+  max-width: 343px;
+  width: 100%;
+}
+
+.accordion-description-button {
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 16px;
+}
+
+.accordion-paragraph:nth-child(odd) {
+  margin-bottom: 2px;
+  font-family: var(--font-manrope), sans-serif;
+  font-size: var(--captions-fs);
+  font-weight: var(--captions-fw);
+  line-height: var(--captions-lh);
+  letter-spacing: 1px;
+  color: var(--grey700);
+}
+
+.accordion-paragraph:nth-child(even) {
+  margin-bottom: 8px;
+  font-family: var(--font-manrope), sans-serif;
+  font-size: var(--body-small-fs);
+  font-weight: var(--body-small-fw);
+  line-height: var(--body-small-lh);
+  color: var(--grey900);
+}
+
+@media screen and (min-width: 1280px) {
+  .accordion-wrapper {
+    max-width: 580px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .accordion-wrapper {
+    max-width: 580px;
+  }
+}
