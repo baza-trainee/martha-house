@@ -1,0 +1,32 @@
+.arrow-transform {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out;
+  padding-top: 2px;
+}
+
+.arrow-back {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transition: transform 0.3s ease-in-out;
+  padding-top: 2px;
+}
+
+/* .slowlyMoving { */
+/* transform: translate(-50px, 0);
+  -webkit-transform: translate(-50px, 0);
+  -moz-transform: translate(-50px, 0);
+  -ms-transform: translate(-50px, 0);
+  -o-transform: translate(-50px, 0);
+  transition: transform 0.5s ease-in;
+  -webkit-transition: transform 0.5s ease-in;
+  -moz-transition: transform 0.5s ease-in;
+  -ms-transition: transform 0.5s ease-in;
+  -o-transition: transform 0.5s ease-in; */
+/* } */

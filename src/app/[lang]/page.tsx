@@ -10,6 +10,7 @@ import Support from "@/components/SupportProject/Support";
 import Help from "@/components/Help/Help";
 import History from "@/components/CreationHistory/History";
 import { AboutComponent } from "@/components/About/AboutComponent";
+import AngelDoll from "@/components/AngelDoll";
 
 interface IHomePageProps {
   params: {
@@ -32,6 +33,7 @@ const HomePage: NextPage<IHomePageProps> = async ({ params: { lang } }) => {
       <CoreValuesSection data={t("values")} />
       <FAQSection data={t("faqSection")} />
       <HowToHelp data={t("howToHelp")} />
+      <AngelDoll data={t("angelDoll")} />
     </>
   );
 };
