@@ -5,6 +5,7 @@
 .wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 32px;
   color: var(--white);
   box-sizing: border-box;
@@ -15,11 +16,11 @@
 .captions {
   color: var(--grey300);
   font-family: var(--font-manrope);
-  font-size: var(--captions--fs);
+  font-size: var(--captions-fs);
   font-style: normal;
-  font-weight: var(--captions--fw);
-  line-height: var(--captions--lh);
-  letter-spacing: var(--captions--ls);
+  font-weight: var(--captions-fw);
+  line-height: var(--captions-lh);
+  letter-spacing: var(--captions-ls);
 }
 
 .logo {
@@ -165,7 +166,10 @@
     gap: 32px;
   }
 
-  .rules span:nth-child(1) {
-    position: relative;
+  .rules span:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    right: -6px;
+    top: -1px;
   }
 }
