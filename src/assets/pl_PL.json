@@ -65,59 +65,6 @@
       "Każda matka otrzyma indywidualny plan swojego rozwoju osobistego, z planami na przyszłe wykształcenie i zdobycie zawodu. Niezbędny czas pobytu w 'Mieście' będzie określany w zależności od zadań i celów."
     ]
   },
-  "howToHelp": {
-    "title": "Як допомогти?",
-    "paragraph": "Новий будинок “Міста Добра” вже відкрив свої двері для своїх мешканців. Та аби зробити його насправді незалежним і успішним, нам потрібна ваша допомога!",
-    "accordionItemOne": {
-      "img": "/images/howtohelp/monobank.svg",
-      "icon": "/images/howtohelp/arrow.svg",
-      "alt": "monobank",
-      "text": ["", ""]
-    },
-    "accordionItemTwo": {
-      "img": "/images/howtohelp/paypal.svg",
-      "icon": "/images/howtohelp/arrow.svg",
-      "alt": "paypal",
-      "text": ["", ""]
-    },
-    "accordionItemThree": {
-      "img": "/images/howtohelp/bitcoin.svg",
-      "icon": "/images/howtohelp/arrow.svg",
-      "alt": "bitcoin",
-      "text": ["", ""]
-    },
-    "accordionItemFour": {
-      "subtitle": "Банківський переказ",
-      "icon": "/images/howtohelp/arrow.svg",
-      "alt": "",
-      "text": [
-        "Company Name",
-        "БФ МIСТО ДОБРА",
-        "IBAN",
-        "UA213052990000026003001801305",
-        "Name of the bank",
-        "JSC CB “PRIVATBANK”, 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE",
-        "Bank SWIFT Code",
-        "PBANUA2X",
-        "Company address",
-        "UA 58020 Чернiвецька м Чернiвцi вул Рiчна б.10",
-        "Account in the correspondent bank",
-        "400886700401",
-        "SWIFT Code of the correspondent bank",
-        "COBADEFF",
-        "Correspondent bank",
-        "Commerzbank AG, Frankfurt am Main, Germany",
-        "Account in the correspondent bank",
-        "6231605145"
-      ]
-    },
-    "accordionItemFive": {
-      "subtitle": "Онлайн платіж",
-      "icon": "/images/howtohelp/arrow.svg",
-      "alt": "",
-      "button": ["Онлайн платіж в грн", "Онлайн платіж в євро"]
-    }
-  },
   "support": {
     "text": "Zwracamy się do wszystkich, którym nie jest obojętne – wyciągnijcie pomocną dłoń do Ukrainy w tych strasznych czasach, wyciągnijcie pomocną dłoń do ukraińskich dzieci!",
     "buttonText": "Wspierać projekt"
@@ -193,6 +140,84 @@
         "responses": []
       }
     ]
+  },
+  "howToHelp": {
+    "title": "Як допомогти?",
+    "paragraph": "Новий будинок “Міста Добра” вже відкрив свої двері для своїх мешканців. Та аби зробити його насправді незалежним і успішним, нам потрібна ваша допомога!",
+    "accordionItemOne": {
+      "img": "/images/howtohelp/monobank.svg",
+      "icon": "/images/howtohelp/arrow.svg",
+      "alt": "monobank",
+      "text": ["", ""]
+    },
+    "accordionItemTwo": {
+      "img": "/images/howtohelp/paypal.svg",
+      "icon": "/images/howtohelp/arrow.svg",
+      "alt": "paypal",
+      "text": ["", ""]
+    },
+    "accordionItemThree": {
+      "img": "/images/howtohelp/bitcoin.svg",
+      "icon": "/images/howtohelp/arrow.svg",
+      "alt": "bitcoin",
+      "text": ["", ""]
+    },
+    "accordionItemFour": {
+      "subtitle": "Банківський переказ",
+      "icon": "/images/howtohelp/arrow.svg",
+      "alt": "",
+      "text": [
+        "Company Name",
+        "БФ МIСТО ДОБРА",
+        "IBAN",
+        "UA213052990000026003001801305",
+        "Name of the bank",
+        "JSC CB “PRIVATBANK”, 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE",
+        "Bank SWIFT Code",
+        "PBANUA2X",
+        "Company address",
+        "UA 58020 Чернiвецька м Чернiвцi вул Рiчна б.10",
+        "Account in the correspondent bank",
+        "400886700401",
+        "SWIFT Code of the correspondent bank",
+        "COBADEFF",
+        "Correspondent bank",
+        "Commerzbank AG, Frankfurt am Main, Germany",
+        "Account in the correspondent bank",
+        "6231605145"
+      ]
+    },
+    "accordionItemFive": {
+      "subtitle": "Онлайн платіж",
+      "icon": "/images/howtohelp/arrow.svg",
+      "alt": "",
+      "button": ["Онлайн платіж в грн", "Онлайн платіж в євро"]
+    }
+  },
+  "angelDoll": {
+    "title": "Підтримай Місто Добра - купи ляльку-янгола!",
+    "buttonUp": "Скрити деталі",
+    "buttonDown": "Детальніше",
+    "img": "/images/howtohelp/arrow.svg",
+    "alt": "arrow",
+    "hiddenText": {
+      "img": "/images/angel-doll.png",
+      "alt": "angel-doll",
+      "text": [
+        "Один із способів підтримати існування “Міста Добра” – придбати унікальну ляльку Янгола Міста Добра.",
+        "Цю чудову іграшку шиють матусі, які проживають у нашому центрі. А дітлахи допомагають кріпити крильця, які перетворюють ляльку на справжнього янгола.Висота ляльки – 25 сантиметрів. Ескіз виконала художниця з Америки, яка вже багато років підтримує наш проєкт – Юлія Косівчук.",
+        "Кожна наша лялька від початку створення проникнена любов’ю, вдячністю та позитивними думками наших мам. Вона принесе в дім затишок і спокій, та оберігатиме свого власника, як і має кожен Янгол Охоронець.А також вона стане постійним нагадуванням, про добру справу, підтримку Міста Добра.Ми пакуємо ляльку у гарненьку коробку, тому вона стане чудовим подарунком вашим близким!"
+      ],
+      "title": "Як замовити?",
+      "subtitle1": "Оплатити",
+      "text1": [
+        "Перечисліть кошти на карту Приват",
+        "5218 5722 2175 5783",
+        "Левченко Марта"
+      ],
+      "subtitle2": "Написати",
+      "text2": ""
+    }
   },
   "footer": {
     "email": "E-mail",

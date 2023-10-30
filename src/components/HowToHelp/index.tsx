@@ -28,10 +28,12 @@ const HowToHelp: React.FC<IHowToHelpProps> = ({ data }) => {
   return (
     <section className={styles.howToHelp}>
       <Container>
-        <h2 className={styles.title}>{data.title}</h2>
-        <div className={styles["howToHelp-wrapper"]}>
-          <p className={styles.paragraph}>{data.paragraph}</p>
-          <Accordion sections={sections} />
+        <div>
+          <h2 className={styles.title}>{data.title}</h2>
+          <div className={styles["howToHelp-wrapper"]}>
+            <p className={styles.paragraph}>{data.paragraph}</p>
+            <Accordion sections={sections} />
+          </div>
         </div>
       </Container>
     </section>
