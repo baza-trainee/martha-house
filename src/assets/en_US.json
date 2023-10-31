@@ -217,6 +217,9 @@
   "footer": {
     "email": "Email",
     "phones": "Phones",
-    "socialNet": "Follow Us"
+    "socialNet": "Follow Us",
+    "report": "Report",
+    "policy": "Privacy Policy",
+    "rules": "Site Rules"
   }
 }

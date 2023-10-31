@@ -2,6 +2,7 @@ import { NextPage } from "next";
 import React from "react";
 import IconsBar from "@/components/Footer/IconsBar";
 import { CustomImage } from "@/components";
+import Link from "next/link";
 import styles from "./Footer.module.css";
 
 interface FooterProps {
@@ -9,6 +10,9 @@ interface FooterProps {
     email: string;
     phones: string;
     socialNet: string;
+    report: string;
+    rules: string;
+    policy: string;
   };
 }
 
@@ -41,8 +45,13 @@ export const Footer: NextPage<FooterProps> = ({ data }) => (
         </div>
       </div>
       <div className={styles.rules}>
-        <span>Політика конфіденційності</span>
-        <span>Правила користування сайтом</span>
+        <Link href="report">
+          <span>{data.report}</span>
+        </Link>
+        <div className={styles.usage}>
+          <span>{data.policy}</span>
+          <span>{data.rules}</span>
+        </div>
         <span>Baza Trainee Ukraine 2023 (©)</span>
       </div>
     </div>
