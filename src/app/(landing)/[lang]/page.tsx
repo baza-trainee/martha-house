@@ -11,6 +11,7 @@ import Help from "@/components/Help/Help";
 import History from "@/components/CreationHistory/History";
 import { AboutComponent } from "@/components/About/AboutComponent";
 import AngelDoll from "@/components/AngelDoll";
+import WhyNeed from "@/components/WhyNeed/WhyNeed";
 
 interface IHomePageProps {
   params: {
@@ -28,6 +29,7 @@ const HomePage: NextPage<IHomePageProps> = async ({ params: { lang } }) => {
       <NeedHelp data={t("needHelp")} />
       <AboutComponent data={t("about")} />
       <Support data={t("support")} />
+      <WhyNeed data={t("whyNeed")} />
       <HowToHelp data={t("howToHelp")} />
       <Help data={t("help")} />
       <History data={t("history")} />
