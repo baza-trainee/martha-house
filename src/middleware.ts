@@ -3,6 +3,10 @@ import Negotiator from "negotiator";
 import { Locales, Locale } from "./types";
 
 export const middleware = async (request: NextRequest) => {
+  if (request.nextUrl.pathname === "/report") {
+    return;
+  }
+
   const headers = {
     "accept-language": request.headers.get("accept-language"),
   };

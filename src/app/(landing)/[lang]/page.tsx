@@ -5,7 +5,7 @@ import CoreValuesSection from "@/components/CoreValuesSection";
 import { getAllTranslations, getTranslation } from "@/utils/dictionary";
 import FAQSection from "@/components/FAQSection";
 import { Locales } from "@/types";
-import HowToHelp from "@/components/HowToHelp/index";
+import HowToHelp from "@/components/HowToHelp";
 import Support from "@/components/SupportProject/Support";
 import Help from "@/components/Help/Help";
 import History from "@/components/CreationHistory/History";

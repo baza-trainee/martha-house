@@ -220,8 +220,11 @@
     }
   },
   "footer": {
-    "email": "E-mail",
-    "phones": "Telefony",
-    "socialNet": "Podążać"
+    "email": "Napisz",
+    "phones": "Zadzwoń",
+    "socialNet": "Obserwuj",
+    "report": "Sprawozdanie",
+    "policy": "Polityka prywatności",
+    "rules": "Regulamin strony"
   }
 }
