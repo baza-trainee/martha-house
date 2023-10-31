@@ -28,7 +28,6 @@ const HomePage: NextPage<IHomePageProps> = async ({ params: { lang } }) => {
       <NeedHelp data={t("needHelp")} />
       <AboutComponent data={t("about")} />
       <Support data={t("support")} />
-      <HowToHelp data={t("howToHelp")} />
       <Help data={t("help")} />
       <History data={t("history")} />
       <CoreValuesSection data={t("values")} />
