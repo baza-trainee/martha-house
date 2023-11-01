@@ -1,8 +1,8 @@
 import React from "react";
 import Container from "@/components/Container/index";
-// import aboutImage from "../../../public/images/pictures/aboutImage.png";
+import aboutImage from "../../../public/images/pictures/aboutImage.png";
 import styles from "./AboutComponent.module.css";
-// import { CustomImage } from "../CustomImage";
+import { CustomImage } from "../CustomImage";
 
 interface AboutComponentProps {
   data: {
@@ -18,11 +18,11 @@ export const AboutComponent: React.FC<AboutComponentProps> = ({ data }) => (
       <div>
         <h2 className={styles.subtitle}>{data.subtitle}</h2>
         <div className={styles.infoContainer}>
-          {/* <CustomImage
+          <CustomImage
             src={aboutImage}
             alt="About Image"
             className={styles.image}
-          /> */}
+          />
           <div className={styles.mainText}>
             <p className={`${styles.text} ${styles.text1}`}>{data.text[0]}</p>
             <p className={`${styles.text} ${styles.text2}`}>{data.text[1]}</p>
