@@ -7,7 +7,7 @@ interface WhyneedProps {
   data: {
     title: string;
     paragraphs: string[];
-    images: string;
+    images: string[];
   };
 }
 
@@ -24,6 +24,7 @@ const WhyNeed: FC<WhyneedProps> = ({ data: { title, images, paragraphs } }) => (
             height={189}
             src={images[0]}
             alt="children"
+            width={343}
             className={styles.whyneedImg}
           />
         </div>
@@ -45,6 +46,7 @@ const WhyNeed: FC<WhyneedProps> = ({ data: { title, images, paragraphs } }) => (
             height={189}
             src={images[1]}
             alt="childs"
+            width={343}
             className={styles.whyneedImg}
           />
         </div>

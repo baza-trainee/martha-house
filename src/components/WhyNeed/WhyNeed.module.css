@@ -40,7 +40,10 @@
 }
 
 .whyneedImg {
+  max-width: 424px;
   width: 100%;
+  object-fit: contain;
+  object-position: left;
 }
 
 @media screen and (min-width: 1024px) {
