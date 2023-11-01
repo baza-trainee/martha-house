@@ -7,7 +7,7 @@ interface WhyneedProps {
   data: {
     title: string;
     paragraphs: string[];
-    images: string;
+    images: string[];
   };
 }
 
