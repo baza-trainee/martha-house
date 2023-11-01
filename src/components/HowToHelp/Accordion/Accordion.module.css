@@ -25,6 +25,7 @@
 .accordion-header {
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .accordion-img {

@@ -2,10 +2,11 @@
 
 import { FC, useState } from "react";
 import Image from "next/image";
+import { useMedia } from "@/hooks/useMedia";
 import { Button } from "../Button";
 import Container from "../Container";
-import styles from "./AngelDoll.module.css";
 import HiddenText, { HiddenTextProps } from "./HiddenText";
+import styles from "./AngelDoll.module.css";
 
 interface AngelDollProps {
   data: {
@@ -22,6 +23,7 @@ const AngelDoll: FC<AngelDollProps> = ({
   data: { title, buttonUp, buttonDown, img, alt, hiddenText },
 }) => {
   const [isHiddenText, setIsHiddenText] = useState(true);
+  const { isMobile, isTablet, isDesktop } = useMedia();
 
   const toggleHandler = () => {
     setIsHiddenText(!isHiddenText);
@@ -29,14 +31,36 @@ const AngelDoll: FC<AngelDollProps> = ({
   return (
     <section className={styles.angelDoll}>
       <Container>
-        <div>
-          <h2>{title}</h2>
-          {!isHiddenText && <HiddenText hiddenText={hiddenText} />}
-          <div>
+        <div className={styles["angelDoll-wrapper"]}>
+          <div className={styles["hiddenText-isDesktop"]}>
+            <h2 className={styles["angelDoll-title"]}>{title}</h2>
+            {(isDesktop || isTablet) && (
+              <Button
+                variant="yellow"
+                onClick={toggleHandler}
+                className={styles["angelDoll-btn"]}
+              >
+                {!isHiddenText ? buttonUp : buttonDown}
+                <Image
+                  src={img}
+                  alt={alt}
+                  width={24}
+                  height={24}
+                  className={
+                    !isHiddenText
+                      ? styles["arrow-transform"]
+                      : styles["arrow-back"]
+                  }
+                />
+              </Button>
+            )}
+          </div>
+          {!isHiddenText && isMobile && <HiddenText hiddenText={hiddenText} />}
+          {isMobile && (
             <Button
               variant="yellow"
               onClick={toggleHandler}
-              className={styles.slowlyMoving}
+              className={styles["angelDoll-btn"]}
             >
               {!isHiddenText ? buttonUp : buttonDown}
               <Image
@@ -51,7 +75,10 @@ const AngelDoll: FC<AngelDollProps> = ({
                 }
               />
             </Button>
-          </div>
+          )}
+          {!isHiddenText && (isDesktop || isTablet) && (
+            <HiddenText hiddenText={hiddenText} />
+          )}
         </div>
       </Container>
     </section>

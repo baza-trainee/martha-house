@@ -1,6 +1,7 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import { FC } from "react";
 import { CustomImage } from "@/components/CustomImage";
-import styles from "../AngelDoll.module.css";
+import styles from "./HiddenText.module.css";
 
 export interface HiddenTextProps {
   img: string;
@@ -16,8 +17,16 @@ export interface HiddenTextProps {
 const HiddenText: FC<{ hiddenText: HiddenTextProps }> = ({
   hiddenText: { img, alt, text, title, subtitle1, text1, subtitle2, text2 },
 }) => (
-  <div>
-    <CustomImage src={img} alt={alt} width={343} height={400} />
+  <div className={styles["hiddenContext-wrapper"]}>
+    <div className={styles["hiddenImg-wrapper"]}>
+      <CustomImage
+        src={img}
+        alt={alt}
+        width={343}
+        height={400}
+        className={styles["angelDoll-img"]}
+      />
+    </div>
     <div className={styles.hiddenDescription}>
       <div className={styles.hiddenText}>
         {text.map((paragraph, index) => (

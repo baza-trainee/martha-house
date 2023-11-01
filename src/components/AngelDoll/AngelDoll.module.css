@@ -1,3 +1,20 @@
+.angelDoll-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.angelDoll-title {
+  font-family: var(--font-mulish), sans-serif;
+  font-size: var(--subtitle-bold-fs);
+  font-weight: var(--subtitle-bold-fw);
+  line-height: var(--subtitle-bold-lh);
+}
+
+.angelDoll-btn {
+  align-self: flex-start;
+}
+
 .arrow-transform {
   transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
@@ -18,15 +35,21 @@
   padding-top: 2px;
 }
 
-/* .slowlyMoving { */
-/* transform: translate(-50px, 0);
-  -webkit-transform: translate(-50px, 0);
-  -moz-transform: translate(-50px, 0);
-  -ms-transform: translate(-50px, 0);
-  -o-transform: translate(-50px, 0);
-  transition: transform 0.5s ease-in;
-  -webkit-transition: transform 0.5s ease-in;
-  -moz-transition: transform 0.5s ease-in;
-  -ms-transition: transform 0.5s ease-in;
-  -o-transition: transform 0.5s ease-in; */
-/* } */
+@media screen and (min-width: 768px) {
+  .angelDoll-wrapper {
+    gap: 32px;
+  }
+
+  .angelDoll-title {
+    font-family: var(--font-mulish), sans-serif;
+    font-size: var(--title1-fs);
+    font-weight: var(--title1-fw);
+    line-height: var(--title1-lh);
+    margin-bottom: 0;
+  }
+
+  .hiddenText-isDesktop {
+    display: flex;
+    justify-content: space-between;
+  }
+}
