@@ -148,24 +148,31 @@
       "img": "/images/howtohelp/monobank.svg",
       "icon": "/images/howtohelp/arrow.svg",
       "alt": "monobank",
-      "text": ["", ""]
+      "text": [
+        "Карта Monobank",
+        "4441 1144 4663 3370",
+        "оформлена на керівника Марту Левченко"
+      ]
     },
     "accordionItemTwo": {
       "img": "/images/howtohelp/paypal.svg",
       "icon": "/images/howtohelp/arrow.svg",
       "alt": "paypal",
-      "text": ["", ""]
+      "text": ["PayPal: Good City", "cityofgoodnessukr@gmail.com"]
     },
     "accordionItemThree": {
       "img": "/images/howtohelp/bitcoin.svg",
       "icon": "/images/howtohelp/arrow.svg",
       "alt": "bitcoin",
-      "text": ["", ""]
+      "text": [
+        "Криптовалютний гаманець Binance",
+        "12YzUqVdKRxWvEhoemyAr8w2bjgrUiXygN"
+      ]
     },
     "accordionItemFour": {
       "subtitle": "Банківський переказ",
       "icon": "/images/howtohelp/arrow.svg",
-      "alt": "",
+      "alt": "arrow",
       "text": [
         "Company Name",
         "БФ МIСТО ДОБРА",
@@ -190,7 +197,7 @@
     "accordionItemFive": {
       "subtitle": "Онлайн платіж",
       "icon": "/images/howtohelp/arrow.svg",
-      "alt": "",
+      "alt": "arrow",
       "button": ["Онлайн платіж в грн", "Онлайн платіж в євро"]
     }
   },

@@ -28,6 +28,7 @@ const AngelDoll: FC<AngelDollProps> = ({
   const toggleHandler = () => {
     setIsHiddenText(!isHiddenText);
   };
+
   return (
     <section className={styles.angelDoll}>
       <Container>
