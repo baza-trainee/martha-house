@@ -27,8 +27,8 @@ const HowToHelp: React.FC<IHowToHelpProps> = ({ data }) => {
 
   return (
     <section className={styles.howToHelp}>
-      <Container>
-        <div>
+      <Container className={styles["howToHelp-container"]}>
+        <div className={styles.extraWidth}>
           <h2 className={styles.title}>{data.title}</h2>
           <div className={styles["howToHelp-wrapper"]}>
             <p className={styles.paragraph}>{data.paragraph}</p>

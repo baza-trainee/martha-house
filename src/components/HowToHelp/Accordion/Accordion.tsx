@@ -3,7 +3,6 @@
 import React, { FC, useState } from "react";
 import Image from "next/image";
 
-import { CustomImage } from "@/components/CustomImage";
 import { Button } from "@/components/Button";
 import styles from "./Accordion.module.css";
 
@@ -45,7 +44,7 @@ const AccordionSection: FC<AccordionSectionProps> = ({
 
   if (section.img) {
     accordionHeader = (
-      <CustomImage
+      <Image
         src={section.img}
         alt={section.alt}
         width={100}
