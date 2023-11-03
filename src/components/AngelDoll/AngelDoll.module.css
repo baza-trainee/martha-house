@@ -11,8 +11,13 @@
   line-height: var(--subtitle-bold-lh);
 }
 
-.angelDoll-btn {
+.angelDoll-btn-hidden-mb {
+  display: none;
+}
+
+.angelDoll-btn-mb {
   align-self: flex-start;
+  display: flex;
 }
 
 .arrow-transform {
