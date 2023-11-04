@@ -13,6 +13,8 @@ interface IHowToHelpProps {
     accordionItemThree: AccordionDataProps;
     accordionItemFour: AccordionDataProps;
     accordionItemFive: AccordionDataProps;
+    accordionItemSix: AccordionDataProps;
+    accordionItemSeven: AccordionDataProps;
   };
 }
 
@@ -23,6 +25,8 @@ const HowToHelp: React.FC<IHowToHelpProps> = ({ data }) => {
     data.accordionItemThree,
     data.accordionItemFour,
     data.accordionItemFive,
+    data.accordionItemSix,
+    data.accordionItemSeven,
   ];
 
   return (

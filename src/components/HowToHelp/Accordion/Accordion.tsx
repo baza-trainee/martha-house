@@ -7,12 +7,14 @@ import { Button } from "@/components/Button";
 import styles from "./Accordion.module.css";
 
 export interface AccordionDataProps {
-  subtitle?: string;
-  img?: string;
+  subtitle: string;
+  img: string;
   icon: string;
   alt: string;
   text: string[];
   button: string[];
+  qrImg: string;
+  textButton: { [key: string]: string[] };
 }
 
 interface AccordionSectionProps {
