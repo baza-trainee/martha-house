@@ -35,33 +35,14 @@ const AngelDoll: FC<AngelDollProps> = ({
         <div className={styles["angelDoll-wrapper"]}>
           <div className={styles["hiddenText-isDesktop"]}>
             <h2 className={styles["angelDoll-title"]}>{title}</h2>
-            {(isDesktop || isTablet) && (
-              <Button
-                variant="yellow"
-                onClick={toggleHandler}
-                className={styles["angelDoll-btn"]}
-              >
-                {!isHiddenText ? buttonUp : buttonDown}
-                <Image
-                  src={img}
-                  alt={alt}
-                  width={24}
-                  height={24}
-                  className={
-                    !isHiddenText
-                      ? styles["arrow-transform"]
-                      : styles["arrow-back"]
-                  }
-                />
-              </Button>
-            )}
-          </div>
-          {!isHiddenText && isMobile && <HiddenText hiddenText={hiddenText} />}
-          {isMobile && (
             <Button
               variant="yellow"
               onClick={toggleHandler}
-              className={styles["angelDoll-btn"]}
+              className={`${
+                !isMobile
+                  ? styles["angelDoll-btn-mb"]
+                  : styles["angelDoll-btn-hidden-mb"]
+              }`}
             >
               {!isHiddenText ? buttonUp : buttonDown}
               <Image
@@ -76,7 +57,29 @@ const AngelDoll: FC<AngelDollProps> = ({
                 }
               />
             </Button>
-          )}
+          </div>
+          {!isHiddenText && isMobile && <HiddenText hiddenText={hiddenText} />}
+          <Button
+            variant="yellow"
+            onClick={toggleHandler}
+            className={`${
+              isMobile
+                ? styles["angelDoll-btn-mb"]
+                : styles["angelDoll-btn-hidden-mb"]
+            }`}
+          >
+            {!isHiddenText ? buttonUp : buttonDown}
+            <Image
+              src={img}
+              alt={alt}
+              width={24}
+              height={24}
+              className={
+                !isHiddenText ? styles["arrow-transform"] : styles["arrow-back"]
+              }
+            />
+          </Button>
+
           {!isHiddenText && (isDesktop || isTablet) && (
             <HiddenText hiddenText={hiddenText} />
           )}
