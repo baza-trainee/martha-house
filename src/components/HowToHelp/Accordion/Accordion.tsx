@@ -7,14 +7,16 @@ import { Button } from "@/components/Button";
 import styles from "./Accordion.module.css";
 
 export interface AccordionDataProps {
-  subtitle: string;
+  subtitle?: string;
   img: string;
   icon: string;
   alt: string;
   text: string[];
-  button: string[];
   qrImg: string;
-  textButton: { [key: string]: string[] };
+  button: string[];
+  buttonCurrency: { title: string; content: string[] }[];
+  content: string[];
+  title: string;
 }
 
 interface AccordionSectionProps {
@@ -31,12 +33,15 @@ const AccordionSection: FC<AccordionSectionProps> = ({
   setActiveIndex,
   sectionIndex,
 }) => {
+  const [selectedButton, setSelectedButton] = useState<string>("UA");
+
+  let accordionHeader: React.JSX.Element | null = null;
+  let accordionContent: React.JSX.Element | null = null;
+
   const toggleSection = () => {
     const nextIndex = isActiveSection ? null : sectionIndex;
     setActiveIndex(nextIndex);
   };
-
-  let accordionHeader: React.JSX.Element | null = null;
 
   if (section.subtitle) {
     accordionHeader = (
@@ -60,6 +65,81 @@ const AccordionSection: FC<AccordionSectionProps> = ({
     );
   }
 
+  if (
+    section.alt === "monobank" ||
+    section.alt === "paypal" ||
+    section.alt === "bitcoin"
+  ) {
+    accordionContent = (
+      <div className={styles["accordion-description__p"]}>
+        {section.text.map((text, index) => (
+          <p className={styles["accordion-paragraph"]} key={index}>
+            {text}
+          </p>
+        ))}
+      </div>
+    );
+  }
+
+  if (section.alt === "privatbank") {
+    accordionContent = (
+      <div className={styles["accordion-description__privatbank"]}>
+        <Button variant="white">{section.button[0]}</Button>
+        <p>{section.text[0]}</p>
+        <Image src={section.qrImg} alt={section.alt} width={154} height={154} />
+      </div>
+    );
+  }
+
+  if (section.subtitle === "Підписка" || section.subtitle === "Онлайн платіж") {
+    accordionContent = (
+      <div>
+        {section.button.map((item, index) => (
+          <Button
+            key={index}
+            variant="white"
+            className={styles["button-subscribe"]}
+          >
+            {item}
+          </Button>
+        ))}
+      </div>
+    );
+  }
+
+  if (section.subtitle === "Банківський переказ") {
+    accordionContent = (
+      <>
+        <div>
+          {section.buttonCurrency.map((item, index) => (
+            <Button
+              key={index}
+              variant="white"
+              value={item.title}
+              onClick={(e: React.FormEvent<HTMLButtonElement>) => {
+                setSelectedButton(e.currentTarget.value);
+              }}
+            >
+              {item.title}
+            </Button>
+          ))}
+        </div>
+        {/* eslint-disable arrow-body-style */}
+        {section.buttonCurrency.map((item, index) => {
+          return (
+            item.title === selectedButton && (
+              <div key={index}>
+                {item.content.map((text, index) => (
+                  <p key={index}>{text}</p>
+                ))}
+              </div>
+            )
+          );
+        })}
+      </>
+    );
+  }
+
   return (
     <div className={styles["accordion-section"]}>
       <div className={styles["accordion-header"]} onClick={toggleSection}>
@@ -71,29 +151,12 @@ const AccordionSection: FC<AccordionSectionProps> = ({
           height={24}
           className={
             isActiveSection
-              ? styles["accordion-arrow-transform"]
-              : styles["accordion-arrow-back"]
+              ? styles["accordion-arrow__transform"]
+              : styles["accordion-arrow__back"]
           }
         />
       </div>
-      {isActiveSection && section.text && (
-        <div className={styles["accordion-description-p"]}>
-          {section.text.map((text, index) => (
-            <p className={styles["accordion-paragraph"]} key={index}>
-              {text}
-            </p>
-          ))}
-        </div>
-      )}
-      {isActiveSection && section.button && (
-        <div className={styles["accordion-description-button"]}>
-          {section.button.map((text, index) => (
-            <Button key={index} variant="white">
-              {text}
-            </Button>
-          ))}
-        </div>
-      )}
+      {isActiveSection && accordionContent}
     </div>
   );
 };
