@@ -1,20 +1,9 @@
 import React from "react";
 
+import { IHowToHelpProps, AccordionDataProps } from "@/types";
 import Container from "../Container";
-import Accordion, { AccordionDataProps } from "./Accordion/Accordion";
+import Accordion from "./Accordion/Accordion";
 import styles from "./HowToHelp.module.css";
-
-interface IHowToHelpProps {
-  data: {
-    title: string;
-    paragraph: string;
-    accordionItemOne: AccordionDataProps;
-    accordionItemTwo: AccordionDataProps;
-    accordionItemThree: AccordionDataProps;
-    accordionItemFour: AccordionDataProps;
-    accordionItemFive: AccordionDataProps;
-  };
-}
 
 const HowToHelp: React.FC<IHowToHelpProps> = ({ data }) => {
   const sections: AccordionDataProps[] = [
@@ -23,6 +12,8 @@ const HowToHelp: React.FC<IHowToHelpProps> = ({ data }) => {
     data.accordionItemThree,
     data.accordionItemFour,
     data.accordionItemFive,
+    data.accordionItemSix,
+    data.accordionItemSeven,
   ];
 
   return (
