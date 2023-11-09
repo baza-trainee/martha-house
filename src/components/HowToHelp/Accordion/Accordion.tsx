@@ -4,28 +4,8 @@ import React, { FC, useState } from "react";
 import Image from "next/image";
 
 import { Button } from "@/components/Button";
+import { AccordionDataProps, AccordionSectionProps } from "@/types";
 import styles from "./Accordion.module.css";
-
-export interface AccordionDataProps {
-  subtitle?: string;
-  img: string;
-  icon: string;
-  alt: string;
-  text: string[];
-  qrImg: string;
-  button: string[];
-  buttonCurrency: { title: string; content: string[] }[];
-  content: string[];
-  title: string;
-}
-
-interface AccordionSectionProps {
-  section: AccordionDataProps;
-  isActiveSection: boolean;
-  // eslint-disable-next-line no-unused-vars
-  setActiveIndex: (index: number | null) => void;
-  sectionIndex: number;
-}
 
 const AccordionSection: FC<AccordionSectionProps> = ({
   section,
@@ -71,9 +51,16 @@ const AccordionSection: FC<AccordionSectionProps> = ({
     section.alt === "bitcoin"
   ) {
     accordionContent = (
-      <div className={styles["accordion-description__p"]}>
+      <div className={styles["accordion-description"]}>
         {section.text.map((text, index) => (
-          <p className={styles["accordion-paragraph"]} key={index}>
+          <p
+            className={
+              section.alt === "paypal"
+                ? styles["paypal__accordion-paragraph"]
+                : styles["accordion-paragraph"]
+            }
+            key={index}
+          >
             {text}
           </p>
         ))}
@@ -83,9 +70,11 @@ const AccordionSection: FC<AccordionSectionProps> = ({
 
   if (section.alt === "privatbank") {
     accordionContent = (
-      <div className={styles["accordion-description__privatbank"]}>
-        <Button variant="white">{section.button[0]}</Button>
-        <p>{section.text[0]}</p>
+      <div className={styles["privatbank__accordion-description"]}>
+        <Button variant="white" className={styles["privatbank-button"]}>
+          {section.button[0]}
+        </Button>
+        <p className={styles["privatbank-text"]}>{section.text[0]}</p>
         <Image src={section.qrImg} alt={section.alt} width={154} height={154} />
       </div>
     );
@@ -93,14 +82,18 @@ const AccordionSection: FC<AccordionSectionProps> = ({
 
   if (section.subtitle === "Підписка" || section.subtitle === "Онлайн платіж") {
     accordionContent = (
-      <div>
+      <div className={styles["accordion-description__button"]}>
         {section.button.map((item, index) => (
           <Button
             key={index}
             variant="white"
-            className={styles["button-subscribe"]}
+            className={
+              section.subtitle === "Підписка"
+                ? styles["button-subscribe"]
+                : styles["button-online"]
+            }
           >
-            {item}
+            <span>{item}</span>
           </Button>
         ))}
       </div>
@@ -109,13 +102,19 @@ const AccordionSection: FC<AccordionSectionProps> = ({
 
   if (section.subtitle === "Банківський переказ") {
     accordionContent = (
-      <>
-        <div>
+      <div className={styles["bank-transfer__wrapper"]}>
+        <div className={styles["bank-transfer__button"]}>
           {section.buttonCurrency.map((item, index) => (
             <Button
               key={index}
               variant="white"
               value={item.title}
+              style={{ width: 53 }}
+              className={
+                item.title === selectedButton
+                  ? ""
+                  : styles["button-transparent"]
+              }
               onClick={(e: React.FormEvent<HTMLButtonElement>) => {
                 setSelectedButton(e.currentTarget.value);
               }}
@@ -130,13 +129,22 @@ const AccordionSection: FC<AccordionSectionProps> = ({
             item.title === selectedButton && (
               <div key={index}>
                 {item.content.map((text, index) => (
-                  <p key={index}>{text}</p>
+                  <p
+                    className={
+                      selectedButton === "UA"
+                        ? styles["bank-transfer__text-ua"]
+                        : styles["bank-transfer__text"]
+                    }
+                    key={index}
+                  >
+                    {text}
+                  </p>
                 ))}
               </div>
             )
           );
         })}
-      </>
+      </div>
     );
   }
 
