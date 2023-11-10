@@ -169,16 +169,19 @@
   -o-border-radius: 8px;
 }
 
-.button-transparent {
+.bank-transfer__button .button-transparent {
   background: none;
   border: none;
+  box-shadow: none;
 }
 
 @media screen and (min-width: 1280px) {
   .accordion-paragraph:nth-child(odd),
-  .paypal__accordion-paragraph:nth-child(even),
+  .accordion-paragraph__paypal:nth-child(even),
   .privatbank-text,
-  .bank-transfer__text:nth-child(odd) {
+  .bank-transfer__text:nth-child(odd),
+  .bank-transfer__text-ua:nth-child(even),
+  .bank-transfer__text-ua:nth-child(3) {
     font-family: var(--font-manrope), sans-serif;
     font-size: var(--body-medium-mb-fs);
     font-weight: var(--body-medium-mb-fw);
@@ -186,8 +189,12 @@
   }
 
   .accordion-paragraph:nth-child(even),
-  .accordion-paragraph__paypal:nth-child(odd),
-  .bank-transfer__text:nth-child(even) {
+  .paypal__accordion-paragraph:nth-child(odd),
+  .bank-transfer__text:nth-child(even),
+  .bank-transfer__text-ua:nth-child(odd),
+  .bank-transfer__text-ua:nth-child(2),
+  .bank-transfer__text-ua:nth-child(4),
+  .bank-transfer__text-ua:nth-child(5) {
     font-family: var(--font-manrope), sans-serif;
     font-size: var(--body-medium-web-fs);
     font-weight: var(--body-medium-web-fw);
@@ -198,10 +205,23 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
+  .button-subscribe {
+    width: 120px;
+  }
 }
 
 @media screen and (min-width: 2000px) {
   .accordion-wrapper {
     max-width: 580px;
+  }
+
+  .accordion-description__button {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .button-subscribe {
+    width: 120px;
   }
 }

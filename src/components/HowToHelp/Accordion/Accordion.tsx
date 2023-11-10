@@ -111,9 +111,9 @@ const AccordionSection: FC<AccordionSectionProps> = ({
               value={item.title}
               style={{ width: 53 }}
               className={
-                item.title === selectedButton
-                  ? ""
-                  : styles["button-transparent"]
+                item.title !== selectedButton
+                  ? styles["button-transparent"]
+                  : ""
               }
               onClick={(e: React.FormEvent<HTMLButtonElement>) => {
                 setSelectedButton(e.currentTarget.value);
