@@ -29,13 +29,13 @@ export const Footer: NextPage<FooterProps> = ({ data }) => (
         <div className={styles.getTouch}>
           <div className={styles.contacts}>
             <p className={styles.captions}>{data.email}</p>
-            <p>cityofgoodnessua@gmail.com</p>
+            <p className={styles.text}>cityofgoodnessua@gmail.com</p>
           </div>
           <div className={styles.contacts}>
             <p className={styles.captions}>{data.phones}</p>
             <div className={styles.phones}>
-              <p>+380 95 053 60 09</p>
-              <p>0 80 050 32 31</p>
+              <p className={styles.text}>+380 95 053 60 09</p>
+              <p className={styles.text}>0 80 050 32 31</p>
             </div>
           </div>
           <div className={`${styles.contacts} ${styles.socialBlock} `}>
@@ -52,7 +52,9 @@ export const Footer: NextPage<FooterProps> = ({ data }) => (
           <span>{data.policy}</span>
           <span>{data.rules}</span>
         </div>
-        <span>Baza Trainee Ukraine 2023 (©)</span>
+        <p className={styles.rights}>
+          Розробка Baza Trainee Ukraine 2023 (©) Усі права захищені
+        </p>
       </div>
     </div>
   </footer>
