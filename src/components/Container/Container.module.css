@@ -16,7 +16,7 @@
 /* Small tablets (in portrait mode) and small laptops */
 @media screen and (min-width: 769px) {
   .container {
-    padding: var(--padding-xl) var(--padding-lg);
+    padding: var(--padding-xl) var(--padding-xxl);
   }
 }
 
