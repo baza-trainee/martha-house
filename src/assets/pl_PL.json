@@ -142,24 +142,24 @@
     ]
   },
   "howToHelp": {
-    "title": "Як допомогти?",
-    "paragraph": "Новий будинок “Міста Добра” вже відкрив свої двері для своїх мешканців. Та аби зробити його насправді незалежним і успішним, нам потрібна ваша допомога!",
+    "title": "Jak pomóc?",
+    "paragraph": "Nowy budynek „Miasta Dobroci” otworzył już swoje drzwi dla swoich mieszkańców. Ale aby naprawdę uczynić go funkcjonalnym i pomocnym, potrzebujemy waszego wsparcia!",
     "accordionItemOne": {
       "img": "/images/howtohelp/monobank.svg",
       "icon": "/images/howtohelp/arrow.svg",
       "alt": "monobank",
       "text": [
-        "Карта Monobank",
+        "Karta Monobank",
         "4441 1144 4663 3370",
-        "оформлена на керівника Марту Левченко"
+        "Założona na kierownika Martę Lewczenko"
       ]
     },
     "accordionItemTwo": {
       "img": "/images/howtohelp/privatbank.svg",
       "icon": "/images/howtohelp/arrow.svg",
       "alt": "privatbank",
-      "button": ["Підтримати проєкт"],
-      "text": ["або відскануйте QR-код через додаток Приват24"],
+      "button": ["Wesprzyj projekt"],
+      "text": ["lub zeskanuj kod QR poprzez aplikację Privat24"],
       "qrImg": "/images/howtohelp/qrcode-privat.svg"
     },
     "accordionItemThree": {
@@ -173,12 +173,12 @@
       "icon": "/images/howtohelp/arrow.svg",
       "alt": "bitcoin",
       "text": [
-        "Криптовалютний гаманець Binance",
+        "Portfel kryptowalutowy Binance",
         "12YzUqVdKRxWvEhoemyAr8w2bjgrUiXygN"
       ]
     },
     "accordionItemFive": {
-      "subtitle": "Підписка",
+      "subtitle": "Subskrypcja",
       "icon": "/images/howtohelp/arrow.svg",
       "button": [
         "100 грн",
@@ -190,86 +190,86 @@
       ]
     },
     "accordionItemSix": {
-      "subtitle": "Банківський переказ",
+      "subtitle": "Przelew bankowy",
       "icon": "/images/howtohelp/arrow.svg",
       "buttonCurrency": [
         {
           "title": "UA",
           "content": [
-            "Рахунок в АТ КБ «ПРИВАТБАНК»",
-            "БО МІСТО ДОБРА БЛАГОДІЙНИЙ ФОНД",
+            "Konto w PrivatBank",
+            "Fundacja Charytatywna MIASTO DOBROCI",
             "IBAN",
             "UA563052990000026001021800106",
-            "БФ МІСТО ДОБРА",
-            "ЄДРПОУ",
+            "FC MIASTO DOBROCI",
+            "NIP",
             "43894641",
-            "МФО",
+            "Kod banku",
             "305299",
-            "Ключ карта БФ « Місто добра»",
+            "Klucz karty fundacji \"Miasto Dobroci\"",
             "4246 0010 0081 0725",
-            "оформлена на керівника Марту Левченко"
+            "оZarejestrowana na kierownika Martę Lewczenko"
           ]
         },
         {
           "title": "USD",
           "content": [
-            "Company Name",
-            "БФ МIСТО ДОБРА",
+            "Nazwa firmy",
+            "Fundacja MIASTO DOBROCI",
             "IBAN",
             "UA363052990000026006031801190",
-            "Name of the bank",
-            "JSC CB “PRIVATBANK”, 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE",
-            "Bank SWIFT Code",
+            "Nazwa banku",
+            "JSC CB “PRIVATBANK”, UL. HRUSHEVSKOHO 1D, KIJÓW, 01001, UKRAINA",
+            "Kod SWIFT",
             "PBANUA2X",
-            "Company address",
-            "UA 58020 Чернiвецька м.Чернiвцi вул.Рiчна, б.10",
-            "Account in the correspondent bank",
+            "Adres firmy",
+            "UA 58020 Czerniowce, ul. Rična 10",
+            "Konto w banku korespondencyjnym",
             "001-1-000080",
             "SWIFT Code of the correspondent bank",
             "CHASUS33",
-            "Correspondent bank",
-            "JP Morgan Chase Bank, New York ,USA",
-            "Account in the correspondent bank",
+            "Bank korespondencyjny",
+            "JP Morgan Chase Bank, Nowy Jork, USA",
+            "Konto w banku korespondencyjnym",
             "890-0085-754",
-            "SWIFT Code of the correspondent bank",
+            "Kod SWIFT banku korespondencyjnego",
             "IRVT US 3N",
-            "Correspondent bank",
-            "The Bank of New York Mellon, New York, USA"
+            "Bank korespondencyjny",
+            "The Bank of New York Mellon, Nowy Jork, USA"
           ]
         },
         {
           "title": "EUR",
           "content": [
-            "Company Name",
-            "БФ МIСТО ДОБРА",
+            "Nazwa firmy",
+            "Fundacja MIASTO DOBROCI",
             "IBAN",
             "UA213052990000026003001801305",
-            "Name of the bank",
-            "JSC CB “PRIVATBANK”, 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE",
-            "Bank SWIFT Code",
+            "Nazwa banku",
+            "JSC CB “PRIVATBANK”, UL. HRUSHEVSKOHO 1D, KIJÓW, 01001, UKRAINA",
+            "Kod SWIFT banku",
             "PBANUA2X",
-            "Company address",
-            "UA 58020 Чернiвецька м.Чернiвцi вул.Рiчна, б.10",
-            "Account in the correspondent bank",
+            "Adres firmy",
+            "UA 58020 Czerniowce, ul. Rična 10",
+            "Konto w banku korespondencyjnym",
             "400886700401",
-            "SWIFT Code of the correspondent bank",
+            "Kod SWIFT banku korespondencyjnego",
             "COBADEFF",
-            "Correspondent bank",
-            "Commerzbank AG, Frankfurt am Main, Germany",
-            "Account in the correspondent bank",
+            "Bank korespondencyjny",
+            "Commerzbank AG, Frankfurt nad Menem, Niemcy",
+            "Konto w banku korespondencyjnym",
             "6231605145",
-            "SWIFT Code of the correspondent bank",
+            "Kod SWIFT banku korespondencyjnego",
             "CHASDEFX",
-            "Correspondent bank",
-            "J.P.MORGAN AG, FRANKFURT AM MAIN, GERMANY"
+            "Bank korespondencyjny",
+            "J.P.MORGAN AG, Frankfurt nad Menem, Niemcy"
           ]
         }
       ]
     },
     "accordionItemSeven": {
-      "subtitle": "Онлайн платіж",
+      "subtitle": "Płatność online",
       "icon": "/images/howtohelp/arrow.svg",
-      "button": ["Допомогти в ГРН, USD, EUR"]
+      "button": ["Pomoc w ГРН, USD, EUR"]
     }
   },
   "angelDoll": {
