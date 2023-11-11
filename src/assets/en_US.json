@@ -144,17 +144,17 @@
       "icon": "/images/howtohelp/arrow.svg",
       "alt": "monobank",
       "text": [
-        "Карта Monobank",
+        "Monobank card",
         "4441 1144 4663 3370",
-        "оформлена на керівника Марту Левченко"
+        "issued to the head of the bank Marta Levchenko"
       ]
     },
     "accordionItemTwo": {
       "img": "/images/howtohelp/privatbank.svg",
       "icon": "/images/howtohelp/arrow.svg",
       "alt": "privatbank",
-      "button": ["Підтримати проєкт"],
-      "text": ["або відскануйте QR-код через додаток Приват24"],
+      "button": ["Support the project"],
+      "text": ["or scan the QR code through the Privat24 app"],
       "qrImg": "/images/howtohelp/qrcode-privat.svg"
     },
     "accordionItemThree": {
@@ -168,48 +168,48 @@
       "icon": "/images/howtohelp/arrow.svg",
       "alt": "bitcoin",
       "text": [
-        "Криптовалютний гаманець Binance",
+        "Binance cryptocurrency wallet",
         "12YzUqVdKRxWvEhoemyAr8w2bjgrUiXygN"
       ]
     },
     "accordionItemFive": {
-      "subtitle": "Підписка",
+      "subtitle": "Subscription",
       "icon": "/images/howtohelp/arrow.svg",
       "button": [
-        "100 грн",
-        "200 грн",
-        "300 грн",
-        "400 грн",
-        "500 грн",
-        "1000 грн"
+        "100 UAH",
+        "200 UAH",
+        "300 UAH",
+        "400 UAH",
+        "500 UAH",
+        "1000 UAH"
       ]
     },
     "accordionItemSix": {
-      "subtitle": "Банківський переказ",
+      "subtitle": "Bank transfer",
       "icon": "/images/howtohelp/arrow.svg",
       "buttonCurrency": [
         {
           "title": "UA",
           "content": [
-            "Рахунок в АТ КБ «ПРИВАТБАНК»",
-            "БО МІСТО ДОБРА БЛАГОДІЙНИЙ ФОНД",
+            "Account in JSC CB “PRIVATBANK”",
+            "CHARITABLE ORGANIZATION ‘CITY OF GOODNESS’ CHARITY FUND",
             "IBAN",
             "UA563052990000026001021800106",
-            "БФ МІСТО ДОБРА",
-            "ЄДРПОУ",
+            "CHARITABLE FOUNDATION CITY OF GOODNESS",
+            "USREOU (Unified State Register of Enterprises and Organizations of Ukraine)",
             "43894641",
-            "МФО",
+            "MFO (Bank Identification Code)",
             "305299",
-            "Ключ карта БФ « Місто добра»",
+            "Key card of the Charity Fund “City of Goodness”",
             "4246 0010 0081 0725",
-            "оформлена на керівника Марту Левченко"
+            "issued to the head of the organization Marta Levchenko"
           ]
         },
         {
           "title": "USD",
           "content": [
             "Company Name",
-            "БФ МIСТО ДОБРА",
+            "CHARITABLE ORGANIZATION ‘CITY OF GOODNESS’ CHARITY FUND",
             "IBAN",
             "UA363052990000026006031801190",
             "Name of the bank",
@@ -236,7 +236,7 @@
           "title": "EUR",
           "content": [
             "Company Name",
-            "БФ МIСТО ДОБРА",
+            "CHARITABLE ORGANIZATION ‘CITY OF GOODNESS’ CHARITY FUND",
             "IBAN",
             "UA213052990000026003001801305",
             "Name of the bank",
@@ -262,9 +262,9 @@
       ]
     },
     "accordionItemSeven": {
-      "subtitle": "Онлайн платіж",
+      "subtitle": "Online payment",
       "icon": "/images/howtohelp/arrow.svg",
-      "button": ["Допомогти в ГРН, USD, EUR"]
+      "button": ["Help in UAH, USD, EUR"]
     }
   },
   "angelDoll": {

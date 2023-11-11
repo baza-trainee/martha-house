@@ -80,7 +80,7 @@ const AccordionSection: FC<AccordionSectionProps> = ({
     );
   }
 
-  if (section.subtitle === "Підписка" || section.subtitle === "Онлайн платіж") {
+  if (section.hasOwnProperty("button")) {
     accordionContent = (
       <div className={styles["accordion-description__button"]}>
         {section.button.map((item, index) => (
@@ -88,7 +88,9 @@ const AccordionSection: FC<AccordionSectionProps> = ({
             key={index}
             variant="white"
             className={
-              section.subtitle === "Підписка"
+              section.subtitle === "Підписка" ||
+              section.subtitle === "Subscription" ||
+              section.subtitle === "Subskrypcja"
                 ? styles["button-subscribe"]
                 : styles["button-online"]
             }
@@ -100,7 +102,7 @@ const AccordionSection: FC<AccordionSectionProps> = ({
     );
   }
 
-  if (section.subtitle === "Банківський переказ") {
+  if (section.hasOwnProperty("buttonCurrency")) {
     accordionContent = (
       <div className={styles["bank-transfer__wrapper"]}>
         <div className={styles["bank-transfer__button"]}>
