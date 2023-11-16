@@ -6,6 +6,7 @@ export interface AccordionDataProps {
   text: string[];
   qrImg: string;
   button: string[];
+  buttonPrivat: string;
   buttonCurrency: { title: string; content: string[] }[];
   content: string[];
   title: string;
