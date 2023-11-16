@@ -13,7 +13,7 @@ const AccordionSection: FC<AccordionSectionProps> = ({
   setActiveIndex,
   sectionIndex,
 }) => {
-  const [selectedButton, setSelectedButton] = useState<string>("UA");
+  const [selectedButton, setSelectedButton] = useState<string>("UAH");
 
   let accordionHeader: React.JSX.Element | null = null;
   let accordionContent: React.JSX.Element | null = null;
@@ -72,7 +72,7 @@ const AccordionSection: FC<AccordionSectionProps> = ({
     accordionContent = (
       <div className={styles["privatbank__accordion-description"]}>
         <Button variant="white" className={styles["privatbank-button"]}>
-          {section.button[0]}
+          {section.buttonPrivat}
         </Button>
         <p className={styles["privatbank-text"]}>{section.text[0]}</p>
         <Image src={section.qrImg} alt={section.alt} width={154} height={154} />
@@ -133,7 +133,7 @@ const AccordionSection: FC<AccordionSectionProps> = ({
                 {item.content.map((text, index) => (
                   <p
                     className={
-                      selectedButton === "UA"
+                      selectedButton === "UA" || selectedButton === "UAH"
                         ? styles["bank-transfer__text-ua"]
                         : styles["bank-transfer__text"]
                     }

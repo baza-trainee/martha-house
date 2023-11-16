@@ -154,14 +154,6 @@
         "Założona na kierownika Martę Lewczenko"
       ]
     },
-    "accordionItemTwo": {
-      "img": "/images/howtohelp/privatbank.svg",
-      "icon": "/images/howtohelp/arrow.svg",
-      "alt": "privatbank",
-      "button": ["Wesprzyj projekt"],
-      "text": ["lub zeskanuj kod QR poprzez aplikację Privat24"],
-      "qrImg": "/images/howtohelp/qrcode-privat.svg"
-    },
     "accordionItemThree": {
       "img": "/images/howtohelp/paypal.svg",
       "icon": "/images/howtohelp/arrow.svg",
@@ -177,24 +169,12 @@
         "12YzUqVdKRxWvEhoemyAr8w2bjgrUiXygN"
       ]
     },
-    "accordionItemFive": {
-      "subtitle": "Subskrypcja",
-      "icon": "/images/howtohelp/arrow.svg",
-      "button": [
-        "100 грн",
-        "200 грн",
-        "300 грн",
-        "400 грн",
-        "500 грн",
-        "1000 грн"
-      ]
-    },
     "accordionItemSix": {
       "subtitle": "Przelew bankowy",
       "icon": "/images/howtohelp/arrow.svg",
       "buttonCurrency": [
         {
-          "title": "UA",
+          "title": "UAH",
           "content": [
             "Konto w PrivatBank",
             "Fundacja Charytatywna MIASTO DOBROCI",

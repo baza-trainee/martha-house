@@ -149,14 +149,6 @@
         "issued to the head of the bank Marta Levchenko"
       ]
     },
-    "accordionItemTwo": {
-      "img": "/images/howtohelp/privatbank.svg",
-      "icon": "/images/howtohelp/arrow.svg",
-      "alt": "privatbank",
-      "button": ["Support the project"],
-      "text": ["or scan the QR code through the Privat24 app"],
-      "qrImg": "/images/howtohelp/qrcode-privat.svg"
-    },
     "accordionItemThree": {
       "img": "/images/howtohelp/paypal.svg",
       "icon": "/images/howtohelp/arrow.svg",
@@ -172,24 +164,12 @@
         "12YzUqVdKRxWvEhoemyAr8w2bjgrUiXygN"
       ]
     },
-    "accordionItemFive": {
-      "subtitle": "Subscription",
-      "icon": "/images/howtohelp/arrow.svg",
-      "button": [
-        "100 UAH",
-        "200 UAH",
-        "300 UAH",
-        "400 UAH",
-        "500 UAH",
-        "1000 UAH"
-      ]
-    },
     "accordionItemSix": {
       "subtitle": "Bank transfer",
       "icon": "/images/howtohelp/arrow.svg",
       "buttonCurrency": [
         {
-          "title": "UA",
+          "title": "UAH",
           "content": [
             "Account in JSC CB “PRIVATBANK”",
             "CHARITABLE ORGANIZATION ‘CITY OF GOODNESS’ CHARITY FUND",
