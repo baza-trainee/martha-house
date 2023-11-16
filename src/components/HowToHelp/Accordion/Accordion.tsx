@@ -133,7 +133,7 @@ const AccordionSection: FC<AccordionSectionProps> = ({
                 {item.content.map((text, index) => (
                   <p
                     className={
-                      selectedButton === "UA" || selectedButton === "UAH"
+                      selectedButton === "UAH"
                         ? styles["bank-transfer__text-ua"]
                         : styles["bank-transfer__text"]
                     }
