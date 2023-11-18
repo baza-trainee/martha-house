@@ -6,7 +6,7 @@
   margin: 0 auto;
 }
 
-/* iPads, Tablets */
+/* iPads */
 @media screen and (min-width: 481px) {
   .container {
     padding: var(--padding-xl) var(--padding-md);
@@ -14,7 +14,7 @@
 }
 
 /* Small tablets (in portrait mode) and small laptops */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 834px) {
   .container {
     padding: var(--padding-xl) var(--padding-xxl);
   }
@@ -31,8 +31,8 @@
 @media screen and (min-width: 1401px) {
   .container {
     padding: 96px var(--padding-xxl);
-    box-sizing: unset;
-    max-width: 1200px;
+    /* 1328px, calculation for content width 1200px + paddings */
+    max-width: calc(1200px + (var(--padding-xxl) * 2));
   }
   .container:has(.info-section) {
     max-width: 888px;

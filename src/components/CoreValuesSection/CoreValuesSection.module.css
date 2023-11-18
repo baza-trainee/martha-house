@@ -43,8 +43,9 @@
   margin: 0 auto;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 834px) {
   .styledContainer {
+    display: flex;
     flex-direction: row;
     justify-content: space-between !important;
     align-items: flex-start !important;
@@ -65,5 +66,11 @@
     width: 64px;
     height: 64px;
     padding: 12px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .styledTitle {
+    font-family: Mulish;
   }
 }

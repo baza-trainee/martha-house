@@ -10,6 +10,7 @@
 
 .styledContainer {
   display: flex;
+  justify-content: center;
   align-self: self-start;
   position: relative;
   top: -168px;
@@ -46,7 +47,7 @@
 }
 
 /* iPads, Tablets, Laptops, Desktops */
-@media screen and (min-width: 481px) {
+/* @media screen and (min-width: 481px) {
   .heroSection {
     background-image: url("/images/hero_banner_medium.png");
     margin-top: 0px;
@@ -61,18 +62,36 @@
   .heroSection .infoContainer {
     margin-top: 72px;
   }
+} */
+
+/* Tablet */
+@media screen and (min-width: 481px) {
+  .heroSection {
+    background-image: url("/images/hero_banner_tablet.png");
+    min-height: calc(100vh - 365px);
+    margin-top: 365px;
+  }
+
+  .heroSection .styledContainer {
+    top: -253px;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /* Small tablets (in portrait mode) and small laptops */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1025px) {
   .heroSection {
     background-image: url("/images/hero_banner_medium.png");
+    margin: 0;
+    min-height: 100vh;
   }
 
   .heroSection .styledContainer {
     justify-content: flex-end;
     padding-top: 120px;
     align-items: flex-end;
+    top: 72px;
   }
 
   .heroSection .infoContainer {
@@ -94,11 +113,17 @@
   }
 }
 
+/* adjusting visibility of the text on hero section for one edge case from 1025px to 1165px */
+@media screen and (min-width: 1025px) and (max-width: 1165px) {
+  .heroSection .infoContainer {
+    padding-left: 105px;
+  }
+}
+
 /* Extra large desktop monitors, TVs, and ultra-wide screens */
 @media screen and (min-width: 2001px) {
   .heroSection {
     background-image: url("/images/hero_banner_large.png");
-    min-height: 809px;
     max-width: 1400px;
     margin: 0 auto;
   }

@@ -1,6 +1,6 @@
 .header {
   height: 72px;
-  position: sticky;
+  position: fixed;
   inset: 0 0 0 0;
   z-index: 9999;
 }
