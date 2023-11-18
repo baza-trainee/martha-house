@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "@/components/Container/index";
-import styles from "./AboutComponent.module.css";
 import aboutImage from "../../../public/images/pictures/aboutImage.png";
+import styles from "./AboutComponent.module.css";
 import { CustomImage } from "../CustomImage";
 
 interface AboutComponentProps {

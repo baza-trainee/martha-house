@@ -5,7 +5,7 @@
     "news": "NEWS"
   },
   "hero": {
-    "title": "THE CITY IS GOOD",
+    "title": "THE CITY OF GOODNESS",
     "subtitle": "International Center for Support of Women and Children.\nA city where a mother is close to her child.",
     "supportBtn": "Support the project"
   },
@@ -53,23 +53,17 @@
     }
   },
   "help": {
-    "text": "The new \"City of Good\" building has already opened its doors for its residents. But to truly make it independent and successful, we need your help!",
+    "text": "The new \"City of Goodness\" building has already opened its doors for its residents. But to truly make it independent and successful, we need your help!",
     "buttonText": "Help"
   },
   "about": {
-    "subtitle": "What is City of Goodness?",
+    "subtitle": "What is the City of Goodness?",
     "textQuote": "City of Goodness is a child by their mother's side!",
     "text": [
       "City of Goodness is a charitable all-Ukrainian project, a large complex of social services and shelter for mothers with children who have found themselves in difficult life situations. They have become victims of domestic violence, are at risk of ending up on the street, need support in socialization and reintegration, and live below the poverty line. We act to preserve the child within the family.",
       "In 'City of Goodness,' we fight for every mother for her child. Here, homeless mothers, orphaned mothers, and graduates of orphanages, mothers torn apart by domestic violence and indifference, will find shelter and support.",
       "Each mother will receive an individual plan for her personal growth, with plans for future education and the acquisition of a profession. The necessary duration of stay in the 'City' will be determined according to the tasks and goals set."
     ]
-  },
-  "howToHelp": {
-    "title": "How to help?",
-    "paragraph": "The new 'City of Good' building has already opened its doors to its residents. But to make it truly independent and successful, we need your help!",
-    "bankTransfer": "Bank transfer",
-    "onlinePayment": "Online payment"
   },
   "support": {
     "text": "We appeal to all who care – extend a helping hand to Ukraine during these terrifying times, extend a helping hand to Ukrainian children!",
@@ -142,9 +136,160 @@
       }
     ]
   },
+  "howToHelp": {
+    "title": "How to help?",
+    "paragraph": "The new home \"The City of Goodness\" has already opened its doors to its residents. But to make it truly independent and successful, we need your help!",
+    "accordionItemOne": {
+      "img": "/images/howtohelp/monobank.svg",
+      "icon": "/images/howtohelp/arrow.svg",
+      "alt": "monobank",
+      "text": [
+        "Monobank card",
+        "4441 1144 4663 3370",
+        "issued to the head of the bank Marta Levchenko"
+      ]
+    },
+    "accordionItemThree": {
+      "img": "/images/howtohelp/paypal.svg",
+      "icon": "/images/howtohelp/arrow.svg",
+      "alt": "paypal",
+      "text": ["PayPal: Good City", "cityofgoodnessukr@gmail.com"]
+    },
+    "accordionItemFour": {
+      "img": "/images/howtohelp/bitcoin.svg",
+      "icon": "/images/howtohelp/arrow.svg",
+      "alt": "bitcoin",
+      "text": [
+        "Binance cryptocurrency wallet",
+        "12YzUqVdKRxWvEhoemyAr8w2bjgrUiXygN"
+      ]
+    },
+    "accordionItemSix": {
+      "subtitle": "Bank transfer",
+      "icon": "/images/howtohelp/arrow.svg",
+      "buttonCurrency": [
+        {
+          "title": "UAH",
+          "content": [
+            "Account in JSC CB “PRIVATBANK”",
+            "CHARITABLE ORGANIZATION ‘CITY OF GOODNESS’ CHARITY FUND",
+            "IBAN",
+            "UA563052990000026001021800106",
+            "CHARITABLE FOUNDATION CITY OF GOODNESS",
+            "USREOU (Unified State Register of Enterprises and Organizations of Ukraine)",
+            "43894641",
+            "MFO (Bank Identification Code)",
+            "305299",
+            "Key card of the Charity Fund “City of Goodness”",
+            "4246 0010 0081 0725",
+            "issued to the head of the organization Marta Levchenko"
+          ]
+        },
+        {
+          "title": "USD",
+          "content": [
+            "Company Name",
+            "CHARITABLE ORGANIZATION ‘CITY OF GOODNESS’ CHARITY FUND",
+            "IBAN",
+            "UA363052990000026006031801190",
+            "Name of the bank",
+            "JSC CB “PRIVATBANK”, 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE",
+            "Bank SWIFT Code",
+            "PBANUA2X",
+            "Company address",
+            "UA 58020, Chernivtsi region, Chernivtsi city, Richna street, b.10",
+            "Account in the correspondent bank",
+            "001-1-000080",
+            "SWIFT Code of the correspondent bank",
+            "CHASUS33",
+            "Correspondent bank",
+            "JP Morgan Chase Bank, New York ,USA",
+            "Account in the correspondent bank",
+            "890-0085-754",
+            "SWIFT Code of the correspondent bank",
+            "IRVT US 3N",
+            "Correspondent bank",
+            "The Bank of New York Mellon, New York, USA"
+          ]
+        },
+        {
+          "title": "EUR",
+          "content": [
+            "Company Name",
+            "CHARITABLE ORGANIZATION ‘CITY OF GOODNESS’ CHARITY FUND",
+            "IBAN",
+            "UA213052990000026003001801305",
+            "Name of the bank",
+            "JSC CB “PRIVATBANK”, 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE",
+            "Bank SWIFT Code",
+            "PBANUA2X",
+            "Company address",
+            "UA 58020, Chernivtsi region, Chernivtsi city, Richna street, b.10",
+            "Account in the correspondent bank",
+            "400886700401",
+            "SWIFT Code of the correspondent bank",
+            "COBADEFF",
+            "Correspondent bank",
+            "Commerzbank AG, Frankfurt am Main, Germany",
+            "Account in the correspondent bank",
+            "6231605145",
+            "SWIFT Code of the correspondent bank",
+            "CHASDEFX",
+            "Correspondent bank",
+            "J.P.MORGAN AG, FRANKFURT AM MAIN, GERMANY"
+          ]
+        }
+      ]
+    },
+    "accordionItemSeven": {
+      "subtitle": "Online payment",
+      "icon": "/images/howtohelp/arrow.svg",
+      "button": ["Help in UAH, USD, EUR"]
+    }
+  },
+  "angelDoll": {
+    "title": "Support the City of Goodness - buy an angel doll!",
+    "buttonUp": "Hide details",
+    "buttonDown": "More details",
+    "img": "/images/howtohelp/arrow.svg",
+    "alt": "arrow",
+    "hiddenText": {
+      "img": "/images/angel-doll.png",
+      "alt": "angel-doll",
+      "text": [
+        "One of the ways to support the existence of the City of Goodness is to buy a unique City of Goodness Angel doll.",
+        "This wonderful toy is sewn by mothers who live in our center. The children help to attach the wings that turn the doll into a real angel. The doll is 25 centimeters high. The sketch was made by an American artist who has been supporting our project for many years, Yulia Kosivchuk.",
+        "Each of our dolls is imbued with love, gratitude, and positive thoughts of our mothers from the very beginning of its creation. She will bring comfort and peace to the house and will protect her owner, as every Guardian Angel should. She will also become a constant reminder of good deeds, and support for the City of Goodness. We pack the doll in a beautiful box, so it will be a great gift for your loved ones!"
+      ],
+      "title": "How to order?",
+      "subtitle1": "To pay",
+      "text1": [
+        "Transfer funds to the Privat card",
+        "5218 5722 2175 5783",
+        "Levchenko Marta"
+      ],
+      "subtitle2": "Write a message",
+      "text2": "Send the payment screen and write the data for sending by \"New Mail\" to us by e-mail cityofgoodnessua@gmail.com"
+    }
+  },
+  "whyNeed": {
+    "title": "Why is the City of Goodness needed?",
+    "paragraphs": [
+      "Every 3 days 250 children are admitted to boarding schools in Ukraine, and every 3 days one child dies there! 95% of these children could have never ended up in an orphanage because they are not orphans, but children from poor families! Unfortunately, it is easier for children's services to take a child from a problem family than to help the family overcome a difficult situation. Such children will spend their entire childhood in an orphanage because adoption with living parents is impossible.",
+      "Poverty becomes an obstacle for a person to receive education, and medical treatment, and protect their interests. But poverty is not a sentence for a loving family. Poor parents are not bad parents! And if you support the family in time, you can change the child's entire life. We can prevent children from going to an orphanage!",
+      "Many mothers live with their children below the poverty line, without necessities. Often, a difficult situation cannot be solved once. Some mothers are graduates of orphanages or mothers who grew up in dysfunctional families and do not have the skills to care for children."
+    ],
+    "images": [
+      "/images/whyneed/whyneedchild.jpg",
+      "/images/whyneed/whyneedchilds.jpg"
+    ]
+  },
   "footer": {
     "email": "Email",
     "phones": "Phones",
-    "socialNet": "Follow Us"
+    "socialNet": "Follow Us",
+    "report": "Report",
+    "policy": "Privacy Policy",
+    "rules": "Site Rules"
   }
 }

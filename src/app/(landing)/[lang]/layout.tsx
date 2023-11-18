@@ -3,8 +3,8 @@ import { NextPage } from "next";
 import type { Metadata } from "next";
 import { Manrope, Mulish } from "next/font/google";
 import { Footer } from "@/components";
-import "../styles/globals.css";
-import "../styles/_normalize.css";
+import "../../styles/globals.css";
+import "../../styles/_normalize.css";
 import { Locales } from "@/types";
 import { getAllTranslations, getTranslation } from "@/utils/dictionary";
 import Header from "@/components/Header";
@@ -39,7 +39,7 @@ const RootLayout: NextPage<IProps> = async ({ params: { lang }, children }) => {
 
   return (
     <html
-      lang="en"
+      lang="uk"
       className={`${mulish.variable} ${manrope.variable} font-sans`}
     >
       <body>

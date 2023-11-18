@@ -1,8 +1,9 @@
 "use client";
+
 import React, { useState } from "react";
 import Container from "@/components/Container";
-import styles from "./FAQSection.module.css";
 import { CustomImage as Icon } from "@/components/CustomImage";
+import styles from "./FAQSection.module.css";
 
 type itemType = {
   query: string;
@@ -19,7 +20,7 @@ interface FAQSectionProps {
 
 const FAQSection: React.FC<FAQSectionProps> = ({ data }) => {
   const [checkedStates, setCheckedStates] = useState<boolean[]>(
-    data.items.map(() => false)
+    data.items.map(() => false),
   );
 
   const toggleChecked = (index: number) => {
@@ -42,17 +43,17 @@ const FAQSection: React.FC<FAQSectionProps> = ({ data }) => {
               <span className={styles.button}>
                 {checkedStates[index] ? (
                   <Icon
-                    src='/images/icons/close.svg'
-                    alt='close-icon'
-                    width='24'
-                    height='24'
+                    src="/images/icons/close.svg"
+                    alt="close-icon"
+                    width="24"
+                    height="24"
                   />
                 ) : (
                   <Icon
-                    src='/images/icons/add.svg'
-                    alt='add-icon'
-                    width='24'
-                    height='24'
+                    src="/images/icons/add.svg"
+                    alt="add-icon"
+                    width="24"
+                    height="24"
                   />
                 )}
               </span>
@@ -61,7 +62,9 @@ const FAQSection: React.FC<FAQSectionProps> = ({ data }) => {
               <>
                 <ul className={styles.responseList}>
                   {item.responses.map((response) => (
-                    <li className={styles.responseItem}>{response}</li>
+                    <li key={response} className={styles.responseItem}>
+                      {response}
+                    </li>
                   ))}
                 </ul>
                 {item.description && (

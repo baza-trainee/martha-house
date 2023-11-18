@@ -60,19 +60,13 @@
     "subtitle": "Czym jest Miasto Dobroci?",
     "textQuote": "Miasto Dobroci to dziecko przy boku matki!",
     "text": [
-      "Miasto Dobroci to ukraiński projekt dobroczynny, duży kompleks usług społecznych i schronienie dla matek z dziećmi, które znalazły się w trudnych sytuacjach życiowych. Stały się ofiarami przemocy domowej, mają ryzyko znalezienia się na ulicy, potrzebują wsparcia w socjalizacji i reintegracji, i żyją poniżej granicy ubóstwa. Działamy, aby zachować dziecko w rodzinie.",
-      "W 'Mieście Dobroci' walczymy o każdą matkę i jej dziecko. Tutaj bezdomne matki, sieroty i absolwentki domów dziecka, matki rozdzielone przemocą domową i obojętnością, znajdą schronienie i wsparcie.",
-      "Każda matka otrzyma indywidualny plan swojego rozwoju osobistego, z planami na przyszłe wykształcenie i zdobycie zawodu. Niezbędny czas pobytu w 'Mieście' będzie określany w zależności od zadań i celów."
+      "Miasto Dobroci to ogólnoukraiński projekt dobroczynny, duży kompleks usług społecznych i schronisk dla matek i dzieci znajdujących się w trudnej sytuacji życiowej. Stały się ofiarami przemocy domowej, istnieje ryzyko że zostaną bez dachu nad głową, potrzebują wsparcia w socjalizacji i reintegracji, i żyją poniżej granicy ubóstwa. Dążymy do tego aby  dziecko zostało  przy matce.",
+      "W „Mieście Dobroci” walczą o każdą matkę i jej dziecko. Tutaj schronienie i wsparcie znajdą matki bezdomne, sieroty i absolwentki domów dziecka, matki rozdzielone przemocą domową i obojętnością.",
+      "Każda matka otrzyma indywidualny plan rozwoju osobistego, z planami na przyszłe wykształcenie i zdobycie zawodu. Niezbędny czas pobytu w 'Mieście' będzie określany w zależności od zadań i celów."
     ]
   },
-  "howToHelp": {
-    "title": "Jak pomóc?",
-    "paragraph": "Nowy budynek „Miasta Dobra” otworzył już swoje podwoje dla swoich mieszkańców. Ale aby był naprawdę niezależny i skuteczny, potrzebujemy Twojej pomocy!",
-    "bankTransfer": "Przelew bankowy",
-    "onlinePayment": "Płatność online"
-  },
   "support": {
-    "text": "Zwracamy się do wszystkich, którym nie jest obojętne – wyciągnijcie pomocną dłoń do Ukrainy w tych strasznych czasach, wyciągnijcie pomocną dłoń do ukraińskich dzieci!",
+    "text": "Zwracamy się do wszystkich, którym nie jest obojętne – wyciągnięcie pomocnej dłoni do Ukrainy w tych strasznych czasach, prosimy o pomocy dla ukraińskich dzieci!",
     "buttonText": "Wspierać projekt"
   },
   "blog": {
@@ -147,9 +141,160 @@
       }
     ]
   },
+  "howToHelp": {
+    "title": "Jak pomóc?",
+    "paragraph": "Nowy budynek „Miasta Dobroci” otworzył już swoje drzwi dla swoich mieszkańców. Ale aby naprawdę uczynić go funkcjonalnym i pomocnym, potrzebujemy waszego wsparcia!",
+    "accordionItemOne": {
+      "img": "/images/howtohelp/monobank.svg",
+      "icon": "/images/howtohelp/arrow.svg",
+      "alt": "monobank",
+      "text": [
+        "Karta Monobank",
+        "4441 1144 4663 3370",
+        "Założona na kierownika Martę Lewczenko"
+      ]
+    },
+    "accordionItemThree": {
+      "img": "/images/howtohelp/paypal.svg",
+      "icon": "/images/howtohelp/arrow.svg",
+      "alt": "paypal",
+      "text": ["PayPal: Good City", "cityofgoodnessukr@gmail.com"]
+    },
+    "accordionItemFour": {
+      "img": "/images/howtohelp/bitcoin.svg",
+      "icon": "/images/howtohelp/arrow.svg",
+      "alt": "bitcoin",
+      "text": [
+        "Portfel kryptowalutowy Binance",
+        "12YzUqVdKRxWvEhoemyAr8w2bjgrUiXygN"
+      ]
+    },
+    "accordionItemSix": {
+      "subtitle": "Przelew bankowy",
+      "icon": "/images/howtohelp/arrow.svg",
+      "buttonCurrency": [
+        {
+          "title": "UAH",
+          "content": [
+            "Konto w PrivatBank",
+            "Fundacja Charytatywna MIASTO DOBROCI",
+            "IBAN",
+            "UA563052990000026001021800106",
+            "FC MIASTO DOBROCI",
+            "NIP",
+            "43894641",
+            "Kod banku",
+            "305299",
+            "Klucz karty fundacji \"Miasto Dobroci\"",
+            "4246 0010 0081 0725",
+            "оZarejestrowana na kierownika Martę Lewczenko"
+          ]
+        },
+        {
+          "title": "USD",
+          "content": [
+            "Nazwa firmy",
+            "Fundacja MIASTO DOBROCI",
+            "IBAN",
+            "UA363052990000026006031801190",
+            "Nazwa banku",
+            "JSC CB “PRIVATBANK”, UL. HRUSHEVSKOHO 1D, KIJÓW, 01001, UKRAINA",
+            "Kod SWIFT",
+            "PBANUA2X",
+            "Adres firmy",
+            "UA 58020 Czerniowce, ul. Rična 10",
+            "Konto w banku korespondencyjnym",
+            "001-1-000080",
+            "SWIFT Code of the correspondent bank",
+            "CHASUS33",
+            "Bank korespondencyjny",
+            "JP Morgan Chase Bank, Nowy Jork, USA",
+            "Konto w banku korespondencyjnym",
+            "890-0085-754",
+            "Kod SWIFT banku korespondencyjnego",
+            "IRVT US 3N",
+            "Bank korespondencyjny",
+            "The Bank of New York Mellon, Nowy Jork, USA"
+          ]
+        },
+        {
+          "title": "EUR",
+          "content": [
+            "Nazwa firmy",
+            "Fundacja MIASTO DOBROCI",
+            "IBAN",
+            "UA213052990000026003001801305",
+            "Nazwa banku",
+            "JSC CB “PRIVATBANK”, UL. HRUSHEVSKOHO 1D, KIJÓW, 01001, UKRAINA",
+            "Kod SWIFT banku",
+            "PBANUA2X",
+            "Adres firmy",
+            "UA 58020 Czerniowce, ul. Rična 10",
+            "Konto w banku korespondencyjnym",
+            "400886700401",
+            "Kod SWIFT banku korespondencyjnego",
+            "COBADEFF",
+            "Bank korespondencyjny",
+            "Commerzbank AG, Frankfurt nad Menem, Niemcy",
+            "Konto w banku korespondencyjnym",
+            "6231605145",
+            "Kod SWIFT banku korespondencyjnego",
+            "CHASDEFX",
+            "Bank korespondencyjny",
+            "J.P.MORGAN AG, Frankfurt nad Menem, Niemcy"
+          ]
+        }
+      ]
+    },
+    "accordionItemSeven": {
+      "subtitle": "Płatność online",
+      "icon": "/images/howtohelp/arrow.svg",
+      "button": ["Pomoc w ГРН, USD, EUR"]
+    }
+  },
+  "angelDoll": {
+    "title": "Wesprzyj Miasto Dobroci - kup lalkę anioła!",
+    "buttonUp": "Szczegóły/Ukryj",
+    "buttonDown": "Więcej szczegółów",
+    "img": "/images/howtohelp/arrow.svg",
+    "alt": "arrow",
+    "hiddenText": {
+      "img": "/images/angel-doll.png",
+      "alt": "angel-doll",
+      "text": [
+        "Jednym ze sposobów wsparcia istnienia „Miasta Dobroci” jest zakup wyjątkowej lalki Anioła Miasta Dobroci.",
+        "Tę cudowną zabawkę szyją mamy, które mieszkają w naszym ośrodku. A dzieci pomagają zapiąć skrzydełka, które zamieniają lalkę w prawdziwego anioła.Wysokość lalki wynosi 25 centymetrów. Szkic wykonała artystka z Ameryki, która od wielu lat wspiera nasz projekt – Julia Kosiwczuk.",
+        "Każda z naszych lalek od początku stworzenia jest przepełniona miłością, wdzięcznością i pozytywnymi myślami naszych mam. Lalka wniesie do domu ukojenie i spokój, oraz będzie chronić swoją właścicielkę tak, jak przystało  to na  Anioła Stróża.A także będzie nieustanną pamiątką dobrego uczynku, wsparcia Miasta Dobroci.Lalkę pakujemy w piękne pudełko , więc będzie to świetny prezent dla Twoich bliskich!"
+      ],
+      "title": "Jak zamówić?",
+      "subtitle1": "Zapłać",
+      "text1": [
+        "Przelej środki na kartę Privat",
+        "5218 5722 2175 5783",
+        "Marta Lewczenko"
+      ],
+      "subtitle2": "Napisz",
+      "text2": "Wyślij ekran płatności i wpisz dane do wysłania przez \"Nową pocztę\" do nas na adres e-mail cityofgoodnessua@gmail.com"
+    }
+  },
+  "whyNeed": {
+    "title": "Dlaczego Miasto Dobra jest potrzebne?",
+    "paragraphs": [
+      "Co 3 dni na Ukrainie do domów dziecka trafią 250 dzieci, a co 3 dni umiera tam jedno dziecko! 95% tych dzieci nigdy nie mogłoby trafić do domu dziecka, bo  nie sa to sieroty, ale dzieci z biednych rodzin! Niestety opiece społecznej łatwiej jest odebrać dziecko z trudnej rodziny, niż pomóc rodzinie przezwyciężyć trudną sytuację. Takie dziecko całe dzieciństwo spędzi w domu dziecka, bo adopcja u żyjących rodziców jest niemożliwa.",
+      "Ubóstwo staje się przeszkodą w zdobyciu wykształcenia,co wiąże się w późniejszym etapie z podstawowymi problemami jak leczenie czy stałe miejsce zamieszkania . Ale ubóstwo nie jest wyrokiem dla kochającej rodziny. Biedni rodzice nie są złymi rodzicami! A jeśli wesprzesz rodzinę na czas, możesz zmienić cały los dziecka. Pomagamy rodzinom aby dzieci nie musiały trafiać do domu dziecka.",
+      "Wiele matek żyje z dziećmi poniżej progu ubóstwa, bez podstawowych artykułów pierwszej potrzeby. Często trudnej sytuacji nie da się rozwiązać od razu. Część matek, które same wychowały się domu dziecka lub matki, które  wychowały się w rodzinach dysfunkcyjnych, nie mają umiejętności opiekowania się dziećmi."
+    ],
+    "images": [
+      "/images/whyneed/whyneedchild.jpg",
+      "/images/whyneed/whyneedchilds.jpg"
+    ]
+  },
   "footer": {
-    "email": "E-mail",
-    "phones": "Telefony",
-    "socialNet": "Podążać"
+    "email": "Napisz",
+    "phones": "Zadzwoń",
+    "socialNet": "Obserwuj",
+    "report": "Sprawozdanie",
+    "policy": "Polityka prywatności",
+    "rules": "Regulamin strony"
   }
 }
