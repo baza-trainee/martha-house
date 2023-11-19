@@ -39,7 +39,7 @@ const FAQSection: React.FC<FAQSectionProps> = ({ data }) => {
               className={styles.queryContainer}
               onClick={() => toggleChecked(index)}
             >
-              <p>{item.query}</p>
+              <h3>{item.query}</h3>
               <span className={styles.button}>
                 {checkedStates[index] ? (
                   <Icon

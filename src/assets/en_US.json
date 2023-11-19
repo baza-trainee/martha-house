@@ -97,14 +97,14 @@
     "items": [
       {
         "query": "Who do we accept?",
+        "description": "The center accepts women and children of all religions and is adapted for people with different types of physical disabilities.",
         "responses": [
           "Women with children suffering from domestic violence;",
           "Women with children who are homeless and without shelter;",
           "Women on the verge of losing parental rights due to inadequate care conditions caused by homelessness, poverty, or lack of education;",
           "Women with children who have documentation issues and therefore cannot find work and housing;",
           "Women with children from all regions of Ukraine and citizens of other countries who need help in Ukraine;",
-          "Elderly, lonely grandmothers who have nowhere to live or suffer from domestic violence.",
-          "The center accepts women and children of all religions and is adapted for people with different types of physical disabilities."
+          "Elderly, lonely grandmothers who have nowhere to live or suffer from domestic violence."
         ]
       },
       {
@@ -133,6 +133,11 @@
           "we teach to follow the child;",
           "we help to get an education and a job."
         ]
+      },
+      {
+        "query": "What is the purpose of the 'City of Good' existence?",
+        "description": "'City of Good' is not just a shelter and a place to live, it is a comprehensive program of socialization of women. Our ultimate goal is a woman who can support herself and her children, is self-reliant and independent.The development program is personalized and is based exclusively on the wishes and potential of the woman herself. Throughout the family's rehabilitation, we will keep in touch with the social worker who referred the family to the center and update them on the family's progress, condition and situation.Every woman who comes to us must be ready to work on her development, study, and, if necessary, acquire a profession.",
+        "responses": []
       }
     ]
   },
