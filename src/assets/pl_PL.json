@@ -69,9 +69,6 @@
     "text": "Zwracamy się do wszystkich, którym nie jest obojętne – wyciągnijcie pomocną dłoń do Ukrainy w tych strasznych czasach, wyciągnijcie pomocną dłoń do ukraińskich dzieci!",
     "buttonText": "Wspierać projekt"
   },
-  "blog": {
-    "title": "Blog"
-  },
   "news": {
     "title": "AKTUALNOŚCI"
   },
@@ -317,5 +314,9 @@
     "report": "Sprawozdanie",
     "policy": "Polityka prywatności",
     "rules": "Regulamin strony"
+  },
+  "blog": {
+    "title": "Blog",
+    "text": "Na tej stronie zebrane są artykuły profilowe"
   }
 }

@@ -69,9 +69,6 @@
     "text": "We appeal to all who care – extend a helping hand to Ukraine during these terrifying times, extend a helping hand to Ukrainian children!",
     "buttonText": "Support the project"
   },
-  "blog": {
-    "title": "Blog Page"
-  },
   "news": {
     "title": "News Page"
   },
@@ -312,5 +309,9 @@
     "report": "Report",
     "policy": "Privacy Policy",
     "rules": "Site Rules"
+  },
+  "blog": {
+    "title": "Blog",
+    "text": "This page contains profile articles"
   }
 }
