@@ -6,12 +6,25 @@ import Container from "@/components/Container";
 import "./styles.css";
 import ArticlesList from "@/app/(landing)/[lang]/blog/components/ArticlesList/ArticlesList";
 import { articles } from "@/app/(landing)/[lang]/blog/mock/MockData";
+// import config from "@/config";
+
 
 interface IProps {
   params: {
     lang: Locales;
   };
 }
+
+// const fetchBlogs = async () => {
+//   const reqOption = {
+//     headers: {
+//       Authorization: `Baerer ${process.env.API_KEY}`,
+//     },
+//   };
+
+//   const request = await fetch(`${config.api}/api/blogs?populate=*`, reqOption);
+//   const response = await request.json();
+// };
 
 const BlogPage: NextPage<IProps> = async ({ params: { lang } }) => {
   const language = await getAllTranslations(lang);

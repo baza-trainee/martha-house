@@ -1,6 +1,6 @@
 .header {
   height: 72px;
-  position: sticky;
+  position: fixed;
   inset: 0 0 0 0;
   z-index: 9999;
 }
@@ -79,6 +79,12 @@
   font-weight: var(--body-lg-bold-fw);
   line-height: var(--body-lg-bold-lh);
   color: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 20px var(--padding-xxl);
+  }
 }
 
 @media screen and (min-width: 1280px) {

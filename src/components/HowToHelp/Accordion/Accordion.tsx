@@ -13,7 +13,7 @@ const AccordionSection: FC<AccordionSectionProps> = ({
   setActiveIndex,
   sectionIndex,
 }) => {
-  const [selectedButton, setSelectedButton] = useState<string>("UA");
+  const [selectedButton, setSelectedButton] = useState<string>("UAH");
 
   let accordionHeader: React.JSX.Element | null = null;
   let accordionContent: React.JSX.Element | null = null;
@@ -72,7 +72,7 @@ const AccordionSection: FC<AccordionSectionProps> = ({
     accordionContent = (
       <div className={styles["privatbank__accordion-description"]}>
         <Button variant="white" className={styles["privatbank-button"]}>
-          {section.button[0]}
+          {section.buttonPrivat}
         </Button>
         <p className={styles["privatbank-text"]}>{section.text[0]}</p>
         <Image src={section.qrImg} alt={section.alt} width={154} height={154} />
@@ -80,7 +80,7 @@ const AccordionSection: FC<AccordionSectionProps> = ({
     );
   }
 
-  if (section.subtitle === "Підписка" || section.subtitle === "Онлайн платіж") {
+  if (section.hasOwnProperty("button")) {
     accordionContent = (
       <div className={styles["accordion-description__button"]}>
         {section.button.map((item, index) => (
@@ -88,7 +88,9 @@ const AccordionSection: FC<AccordionSectionProps> = ({
             key={index}
             variant="white"
             className={
-              section.subtitle === "Підписка"
+              section.subtitle === "Підписка" ||
+              section.subtitle === "Subscription" ||
+              section.subtitle === "Subskrypcja"
                 ? styles["button-subscribe"]
                 : styles["button-online"]
             }
@@ -100,7 +102,7 @@ const AccordionSection: FC<AccordionSectionProps> = ({
     );
   }
 
-  if (section.subtitle === "Банківський переказ") {
+  if (section.hasOwnProperty("buttonCurrency")) {
     accordionContent = (
       <div className={styles["bank-transfer__wrapper"]}>
         <div className={styles["bank-transfer__button"]}>
@@ -111,9 +113,9 @@ const AccordionSection: FC<AccordionSectionProps> = ({
               value={item.title}
               style={{ width: 53 }}
               className={
-                item.title === selectedButton
-                  ? ""
-                  : styles["button-transparent"]
+                item.title !== selectedButton
+                  ? styles["button-transparent"]
+                  : ""
               }
               onClick={(e: React.FormEvent<HTMLButtonElement>) => {
                 setSelectedButton(e.currentTarget.value);
@@ -131,7 +133,7 @@ const AccordionSection: FC<AccordionSectionProps> = ({
                 {item.content.map((text, index) => (
                   <p
                     className={
-                      selectedButton === "UA"
+                      selectedButton === "UAH"
                         ? styles["bank-transfer__text-ua"]
                         : styles["bank-transfer__text"]
                     }

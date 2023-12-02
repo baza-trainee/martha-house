@@ -155,7 +155,7 @@
       "img": "/images/howtohelp/privatbank.svg",
       "icon": "/images/howtohelp/arrow.svg",
       "alt": "privatbank",
-      "button": ["Підтримати проєкт"],
+      "buttonPrivat": "Підтримати проєкт",
       "text": ["або відскануйте QR-код через додаток Приват24"],
       "qrImg": "/images/howtohelp/qrcode-privat.svg"
     },
@@ -191,7 +191,7 @@
       "icon": "/images/howtohelp/arrow.svg",
       "buttonCurrency": [
         {
-          "title": "UA",
+          "title": "UAH",
           "content": [
             "Рахунок в АТ КБ «ПРИВАТБАНК»",
             "БО МІСТО ДОБРА БЛАГОДІЙНИЙ ФОНД",

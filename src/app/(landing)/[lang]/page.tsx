@@ -2,6 +2,7 @@ import { NextPage } from "next";
 import HeroSection from "@/components/HeroSection";
 import NeedHelp from "@/components/NeedHelp";
 import CoreValuesSection from "@/components/CoreValuesSection";
+import VideoSection from "@/components/VideoSection";
 import { getAllTranslations, getTranslation } from "@/utils/dictionary";
 import FAQSection from "@/components/FAQSection";
 import { Locales } from "@/types";
@@ -33,6 +34,7 @@ const HomePage: NextPage<IHomePageProps> = async ({ params: { lang } }) => {
       <Help data={t("help")} />
       <History data={t("history")} />
       <CoreValuesSection data={t("values")} />
+      <VideoSection />
       <FAQSection data={t("faqSection")} />
       <HowToHelp data={t("howToHelp")} />
       <AngelDoll data={t("angelDoll")} />

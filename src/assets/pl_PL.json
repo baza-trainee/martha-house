@@ -60,13 +60,13 @@
     "subtitle": "Czym jest Miasto Dobroci?",
     "textQuote": "Miasto Dobroci to dziecko przy boku matki!",
     "text": [
-      "Miasto Dobroci to ukraiński projekt dobroczynny, duży kompleks usług społecznych i schronienie dla matek z dziećmi, które znalazły się w trudnych sytuacjach życiowych. Stały się ofiarami przemocy domowej, mają ryzyko znalezienia się na ulicy, potrzebują wsparcia w socjalizacji i reintegracji, i żyją poniżej granicy ubóstwa. Działamy, aby zachować dziecko w rodzinie.",
-      "W 'Mieście Dobroci' walczymy o każdą matkę i jej dziecko. Tutaj bezdomne matki, sieroty i absolwentki domów dziecka, matki rozdzielone przemocą domową i obojętnością, znajdą schronienie i wsparcie.",
-      "Każda matka otrzyma indywidualny plan swojego rozwoju osobistego, z planami na przyszłe wykształcenie i zdobycie zawodu. Niezbędny czas pobytu w 'Mieście' będzie określany w zależności od zadań i celów."
+      "Miasto Dobroci to ogólnoukraiński projekt dobroczynny, duży kompleks usług społecznych i schronisk dla matek i dzieci znajdujących się w trudnej sytuacji życiowej. Stały się ofiarami przemocy domowej, istnieje ryzyko że zostaną bez dachu nad głową, potrzebują wsparcia w socjalizacji i reintegracji, i żyją poniżej granicy ubóstwa. Dążymy do tego aby  dziecko zostało  przy matce.",
+      "W „Mieście Dobroci” walczą o każdą matkę i jej dziecko. Tutaj schronienie i wsparcie znajdą matki bezdomne, sieroty i absolwentki domów dziecka, matki rozdzielone przemocą domową i obojętnością.",
+      "Każda matka otrzyma indywidualny plan rozwoju osobistego, z planami na przyszłe wykształcenie i zdobycie zawodu. Niezbędny czas pobytu w 'Mieście' będzie określany w zależności od zadań i celów."
     ]
   },
   "support": {
-    "text": "Zwracamy się do wszystkich, którym nie jest obojętne – wyciągnijcie pomocną dłoń do Ukrainy w tych strasznych czasach, wyciągnijcie pomocną dłoń do ukraińskich dzieci!",
+    "text": "Zwracamy się do wszystkich, którym nie jest obojętne – wyciągnięcie pomocnej dłoni do Ukrainy w tych strasznych czasach, prosimy o pomocy dla ukraińskich dzieci!",
     "buttonText": "Wspierać projekt"
   },
   "news": {
@@ -139,25 +139,17 @@
     ]
   },
   "howToHelp": {
-    "title": "Як допомогти?",
-    "paragraph": "Новий будинок “Міста Добра” вже відкрив свої двері для своїх мешканців. Та аби зробити його насправді незалежним і успішним, нам потрібна ваша допомога!",
+    "title": "Jak pomóc?",
+    "paragraph": "Nowy budynek „Miasta Dobroci” otworzył już swoje drzwi dla swoich mieszkańców. Ale aby naprawdę uczynić go funkcjonalnym i pomocnym, potrzebujemy waszego wsparcia!",
     "accordionItemOne": {
       "img": "/images/howtohelp/monobank.svg",
       "icon": "/images/howtohelp/arrow.svg",
       "alt": "monobank",
       "text": [
-        "Карта Monobank",
+        "Karta Monobank",
         "4441 1144 4663 3370",
-        "оформлена на керівника Марту Левченко"
+        "Założona na kierownika Martę Lewczenko"
       ]
-    },
-    "accordionItemTwo": {
-      "img": "/images/howtohelp/privatbank.svg",
-      "icon": "/images/howtohelp/arrow.svg",
-      "alt": "privatbank",
-      "button": ["Підтримати проєкт"],
-      "text": ["або відскануйте QR-код через додаток Приват24"],
-      "qrImg": "/images/howtohelp/qrcode-privat.svg"
     },
     "accordionItemThree": {
       "img": "/images/howtohelp/paypal.svg",
@@ -170,137 +162,124 @@
       "icon": "/images/howtohelp/arrow.svg",
       "alt": "bitcoin",
       "text": [
-        "Криптовалютний гаманець Binance",
+        "Portfel kryptowalutowy Binance",
         "12YzUqVdKRxWvEhoemyAr8w2bjgrUiXygN"
       ]
     },
-    "accordionItemFive": {
-      "subtitle": "Підписка",
-      "icon": "/images/howtohelp/arrow.svg",
-      "button": [
-        "100 грн",
-        "200 грн",
-        "300 грн",
-        "400 грн",
-        "500 грн",
-        "1000 грн"
-      ]
-    },
     "accordionItemSix": {
-      "subtitle": "Банківський переказ",
+      "subtitle": "Przelew bankowy",
       "icon": "/images/howtohelp/arrow.svg",
       "buttonCurrency": [
         {
-          "title": "UA",
+          "title": "UAH",
           "content": [
-            "Рахунок в АТ КБ «ПРИВАТБАНК»",
-            "БО МІСТО ДОБРА БЛАГОДІЙНИЙ ФОНД",
+            "Konto w PrivatBank",
+            "Fundacja Charytatywna MIASTO DOBROCI",
             "IBAN",
             "UA563052990000026001021800106",
-            "БФ МІСТО ДОБРА",
-            "ЄДРПОУ",
+            "FC MIASTO DOBROCI",
+            "NIP",
             "43894641",
-            "МФО",
+            "Kod banku",
             "305299",
-            "Ключ карта БФ « Місто добра»",
+            "Klucz karty fundacji \"Miasto Dobroci\"",
             "4246 0010 0081 0725",
-            "оформлена на керівника Марту Левченко"
+            "оZarejestrowana na kierownika Martę Lewczenko"
           ]
         },
         {
           "title": "USD",
           "content": [
-            "Company Name",
-            "БФ МIСТО ДОБРА",
+            "Nazwa firmy",
+            "Fundacja MIASTO DOBROCI",
             "IBAN",
             "UA363052990000026006031801190",
-            "Name of the bank",
-            "JSC CB “PRIVATBANK”, 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE",
-            "Bank SWIFT Code",
+            "Nazwa banku",
+            "JSC CB “PRIVATBANK”, UL. HRUSHEVSKOHO 1D, KIJÓW, 01001, UKRAINA",
+            "Kod SWIFT",
             "PBANUA2X",
-            "Company address",
-            "UA 58020 Чернiвецька м.Чернiвцi вул.Рiчна, б.10",
-            "Account in the correspondent bank",
+            "Adres firmy",
+            "UA 58020 Czerniowce, ul. Rična 10",
+            "Konto w banku korespondencyjnym",
             "001-1-000080",
             "SWIFT Code of the correspondent bank",
             "CHASUS33",
-            "Correspondent bank",
-            "JP Morgan Chase Bank, New York ,USA",
-            "Account in the correspondent bank",
+            "Bank korespondencyjny",
+            "JP Morgan Chase Bank, Nowy Jork, USA",
+            "Konto w banku korespondencyjnym",
             "890-0085-754",
-            "SWIFT Code of the correspondent bank",
+            "Kod SWIFT banku korespondencyjnego",
             "IRVT US 3N",
-            "Correspondent bank",
-            "The Bank of New York Mellon, New York, USA"
+            "Bank korespondencyjny",
+            "The Bank of New York Mellon, Nowy Jork, USA"
           ]
         },
         {
           "title": "EUR",
           "content": [
-            "Company Name",
-            "БФ МIСТО ДОБРА",
+            "Nazwa firmy",
+            "Fundacja MIASTO DOBROCI",
             "IBAN",
             "UA213052990000026003001801305",
-            "Name of the bank",
-            "JSC CB “PRIVATBANK”, 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE",
-            "Bank SWIFT Code",
+            "Nazwa banku",
+            "JSC CB “PRIVATBANK”, UL. HRUSHEVSKOHO 1D, KIJÓW, 01001, UKRAINA",
+            "Kod SWIFT banku",
             "PBANUA2X",
-            "Company address",
-            "UA 58020 Чернiвецька м.Чернiвцi вул.Рiчна, б.10",
-            "Account in the correspondent bank",
+            "Adres firmy",
+            "UA 58020 Czerniowce, ul. Rična 10",
+            "Konto w banku korespondencyjnym",
             "400886700401",
-            "SWIFT Code of the correspondent bank",
+            "Kod SWIFT banku korespondencyjnego",
             "COBADEFF",
-            "Correspondent bank",
-            "Commerzbank AG, Frankfurt am Main, Germany",
-            "Account in the correspondent bank",
+            "Bank korespondencyjny",
+            "Commerzbank AG, Frankfurt nad Menem, Niemcy",
+            "Konto w banku korespondencyjnym",
             "6231605145",
-            "SWIFT Code of the correspondent bank",
+            "Kod SWIFT banku korespondencyjnego",
             "CHASDEFX",
-            "Correspondent bank",
-            "J.P.MORGAN AG, FRANKFURT AM MAIN, GERMANY"
+            "Bank korespondencyjny",
+            "J.P.MORGAN AG, Frankfurt nad Menem, Niemcy"
           ]
         }
       ]
     },
     "accordionItemSeven": {
-      "subtitle": "Онлайн платіж",
+      "subtitle": "Płatność online",
       "icon": "/images/howtohelp/arrow.svg",
-      "button": ["Допомогти в ГРН, USD, EUR"]
+      "button": ["Pomoc w ГРН, USD, EUR"]
     }
   },
   "angelDoll": {
-    "title": "Підтримай Місто Добра - купи ляльку-янгола!",
-    "buttonUp": "Скрити деталі",
-    "buttonDown": "Детальніше",
+    "title": "Wesprzyj Miasto Dobroci - kup lalkę anioła!",
+    "buttonUp": "Szczegóły/Ukryj",
+    "buttonDown": "Więcej szczegółów",
     "img": "/images/howtohelp/arrow.svg",
     "alt": "arrow",
     "hiddenText": {
       "img": "/images/angel-doll.png",
       "alt": "angel-doll",
       "text": [
-        "Один із способів підтримати існування “Міста Добра” – придбати унікальну ляльку Янгола Міста Добра.",
-        "Цю чудову іграшку шиють матусі, які проживають у нашому центрі. А дітлахи допомагають кріпити крильця, які перетворюють ляльку на справжнього янгола.Висота ляльки – 25 сантиметрів. Ескіз виконала художниця з Америки, яка вже багато років підтримує наш проєкт – Юлія Косівчук.",
-        "Кожна наша лялька від початку створення проникнена любов’ю, вдячністю та позитивними думками наших мам. Вона принесе в дім затишок і спокій, та оберігатиме свого власника, як і має кожен Янгол Охоронець.А також вона стане постійним нагадуванням, про добру справу, підтримку Міста Добра.Ми пакуємо ляльку у гарненьку коробку, тому вона стане чудовим подарунком вашим близким!"
+        "Jednym ze sposobów wsparcia istnienia „Miasta Dobroci” jest zakup wyjątkowej lalki Anioła Miasta Dobroci.",
+        "Tę cudowną zabawkę szyją mamy, które mieszkają w naszym ośrodku. A dzieci pomagają zapiąć skrzydełka, które zamieniają lalkę w prawdziwego anioła.Wysokość lalki wynosi 25 centymetrów. Szkic wykonała artystka z Ameryki, która od wielu lat wspiera nasz projekt – Julia Kosiwczuk.",
+        "Każda z naszych lalek od początku stworzenia jest przepełniona miłością, wdzięcznością i pozytywnymi myślami naszych mam. Lalka wniesie do domu ukojenie i spokój, oraz będzie chronić swoją właścicielkę tak, jak przystało  to na  Anioła Stróża.A także będzie nieustanną pamiątką dobrego uczynku, wsparcia Miasta Dobroci.Lalkę pakujemy w piękne pudełko , więc będzie to świetny prezent dla Twoich bliskich!"
       ],
-      "title": "Як замовити?",
-      "subtitle1": "Оплатити",
+      "title": "Jak zamówić?",
+      "subtitle1": "Zapłać",
       "text1": [
-        "Перечисліть кошти на карту Приват",
+        "Przelej środki na kartę Privat",
         "5218 5722 2175 5783",
-        "Левченко Марта"
+        "Marta Lewczenko"
       ],
-      "subtitle2": "Написати",
-      "text2": "Пришліть скрін оплати та напишіть дані для відправки “Новою поштою” нам на e-mail cityofgoodnessua@gmail.com"
+      "subtitle2": "Napisz",
+      "text2": "Wyślij ekran płatności i wpisz dane do wysłania przez \"Nową pocztę\" do nas na adres e-mail cityofgoodnessua@gmail.com"
     }
   },
   "whyNeed": {
-    "title": "Чому Місто Добра потрібне?",
+    "title": "Dlaczego Miasto Dobra jest potrzebne?",
     "paragraphs": [
-      "Кожні 3 дні до інтернатів України потрапляють 250 дітей, і кожні 3 дні там помирає одна дитина! 95% цих дітей могли б ніколи не опинитись у інтернаті, бо вони – не сироти, а діти з бідних родин! На жаль, службам у справах дітей простіше забрати дитину з проблемної родини, ніж допомогти сім’ї подолати складну ситуацію. Така малеча все дитинство проведе у інтернаті, бо усиновлення при живих батьках неможливе.",
-      "Бідність стає перепоною для отримання людиною освіти, лікування, захисту своїх інтересів. Але бідність – це не вирок для люблячої родини. Бідні батьки – не погані батьки! І якщо вчасно підтримати сім’ю, то можна змінити всю долю дитини. Ми можемо не допустити потрапляння дітей до інтернату!",
-      "Багато мам проживають з дітьми за межею бідності, без елементарних необхідних речей. Часто складну ситуацію неможливо вирішити разово. Деякі мами випускниці інтернатів чи мами, що самі виросли у неблагополучних сім’ях, не мають навичок по догляду за дітьми.",
-      "Кожні 3 дні до інтернатів України 250 дітей, і кожні 3 дні там помирає одна дитина! 95% цих дітей могли б ніколи не опинитись у інтернаті, бо вони – не сироти, а діти з бідних родин! На жаль, службам у справах дітей простіше забрати дитину з проблемної , ніж допомогти сім’ї подолати складну ситуацію. Така малеча все дитинство проведе у інтернаті, бо усиновлення при живих батьках неможливе."
+      "Co 3 dni na Ukrainie do domów dziecka trafią 250 dzieci, a co 3 dni umiera tam jedno dziecko! 95% tych dzieci nigdy nie mogłoby trafić do domu dziecka, bo  nie sa to sieroty, ale dzieci z biednych rodzin! Niestety opiece społecznej łatwiej jest odebrać dziecko z trudnej rodziny, niż pomóc rodzinie przezwyciężyć trudną sytuację. Takie dziecko całe dzieciństwo spędzi w domu dziecka, bo adopcja u żyjących rodziców jest niemożliwa.",
+      "Ubóstwo staje się przeszkodą w zdobyciu wykształcenia,co wiąże się w późniejszym etapie z podstawowymi problemami jak leczenie czy stałe miejsce zamieszkania . Ale ubóstwo nie jest wyrokiem dla kochającej rodziny. Biedni rodzice nie są złymi rodzicami! A jeśli wesprzesz rodzinę na czas, możesz zmienić cały los dziecka. Pomagamy rodzinom aby dzieci nie musiały trafiać do domu dziecka.",
+      "Wiele matek żyje z dziećmi poniżej progu ubóstwa, bez podstawowych artykułów pierwszej potrzeby. Często trudnej sytuacji nie da się rozwiązać od razu. Część matek, które same wychowały się domu dziecka lub matki, które  wychowały się w rodzinach dysfunkcyjnych, nie mają umiejętności opiekowania się dziećmi."
     ],
     "images": [
       "/images/whyneed/whyneedchild.jpg",

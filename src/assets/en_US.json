@@ -57,7 +57,7 @@
     "buttonText": "Help"
   },
   "about": {
-    "subtitle": "What is City of Goodness?",
+    "subtitle": "What is the City of Goodness?",
     "textQuote": "City of Goodness is a child by their mother's side!",
     "text": [
       "City of Goodness is a charitable all-Ukrainian project, a large complex of social services and shelter for mothers with children who have found themselves in difficult life situations. They have become victims of domestic violence, are at risk of ending up on the street, need support in socialization and reintegration, and live below the poverty line. We act to preserve the child within the family.",
@@ -94,14 +94,14 @@
     "items": [
       {
         "query": "Who do we accept?",
+        "description": "The center accepts women and children of all religions and is adapted for people with different types of physical disabilities.",
         "responses": [
           "Women with children suffering from domestic violence;",
           "Women with children who are homeless and without shelter;",
           "Women on the verge of losing parental rights due to inadequate care conditions caused by homelessness, poverty, or lack of education;",
           "Women with children who have documentation issues and therefore cannot find work and housing;",
           "Women with children from all regions of Ukraine and citizens of other countries who need help in Ukraine;",
-          "Elderly, lonely grandmothers who have nowhere to live or suffer from domestic violence.",
-          "The center accepts women and children of all religions and is adapted for people with different types of physical disabilities."
+          "Elderly, lonely grandmothers who have nowhere to live or suffer from domestic violence."
         ]
       },
       {
@@ -130,29 +130,26 @@
           "we teach to follow the child;",
           "we help to get an education and a job."
         ]
+      },
+      {
+        "query": "What is the purpose of the 'City of Good' existence?",
+        "description": "'City of Good' is not just a shelter and a place to live, it is a comprehensive program of socialization of women. Our ultimate goal is a woman who can support herself and her children, is self-reliant and independent.The development program is personalized and is based exclusively on the wishes and potential of the woman herself. Throughout the family's rehabilitation, we will keep in touch with the social worker who referred the family to the center and update them on the family's progress, condition and situation.Every woman who comes to us must be ready to work on her development, study, and, if necessary, acquire a profession.",
+        "responses": []
       }
     ]
   },
   "howToHelp": {
-    "title": "Як допомогти?",
-    "paragraph": "Новий будинок “Міста Добра” вже відкрив свої двері для своїх мешканців. Та аби зробити його насправді незалежним і успішним, нам потрібна ваша допомога!",
+    "title": "How to help?",
+    "paragraph": "The new home \"The City of Goodness\" has already opened its doors to its residents. But to make it truly independent and successful, we need your help!",
     "accordionItemOne": {
       "img": "/images/howtohelp/monobank.svg",
       "icon": "/images/howtohelp/arrow.svg",
       "alt": "monobank",
       "text": [
-        "Карта Monobank",
+        "Monobank card",
         "4441 1144 4663 3370",
-        "оформлена на керівника Марту Левченко"
+        "issued to the head of the bank Marta Levchenko"
       ]
-    },
-    "accordionItemTwo": {
-      "img": "/images/howtohelp/privatbank.svg",
-      "icon": "/images/howtohelp/arrow.svg",
-      "alt": "privatbank",
-      "button": ["Підтримати проєкт"],
-      "text": ["або відскануйте QR-код через додаток Приват24"],
-      "qrImg": "/images/howtohelp/qrcode-privat.svg"
     },
     "accordionItemThree": {
       "img": "/images/howtohelp/paypal.svg",
@@ -165,48 +162,36 @@
       "icon": "/images/howtohelp/arrow.svg",
       "alt": "bitcoin",
       "text": [
-        "Криптовалютний гаманець Binance",
+        "Binance cryptocurrency wallet",
         "12YzUqVdKRxWvEhoemyAr8w2bjgrUiXygN"
       ]
     },
-    "accordionItemFive": {
-      "subtitle": "Підписка",
-      "icon": "/images/howtohelp/arrow.svg",
-      "button": [
-        "100 грн",
-        "200 грн",
-        "300 грн",
-        "400 грн",
-        "500 грн",
-        "1000 грн"
-      ]
-    },
     "accordionItemSix": {
-      "subtitle": "Банківський переказ",
+      "subtitle": "Bank transfer",
       "icon": "/images/howtohelp/arrow.svg",
       "buttonCurrency": [
         {
-          "title": "UA",
+          "title": "UAH",
           "content": [
-            "Рахунок в АТ КБ «ПРИВАТБАНК»",
-            "БО МІСТО ДОБРА БЛАГОДІЙНИЙ ФОНД",
+            "Account in JSC CB “PRIVATBANK”",
+            "CHARITABLE ORGANIZATION ‘CITY OF GOODNESS’ CHARITY FUND",
             "IBAN",
             "UA563052990000026001021800106",
-            "БФ МІСТО ДОБРА",
-            "ЄДРПОУ",
+            "CHARITABLE FOUNDATION CITY OF GOODNESS",
+            "USREOU (Unified State Register of Enterprises and Organizations of Ukraine)",
             "43894641",
-            "МФО",
+            "MFO (Bank Identification Code)",
             "305299",
-            "Ключ карта БФ « Місто добра»",
+            "Key card of the Charity Fund “City of Goodness”",
             "4246 0010 0081 0725",
-            "оформлена на керівника Марту Левченко"
+            "issued to the head of the organization Marta Levchenko"
           ]
         },
         {
           "title": "USD",
           "content": [
             "Company Name",
-            "БФ МIСТО ДОБРА",
+            "CHARITABLE ORGANIZATION ‘CITY OF GOODNESS’ CHARITY FUND",
             "IBAN",
             "UA363052990000026006031801190",
             "Name of the bank",
@@ -214,7 +199,7 @@
             "Bank SWIFT Code",
             "PBANUA2X",
             "Company address",
-            "UA 58020 Чернiвецька м.Чернiвцi вул.Рiчна, б.10",
+            "UA 58020, Chernivtsi region, Chernivtsi city, Richna street, b.10",
             "Account in the correspondent bank",
             "001-1-000080",
             "SWIFT Code of the correspondent bank",
@@ -233,7 +218,7 @@
           "title": "EUR",
           "content": [
             "Company Name",
-            "БФ МIСТО ДОБРА",
+            "CHARITABLE ORGANIZATION ‘CITY OF GOODNESS’ CHARITY FUND",
             "IBAN",
             "UA213052990000026003001801305",
             "Name of the bank",
@@ -241,7 +226,7 @@
             "Bank SWIFT Code",
             "PBANUA2X",
             "Company address",
-            "UA 58020 Чернiвецька м.Чернiвцi вул.Рiчна, б.10",
+            "UA 58020, Chernivtsi region, Chernivtsi city, Richna street, b.10",
             "Account in the correspondent bank",
             "400886700401",
             "SWIFT Code of the correspondent bank",
@@ -259,43 +244,42 @@
       ]
     },
     "accordionItemSeven": {
-      "subtitle": "Онлайн платіж",
+      "subtitle": "Online payment",
       "icon": "/images/howtohelp/arrow.svg",
-      "button": ["Допомогти в ГРН, USD, EUR"]
+      "button": ["Help in UAH, USD, EUR"]
     }
   },
   "angelDoll": {
-    "title": "Підтримай Місто Добра - купи ляльку-янгола!",
-    "buttonUp": "Скрити деталі",
-    "buttonDown": "Детальніше",
+    "title": "Support the City of Goodness - buy an angel doll!",
+    "buttonUp": "Hide details",
+    "buttonDown": "More details",
     "img": "/images/howtohelp/arrow.svg",
     "alt": "arrow",
     "hiddenText": {
       "img": "/images/angel-doll.png",
       "alt": "angel-doll",
       "text": [
-        "Один із способів підтримати існування “Міста Добра” – придбати унікальну ляльку Янгола Міста Добра.",
-        "Цю чудову іграшку шиють матусі, які проживають у нашому центрі. А дітлахи допомагають кріпити крильця, які перетворюють ляльку на справжнього янгола.Висота ляльки – 25 сантиметрів. Ескіз виконала художниця з Америки, яка вже багато років підтримує наш проєкт – Юлія Косівчук.",
-        "Кожна наша лялька від початку створення проникнена любов’ю, вдячністю та позитивними думками наших мам. Вона принесе в дім затишок і спокій, та оберігатиме свого власника, як і має кожен Янгол Охоронець.А також вона стане постійним нагадуванням, про добру справу, підтримку Міста Добра.Ми пакуємо ляльку у гарненьку коробку, тому вона стане чудовим подарунком вашим близким!"
+        "One of the ways to support the existence of the City of Goodness is to buy a unique City of Goodness Angel doll.",
+        "This wonderful toy is sewn by mothers who live in our center. The children help to attach the wings that turn the doll into a real angel. The doll is 25 centimeters high. The sketch was made by an American artist who has been supporting our project for many years, Yulia Kosivchuk.",
+        "Each of our dolls is imbued with love, gratitude, and positive thoughts of our mothers from the very beginning of its creation. She will bring comfort and peace to the house and will protect her owner, as every Guardian Angel should. She will also become a constant reminder of good deeds, and support for the City of Goodness. We pack the doll in a beautiful box, so it will be a great gift for your loved ones!"
       ],
-      "title": "Як замовити?",
-      "subtitle1": "Оплатити",
+      "title": "How to order?",
+      "subtitle1": "To pay",
       "text1": [
-        "Перечисліть кошти на карту Приват",
+        "Transfer funds to the Privat card",
         "5218 5722 2175 5783",
-        "Левченко Марта"
+        "Levchenko Marta"
       ],
-      "subtitle2": "Написати",
-      "text2": "Пришліть скрін оплати та напишіть дані для відправки “Новою поштою” нам на e-mail cityofgoodnessua@gmail.com"
+      "subtitle2": "Write a message",
+      "text2": "Send the payment screen and write the data for sending by \"New Mail\" to us by e-mail cityofgoodnessua@gmail.com"
     }
   },
   "whyNeed": {
-    "title": "Чому Місто Добра потрібне?",
+    "title": "Why is the City of Goodness needed?",
     "paragraphs": [
-      "Кожні 3 дні до інтернатів України потрапляють 250 дітей, і кожні 3 дні там помирає одна дитина! 95% цих дітей могли б ніколи не опинитись у інтернаті, бо вони – не сироти, а діти з бідних родин! На жаль, службам у справах дітей простіше забрати дитину з проблемної родини, ніж допомогти сім’ї подолати складну ситуацію. Така малеча все дитинство проведе у інтернаті, бо усиновлення при живих батьках неможливе.",
-      "Бідність стає перепоною для отримання людиною освіти, лікування, захисту своїх інтересів. Але бідність – це не вирок для люблячої родини. Бідні батьки – не погані батьки! І якщо вчасно підтримати сім’ю, то можна змінити всю долю дитини. Ми можемо не допустити потрапляння дітей до інтернату!",
-      "Багато мам проживають з дітьми за межею бідності, без елементарних необхідних речей. Часто складну ситуацію неможливо вирішити разово. Деякі мами випускниці інтернатів чи мами, що самі виросли у неблагополучних сім’ях, не мають навичок по догляду за дітьми.",
-      "Кожні 3 дні до інтернатів України 250 дітей, і кожні 3 дні там помирає одна дитина! 95% цих дітей могли б ніколи не опинитись у інтернаті, бо вони – не сироти, а діти з бідних родин! На жаль, службам у справах дітей простіше забрати дитину з проблемної , ніж допомогти сім’ї подолати складну ситуацію. Така малеча все дитинство проведе у інтернаті, бо усиновлення при живих батьках неможливе."
+      "Every 3 days 250 children are admitted to boarding schools in Ukraine, and every 3 days one child dies there! 95% of these children could have never ended up in an orphanage because they are not orphans, but children from poor families! Unfortunately, it is easier for children's services to take a child from a problem family than to help the family overcome a difficult situation. Such children will spend their entire childhood in an orphanage because adoption with living parents is impossible.",
+      "Poverty becomes an obstacle for a person to receive education, and medical treatment, and protect their interests. But poverty is not a sentence for a loving family. Poor parents are not bad parents! And if you support the family in time, you can change the child's entire life. We can prevent children from going to an orphanage!",
+      "Many mothers live with their children below the poverty line, without necessities. Often, a difficult situation cannot be solved once. Some mothers are graduates of orphanages or mothers who grew up in dysfunctional families and do not have the skills to care for children."
     ],
     "images": [
       "/images/whyneed/whyneedchild.jpg",
