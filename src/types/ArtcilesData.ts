@@ -1,7 +1,3 @@
-export interface ArticleData {
-  data: Article[];
-}
-
 export type Article = {
   id: number;
   title: string;
@@ -9,3 +5,7 @@ export type Article = {
   creation: string;
   image: string;
 };
+
+export interface ArticleData {
+  data: Article[];
+}
