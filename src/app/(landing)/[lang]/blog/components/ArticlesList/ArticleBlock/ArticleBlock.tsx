@@ -7,9 +7,10 @@ interface ArticleBlockProps {
   image: string;
   text: string;
   title: string;
+  id: number;
 }
 
-const ArticleBlock = ({ image, text, title }: ArticleBlockProps) => (
+const ArticleBlock = ({ image, text, title, id }: ArticleBlockProps) => (
   <div className={styles.block}>
     <div className={styles.image}>
       <Image src={image} alt={title} width={295} height={240} />
@@ -18,7 +19,7 @@ const ArticleBlock = ({ image, text, title }: ArticleBlockProps) => (
       <div className={styles.title}>
         <h2>{title}</h2>
         <div className={styles.link}>
-          <Link href="/blog/details">
+          <Link href={`/blog/${id}`}>
             <Image
               src="/images/icons/vector.svg"
               alt="vector"

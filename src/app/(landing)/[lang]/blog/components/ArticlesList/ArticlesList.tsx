@@ -7,7 +7,12 @@ const ArticlesList = ({ data }: ArticleData) => (
   <div className={styles.articles}>
     {data.map((item, index) => (
       <Fragment key={index}>
-        <ArticleBlock image={item.image} title={item.title} text={item.text} />
+        <ArticleBlock
+          image={item.image}
+          title={item.title}
+          text={item.text}
+          id={item.id}
+        />
       </Fragment>
     ))}
   </div>

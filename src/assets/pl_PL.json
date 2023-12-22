@@ -297,5 +297,13 @@
   "blog": {
     "title": "Blog",
     "text": "Na tej stronie zebrane są artykuły profilowe"
+  },
+  "details": {
+    "icon": "/images/blog-details/icon-arrow.svg",
+    "id": "id",
+    "title": "title",
+    "creation": "creation",
+    "image": "/images/blog-details/blog-details.png",
+    "text": ["text", "text", "text"]
   }
 }
