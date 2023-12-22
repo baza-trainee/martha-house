@@ -297,5 +297,13 @@
   "blog": {
     "title": "Blog",
     "text": "This page contains profile articles"
+  },
+  "details": {
+    "icon": "/images/blog-details/icon-arrow.svg",
+    "id": "id",
+    "title": "title",
+    "creation": "creation",
+    "image": "/images/blog-details/blog-details.png",
+    "text": ["text", "text", "text"]
   }
 }

@@ -8,7 +8,6 @@ import ArticlesList from "@/app/(landing)/[lang]/blog/components/ArticlesList/Ar
 import { articles } from "@/app/(landing)/[lang]/blog/mock/MockData";
 // import config from "@/config";
 
-
 interface IProps {
   params: {
     lang: Locales;

@@ -318,5 +318,13 @@
   "blog": {
     "title": "Блог",
     "text": "На цій сторінці зібрані профільні статті"
+  },
+  "details": {
+    "icon": "/images/blog-details/icon-arrow.svg",
+    "id": "id",
+    "title": "title",
+    "creation": "creation",
+    "image": "/images/blog-details/blog-details.png",
+    "text": ["text", "text", "text"]
   }
 }
