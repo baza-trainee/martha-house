@@ -38,7 +38,7 @@ const ArticleItem = ({
 
   return (
     <Container>
-      <main className={styles.article}>
+      <div className={styles.article}>
         <div
           className={`${styles["article-wrapper"]} ${gapFromTitleAndButton}`}
         >
@@ -51,13 +51,9 @@ const ArticleItem = ({
           <h2 className={styles.title}>{title}</h2>
         </div>
         <p className={styles.creation}>{creation}</p>
-        <Image
-          className={styles["article-img"]}
-          src={image}
-          alt="blog-img"
-          width={343}
-          height={220}
-        />
+        <div className={styles["article-img"]}>
+          <Image src={image} alt="blog-img" width={100} height={100} />
+        </div>
         <div className={styles["article-text-wrapper"]}>
           {text.map((paragraph, index) => (
             <p className={styles["article-text"]} key={index}>
@@ -65,7 +61,11 @@ const ArticleItem = ({
             </p>
           ))}
         </div>
-      </main>
+
+        <p className={styles.author}>
+          Автор: <span>Ніна Кравець</span>
+        </p>
+      </div>
     </Container>
   );
 };
