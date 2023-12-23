@@ -45,7 +45,7 @@ const ArticlesList = ({ lang }: ArticlesListProps) => {
       };
 
       const response = await fetch(
-        `${process.env.NEXT_API_URL}/api/blogs?populate=*&pagination[page]=${page}&pagination[pageSize]=${pageSize}&locale=${lang}`,
+        `${process.env.NEXT_PUBLIC_API_URL}/api/blogs?populate=*&pagination[page]=${page}&pagination[pageSize]=${pageSize}&locale=${lang}`,
         reqOptions,
       );
       const newData = await response.json();
