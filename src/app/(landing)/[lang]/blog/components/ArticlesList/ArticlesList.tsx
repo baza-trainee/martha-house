@@ -3,7 +3,6 @@
 import React, { Fragment, useEffect, useRef, useState } from "react";
 import ArticleBlock from "@/app/(landing)/[lang]/blog/components/ArticlesList/ArticleBlock/ArticleBlock";
 import { Locales } from "@/types";
-import config from "@/config";
 import { useMedia } from "@/hooks/useMedia";
 import { BlogResponse } from "@/types/Blog";
 import { Button } from "@/components";
@@ -46,7 +45,7 @@ const ArticlesList = ({ lang }: ArticlesListProps) => {
       };
 
       const response = await fetch(
-        `${config.api}/api/blogs?populate=*&pagination[page]=${page}&pagination[pageSize]=${pageSize}&locale=${lang}`,
+        `${process.env.NEXT_API_URL}/api/blogs?populate=*&pagination[page]=${page}&pagination[pageSize]=${pageSize}&locale=${lang}`,
         reqOptions,
       );
       const newData = await response.json();

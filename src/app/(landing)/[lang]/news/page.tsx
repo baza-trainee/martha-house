@@ -1,7 +1,6 @@
 import { NextPage } from "next";
 import { Locales } from "@/types";
 import { getTranslation, getAllTranslations } from "@/utils/dictionary";
-import config from "@/config";
 
 const fetchNews = async (params: string) => {
   const reqOptions: object = {
@@ -11,7 +10,7 @@ const fetchNews = async (params: string) => {
   };
 
   const req = await fetch(
-    `${config.api}/api/news?populate=*&${params}`,
+    `${process.env.NEXT_API_URL}/api/news?populate=*&${params}`,
     reqOptions,
   );
   const res = await req.json();
