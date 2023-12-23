@@ -5,12 +5,17 @@ import styles from "../ArticlesList.module.css";
 
 interface ArticleBlockProps {
   image: string;
-  text: string;
   title: string;
-  id: number;
+  description: string;
+  slug: string;
 }
 
-const ArticleBlock = ({ image, text, title, id }: ArticleBlockProps) => (
+const ArticleBlock = ({
+  image,
+  title,
+  description,
+  slug,
+}: ArticleBlockProps) => (
   <div className={styles.block}>
     <div className={styles.image}>
       <Image src={image} alt={title} width={295} height={240} />
@@ -19,7 +24,7 @@ const ArticleBlock = ({ image, text, title, id }: ArticleBlockProps) => (
       <div className={styles.title}>
         <h2>{title}</h2>
         <div className={styles.link}>
-          <Link href={`/blog/${id}`}>
+          <Link href={`/blog/${slug}`}>
             <Image
               src="/images/icons/vector.svg"
               alt="vector"
@@ -29,7 +34,7 @@ const ArticleBlock = ({ image, text, title, id }: ArticleBlockProps) => (
           </Link>
         </div>
       </div>
-      <p className={styles.text}>{text}</p>
+      <p className={styles.text}>{description}</p>
     </div>
   </div>
 );

@@ -38,8 +38,6 @@ const NewsPage: NextPage<IProps> = async ({ params: { lang } }) => {
     await fetchNews("filters[isFutured][$eq]=false"),
   ]);
 
-  console.log("futuredNews>>>>", futuredNews.data);
-
   return (
     <main>
       <ul>
