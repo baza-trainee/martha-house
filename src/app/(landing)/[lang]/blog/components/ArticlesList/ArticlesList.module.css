@@ -15,6 +15,7 @@
   background: var(--white);
   box-shadow: var(--shadowS);
   width: 343px;
+  height: 436px;
 }
 
 .image {
@@ -31,6 +32,7 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+  width: 100%;
 }
 
 .title {
