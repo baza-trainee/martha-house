@@ -8,13 +8,11 @@ interface HeadingProps {
   };
 }
 
-const Heading = ({ data }: HeadingProps) => {
-  return (
-    <div className={styles.heading}>
-      <h1 className={styles.title}>{data.title.toUpperCase()}</h1>
-      <p className={styles.text}>{data.text}</p>
-    </div>
-  );
-};
+const Heading = ({ data }: HeadingProps) => (
+  <div className={styles.heading}>
+    <h1 className={styles.title}>{data.title.toUpperCase()}</h1>
+    <p className={styles.text}>{data.text}</p>
+  </div>
+);
 
 export default Heading;

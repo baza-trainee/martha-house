@@ -1,9 +1,9 @@
 import { NextPage } from "next";
 import { Locales } from "@/types";
-import Heading from "./components/Heading/Heading";
 import Container from "@/components/Container";
 import { getTranslation, getAllTranslations } from "@/utils/dictionary";
-import config from "@/config";
+// import config from "@/config";
+import Heading from "./components/Heading/Heading";
 
 // const fetchNews = async (params: string) => {
 //   const reqOptions: object = {
