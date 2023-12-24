@@ -6,6 +6,7 @@ import { Locales } from "@/types";
 import { useMedia } from "@/hooks/useMedia";
 import { BlogResponse } from "@/types/Blog";
 import { Button } from "@/components";
+import Loader from "@/components/Loader/Loader";
 import styles from "./ArticlesList.module.css";
 
 interface ArticlesListProps {
@@ -18,6 +19,7 @@ const ArticlesList = ({ lang }: ArticlesListProps) => {
   const [page, setPage] = useState(1);
   const [blogs, setBlogs] = useState<BlogResponse | null>(null);
   const isFirstRun = useRef(true);
+  const [isLoading, setIsLoading] = useState(false);
 
   const buttonToRender =
     blogs &&
@@ -38,6 +40,7 @@ const ArticlesList = ({ lang }: ArticlesListProps) => {
       return;
     }
     const fetchData = async () => {
+      setIsLoading(true);
       const reqOptions = {
         headers: {
           Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`,
@@ -63,6 +66,7 @@ const ArticlesList = ({ lang }: ArticlesListProps) => {
           }
           return newData;
         });
+        setIsLoading(false);
       });
     }
   }, [pageSize, lang, page]);
@@ -73,6 +77,7 @@ const ArticlesList = ({ lang }: ArticlesListProps) => {
 
   return (
     <div className={styles.articles}>
+      {isLoading && <Loader className={styles.spinner} />}
       {blogs &&
         blogs.data.map((item) => (
           <Fragment key={item.id}>

@@ -8,6 +8,7 @@ import Container from "@/components/Container";
 import { Locales } from "@/types";
 import { Blog } from "@/types/Blog";
 import { useFormatDate } from "@/hooks/useFormatDate";
+import Loader from "@/components/Loader/Loader";
 import styles from "./ArticleItem.module.css";
 
 interface ArticleItemProps {
@@ -22,9 +23,11 @@ const ArticleItem = ({ url, lang }: ArticleItemProps) => {
   const [image, setImage] = useState("");
   const data = article && article.date;
   const formattedDate = useFormatDate({ data, lang });
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
+      setIsLoading(true);
       const reqOptions = {
         headers: {
           Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`,
@@ -38,7 +41,10 @@ const ArticleItem = ({ url, lang }: ArticleItemProps) => {
       return response.json();
     };
 
-    fetchData().then((data) => setArticle(data.data[0].attributes));
+    fetchData().then((data) => {
+      setArticle(data.data[0].attributes);
+      setIsLoading(false);
+    });
   }, [url, lang]);
 
   useEffect(() => {
@@ -65,7 +71,7 @@ const ArticleItem = ({ url, lang }: ArticleItemProps) => {
 
   const gapFromTitleAndButton =
     isMobile || isTablet ? styles["gap-from-title"] : "";
-  console.log(article);
+  console.log(isLoading);
 
   const textFormat = (text: string) => {
     const paragraphs = text.split("\n\n").map((paragraph, index) => (
@@ -80,6 +86,7 @@ const ArticleItem = ({ url, lang }: ArticleItemProps) => {
   return (
     <Container>
       <div className={styles.article}>
+        {isLoading && <Loader className={styles.spinner} />}
         {article && (
           <>
             <div
