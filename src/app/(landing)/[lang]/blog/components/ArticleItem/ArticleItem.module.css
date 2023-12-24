@@ -1,5 +1,14 @@
 .article {
   padding: 72px 0 32px;
+  min-height: 80vh;
+  position: relative;
+}
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .article-wrapper {
@@ -103,7 +112,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .article {
     width: 888px;
     margin: auto;
