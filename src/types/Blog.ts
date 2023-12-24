@@ -81,7 +81,7 @@ interface ImageAttributes {
   updatedAt: string;
 }
 
-interface Blog {
+export interface Blog {
   title: string;
   author: string;
   date: string;
@@ -134,4 +134,8 @@ export interface BlogResponse {
       total: number;
     };
   };
+}
+
+export interface Article {
+  attributes: Blog;
 }
