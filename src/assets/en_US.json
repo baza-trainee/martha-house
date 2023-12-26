@@ -70,7 +70,7 @@
     "buttonText": "Support the project"
   },
   "news": {
-    "title": "News Page",
+    "title": "News",
     "text": "This block contains news of the City of Good project",
     "button": "Download more"
   },
@@ -298,7 +298,8 @@
   },
   "blog": {
     "title": "Blog",
-    "text": "This page contains profile articles"
+    "text": "This page contains profile articles",
+    "button": "Load more"
   },
   "details": {
     "icon": "/images/blog-details/icon-arrow.svg",

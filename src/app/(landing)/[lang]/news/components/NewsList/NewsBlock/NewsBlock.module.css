@@ -59,3 +59,51 @@
   white-space: normal;
   max-height: 4em;
 }
+
+@media screen and (min-width: 834px) {
+  .block {
+    flex-direction: row;
+    width: 706px;
+    height: 202px;
+    padding: 0;
+    gap: 0;
+  }
+
+  .image {
+    width: 270px;
+    height: 202px;
+    flex-shrink: 0;
+  }
+
+  .image img {
+    width: 270px;
+    height: 202px;
+    border-radius: 8px 0px 0px 8px;
+  }
+
+  .info {
+    padding: 24px;
+    gap: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .block {
+    width: 1200px;
+    height: 244px;
+  }
+
+  .image {
+    width: 400px;
+    height: 244px;
+  }
+
+  .image img {
+    width: 400px;
+    height: 244px;
+  }
+
+  .info {
+    gap: 32px;
+  }
+}

@@ -298,7 +298,8 @@
   },
   "blog": {
     "title": "Blog",
-    "text": "Na tej stronie zebrane są artykuły profilowe"
+    "text": "Na tej stronie zebrane są artykuły profilowe",
+    "button": "Załaduj więcej"
   },
   "details": {
     "icon": "/images/blog-details/icon-arrow.svg",

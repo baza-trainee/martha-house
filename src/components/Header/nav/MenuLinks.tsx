@@ -1,4 +1,7 @@
-import React from "react";
+"use client";
+
+import React, { useContext } from "react";
+import { MenuContext } from "@/components/Header/HeaderMob";
 import Link from "next/link";
 import { Locales } from "@/types";
 import { NextPage } from "next";
@@ -33,6 +36,12 @@ const MenuLinks: NextPage<MenuLinksProps> = ({
       anchor: blog,
     },
   ];
+  const { handleToggle } = useContext(MenuContext);
+
+  if (!handleToggle) {
+    return null;
+  }
+
   return (
     <div className={styles["nav-menu"]}>
       {menuLinks.map((link, index) => (
@@ -40,6 +49,7 @@ const MenuLinks: NextPage<MenuLinksProps> = ({
           key={index}
           className={pathname === link.href ? `${styles.active}` : ""}
           href={link.href}
+          onClick={handleToggle}
         >
           {link.anchor}
         </Link>

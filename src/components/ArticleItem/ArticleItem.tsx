@@ -7,49 +7,28 @@ import { useMedia } from "@/hooks/useMedia";
 import { Loader } from "@/components";
 import Container from "@/components/Container";
 import { Locales } from "@/types";
-// import { Blog } from "@/types/Blog";
-import { News } from "@/types/News";
+import { useFetchSingleArticle } from "@/hooks/useFetchSingleArticle";
 import { useFormatDate } from "@/hooks/useFormatDate";
-import styles from "@/app/(landing)/[lang]/blog/components/ArticleItem/ArticleItem.module.css";
+import styles from "./ArticleItem.module.css";
 
 interface ArticleItemProps {
   url: string;
   lang: Locales;
+  page: string;
 }
 
-const ArticleItem = ({ url, lang }: ArticleItemProps) => {
+const ArticleItem = ({ url, lang, page }: ArticleItemProps) => {
   const { isMobile, isTablet } = useMedia();
   const [clientReady, setClientReady] = useState(false);
-  const [article, setArticle] = useState<News | null>(null);
+  const endPoint = page === "blog" ? "blogs" : "news";
+  const { isLoading, article, error } = useFetchSingleArticle({
+    endPoint,
+    lang,
+    url,
+  });
   const [image, setImage] = useState("");
   const data = article && article.date;
   const formattedDate = useFormatDate({ data, lang });
-  const [isLoading, setIsLoading] = useState(false);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      setIsLoading(true);
-      const reqOptions = {
-        headers: {
-          Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`,
-        },
-      };
-
-      const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/news?populate=*&filters[slug][$eq]=${url}&locale=${lang}`,
-        reqOptions
-      );
-      return response.json();
-    };
-
-    fetchData().then((data) => {
-      console.log("API response:", data);
-      setArticle(data.data[0].attributes);
-      setIsLoading(false);
-    });
-  }, [url, lang]);
-
-  console.log(article);
 
   useEffect(() => {
     if (article) {
@@ -75,7 +54,6 @@ const ArticleItem = ({ url, lang }: ArticleItemProps) => {
 
   const gapFromTitleAndButton =
     isMobile || isTablet ? styles["gap-from-title"] : "";
-  console.log(isLoading);
 
   const textFormat = (text: string) => {
     const paragraphs = text.split("\n\n").map((paragraph, index) => (
@@ -87,6 +65,8 @@ const ArticleItem = ({ url, lang }: ArticleItemProps) => {
     return <div className={styles["article-text-wrapper"]}>{paragraphs}</div>;
   };
 
+  if (error) return;
+
   return (
     <Container>
       <div className={styles.article}>
@@ -96,11 +76,11 @@ const ArticleItem = ({ url, lang }: ArticleItemProps) => {
             <div
               className={`${styles["article-wrapper"]} ${gapFromTitleAndButton}`}
             >
-              <Link href='/news'>
+              <Link href={page === "blog" ? "/blog" : "/news"}>
                 <div className={styleForButton}>
                   <Image
-                    src='/images/blog-details/icon-arrow.svg'
-                    alt='arrow'
+                    src="/images/blog-details/icon-arrow.svg"
+                    alt="arrow"
                     width={24}
                     height={24}
                   />
@@ -114,15 +94,15 @@ const ArticleItem = ({ url, lang }: ArticleItemProps) => {
               {image && (
                 <Image
                   src={image}
-                  alt='blog-img'
-                  sizes='(max-width: 768px) 100vw, 100vw'
+                  alt="blog-img"
+                  sizes="(max-width: 768px) 100vw, 100vw"
                   width={100}
                   height={100}
                   quality={100}
                 />
               )}
             </div>
-            {textFormat(article.description)}
+            {textFormat(page === "blogs" ? article.text : article.description)}
 
             <p className={styles.author}>
               Автор: <span>{article.author}</span>

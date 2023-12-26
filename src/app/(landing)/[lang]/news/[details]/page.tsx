@@ -2,7 +2,7 @@ import { NextPage } from "next";
 import { Locales } from "@/types";
 import { getTranslation, getAllTranslations } from "@/utils/dictionary";
 import HowToHelp from "@/components/HowToHelp";
-import NewsItem from "../components/NewsItem/NewsItem";
+import ArticleItem from "@/components/ArticleItem/ArticleItem";
 
 interface IDetailPageProps {
   params: {
@@ -19,7 +19,7 @@ const DetailsPage: NextPage<IDetailPageProps> = async ({
 
   return (
     <section>
-      <NewsItem url={details} lang={lang} />
+      <ArticleItem url={details} lang={lang} page="news" />
       <HowToHelp data={t("howToHelp")} />
     </section>
   );

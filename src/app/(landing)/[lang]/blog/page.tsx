@@ -1,7 +1,7 @@
 import { type Metadata, NextPage } from "next";
 import { Locales } from "@/types";
 import { getTranslation, getAllTranslations } from "@/utils/dictionary";
-import Heading from "@/app/(landing)/[lang]/blog/components/Heading/Heading";
+import Heading from "@/components/Heading/Heading";
 import Container from "@/components/Container";
 import ArticlesList from "@/app/(landing)/[lang]/blog/components/ArticlesList/ArticlesList";
 import "./styles.css";
@@ -22,10 +22,10 @@ const BlogPage: NextPage<IProps> = async ({ params: { lang } }) => {
   const t = getTranslation(language);
 
   return (
-    <section className='wrapper'>
-      <Container className='blog'>
+    <section className="wrapper">
+      <Container className="blog">
         <Heading data={t("blog")} />
-        <ArticlesList lang={lang} />
+        <ArticlesList lang={lang} data={t("blog")} />
       </Container>
     </section>
   );

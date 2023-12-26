@@ -20,10 +20,14 @@ export const useFormatDate = ({
         day: "numeric",
       };
 
-      const newFormattedDate = new Intl.DateTimeFormat(
+      let newFormattedDate = new Intl.DateTimeFormat(
         lang,
         formatOptions,
       ).format(date);
+
+      if (lang === "uk-UA") {
+        newFormattedDate = newFormattedDate.replace("р.", "року");
+      }
       setFormattedDate(newFormattedDate);
     }
   }, [lang, data]);
