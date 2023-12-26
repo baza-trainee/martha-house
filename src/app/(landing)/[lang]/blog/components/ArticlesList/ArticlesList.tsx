@@ -1,19 +1,18 @@
 "use client";
 
-import React, { Fragment, useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import ArticleBlock from "@/app/(landing)/[lang]/blog/components/ArticlesList/ArticleBlock/ArticleBlock";
 import { Locales } from "@/types";
 import { useMedia } from "@/hooks/useMedia";
 import { BlogResponse } from "@/types/Blog";
-import { Button } from "@/components";
-import Loader from "@/components/Loader/Loader";
+import { Button, Loader } from "@/components";
 import styles from "./ArticlesList.module.css";
 
 interface ArticlesListProps {
   lang: Locales;
 }
 
-const ArticlesList = ({ lang }: ArticlesListProps) => {
+const ArticlesList: React.FC<ArticlesListProps> = ({ lang }) => {
   const { isDesktop } = useMedia();
   const [pageSize, setPageSize] = useState(0);
   const [page, setPage] = useState(1);
@@ -21,17 +20,8 @@ const ArticlesList = ({ lang }: ArticlesListProps) => {
   const isFirstRun = useRef(true);
   const [isLoading, setIsLoading] = useState(false);
 
-  const buttonToRender =
-    blogs &&
-    blogs.data.length === pageSize &&
-    page < blogs.meta.pagination.pageCount;
-
   useEffect(() => {
-    if (isDesktop) {
-      setPageSize(9);
-    } else {
-      setPageSize(6);
-    }
+    setPageSize(isDesktop ? 9 : 6);
   }, [isDesktop]);
 
   useEffect(() => {
@@ -39,6 +29,7 @@ const ArticlesList = ({ lang }: ArticlesListProps) => {
       isFirstRun.current = false;
       return;
     }
+
     const fetchData = async () => {
       setIsLoading(true);
       const reqOptions = {
@@ -49,7 +40,7 @@ const ArticlesList = ({ lang }: ArticlesListProps) => {
 
       const response = await fetch(
         `${process.env.NEXT_PUBLIC_API_URL}/api/blogs?populate=*&pagination[page]=${page}&pagination[pageSize]=${pageSize}&locale=${lang}`,
-        reqOptions,
+        reqOptions
       );
       const newData = await response.json();
       return newData;
@@ -78,22 +69,21 @@ const ArticlesList = ({ lang }: ArticlesListProps) => {
   return (
     <div className={styles.articles}>
       {isLoading && <Loader className={styles.spinner} />}
-      {blogs &&
-        blogs.data.map((item) => (
-          <Fragment key={item.id}>
-            <ArticleBlock
-              image={item.attributes.image.data.attributes.url}
-              title={item.attributes.title}
-              description={item.attributes.description}
-              slug={item.attributes.slug}
-            />
-          </Fragment>
-        ))}
-      {buttonToRender && (
-        <Button onClick={loadMoreHandler} variant="white">
-          Завантажити ще
-        </Button>
-      )}
+      {blogs?.data.map((item) => (
+        <ArticleBlock
+          key={item.id}
+          image={item.attributes.image.data.attributes.url}
+          title={item.attributes.title}
+          description={item.attributes.description}
+          slug={item.attributes.slug}
+        />
+      ))}
+      {blogs?.data.length === pageSize &&
+        page < blogs.meta.pagination.pageCount && (
+          <Button onClick={loadMoreHandler} variant='white'>
+            Завантажити ще
+          </Button>
+        )}
     </div>
   );
 };

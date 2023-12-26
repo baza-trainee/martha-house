@@ -1,0 +1,25 @@
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 72px;
+
+  .title {
+    font-family: var(--font-mulish);
+    font-size: var(--title1-fs);
+    font-weight: var(--title1-fw);
+    line-height: var(--title1-lh);
+    color: var(--grey900);
+  }
+  .text {
+    text-align: center;
+    margin-top: 4px;
+    max-width: 268px;
+    font-family: var(--font-manrope);
+    font-size: var(--body-medium-web-fs);
+    font-weight: var(--body-medium-web-fw);
+    line-height: var(--body-medium-web-lh);
+    color: var(--grey700);
+  }
+}

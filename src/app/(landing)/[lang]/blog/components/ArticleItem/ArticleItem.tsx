@@ -4,11 +4,11 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useMedia } from "@/hooks/useMedia";
+import { Loader } from "@/components";
 import Container from "@/components/Container";
 import { Locales } from "@/types";
 import { Blog } from "@/types/Blog";
 import { useFormatDate } from "@/hooks/useFormatDate";
-import Loader from "@/components/Loader/Loader";
 import styles from "./ArticleItem.module.css";
 
 interface ArticleItemProps {
@@ -36,7 +36,7 @@ const ArticleItem = ({ url, lang }: ArticleItemProps) => {
 
       const response = await fetch(
         `${process.env.NEXT_PUBLIC_API_URL}/api/blogs?populate=*&filters[slug][$eq]=${url}&locale=${lang}`,
-        reqOptions,
+        reqOptions
       );
       return response.json();
     };
@@ -92,11 +92,11 @@ const ArticleItem = ({ url, lang }: ArticleItemProps) => {
             <div
               className={`${styles["article-wrapper"]} ${gapFromTitleAndButton}`}
             >
-              <Link href="/blog">
+              <Link href='/blog'>
                 <div className={styleForButton}>
                   <Image
-                    src="/images/blog-details/icon-arrow.svg"
-                    alt="arrow"
+                    src='/images/blog-details/icon-arrow.svg'
+                    alt='arrow'
                     width={24}
                     height={24}
                   />
@@ -110,8 +110,8 @@ const ArticleItem = ({ url, lang }: ArticleItemProps) => {
               {image && (
                 <Image
                   src={image}
-                  alt="blog-img"
-                  sizes="(max-width: 768px) 100vw, 100vw"
+                  alt='blog-img'
+                  sizes='(max-width: 768px) 100vw, 100vw'
                   width={100}
                   height={100}
                   quality={100}

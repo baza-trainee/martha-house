@@ -70,7 +70,9 @@
     "buttonText": "Wspierać projekt"
   },
   "news": {
-    "title": "AKTUALNOŚCI"
+    "title": "AKTUALNOŚCI",
+    "text": "W tym bloku znajdują się aktualności dotyczące projektu Miasto Dobrego",
+    "button": "Pobierz więcej"
   },
   "values": [
     {

@@ -1,0 +1,126 @@
+.article {
+  padding: 72px 0 32px;
+  min-height: 80vh;
+  position: relative;
+}
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.article-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.gap-from-title {
+  gap: 8px;
+}
+
+.button-back {
+  position: absolute;
+  top: -7px;
+  left: -120px;
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  border-radius: 8px;
+  box-shadow:
+    0 1px 2px 0 rgba(16, 24, 40, 0.06),
+    0 1px 3px 0 rgba(16, 24, 40, 0.1);
+}
+
+.title {
+  font-family: var(--font-mulish), sans-serif;
+  font-size: var(--subtitle-bold-fs);
+  font-style: normal;
+  font-weight: var(--subtitle-bold-fw);
+  line-height: var(--subtitle-bold-lh);
+}
+
+.creation,
+.article-text,
+.author {
+  font-family: var(--font-manrope);
+  font-size: var(--body-medium-mb-fs);
+  font-style: normal;
+  font-weight: var(--body-medium-mb-fw);
+  line-height: var(--body-medium-mb-lh);
+}
+
+.creation {
+  margin-bottom: 16px;
+  color: var(--grey500);
+}
+
+.article-img {
+  position: relative;
+  width: 92vw;
+  margin-bottom: 24px;
+  border-radius: 8px;
+}
+
+.article-img img {
+  width: 92vw;
+  height: auto;
+  border-radius: 8px;
+}
+
+.article-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.article-text {
+  color: var(--grey700);
+}
+
+.author {
+  margin-top: 24px;
+  color: var(--grey500);
+}
+
+.author span {
+  color: var(--grey900);
+}
+
+@media screen and (min-width: 834px) {
+  .article {
+    padding-bottom: 0;
+    width: 84.5vw;
+    margin: auto;
+  }
+
+  .creation,
+  .article-text,
+  .author {
+    font-size: var(--body-medium-web-fs);
+    font-weight: var(--body-medium-web-fw);
+    line-height: var(--body-medium-web-lh);
+  }
+
+  .article-img img {
+    width: 84.5vw;
+    height: auto;
+    border-radius: 8px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .article {
+    width: 888px;
+    margin: auto;
+  }
+
+  .article-img img {
+    width: 888px;
+    height: 570px;
+    flex-shrink: 0;
+  }
+}

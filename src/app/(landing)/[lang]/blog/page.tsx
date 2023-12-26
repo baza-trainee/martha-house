@@ -22,8 +22,8 @@ const BlogPage: NextPage<IProps> = async ({ params: { lang } }) => {
   const t = getTranslation(language);
 
   return (
-    <section className="wrapper">
-      <Container className="blog">
+    <section className='wrapper'>
+      <Container className='blog'>
         <Heading data={t("blog")} />
         <ArticlesList lang={lang} />
       </Container>
