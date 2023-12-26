@@ -1,6 +1,6 @@
 export const Locale = {
-  en: "en-US",
   ua: "uk-UA",
+  en: "en-US",
   pl: "pl-PL",
 } as const;
 

@@ -43,6 +43,7 @@ const ArticlesList: React.FC<ArticlesListProps> = ({ lang, data }) => {
         {isLoading && <Loader className={styles.spinner} />}
         {blog?.data.map((item) => (
           <ArticleBlock
+            locale={lang}
             key={item.id}
             image={item.attributes.image.data.attributes.url}
             title={item.attributes.title}

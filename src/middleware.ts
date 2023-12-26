@@ -1,13 +1,20 @@
 import { NextRequest, NextResponse } from "next/server";
 import Negotiator from "negotiator";
-import { Locales, Locale } from "./types";
+import { Locale } from "./types";
+
+const getSupportedLanguage = (language: string) => {
+  if (language.startsWith("uk")) return Locale.ua;
+  if (language.startsWith("en")) return Locale.en;
+  if (language.startsWith("pl")) return Locale.pl;
+  return Locale.ua;
+};
 
 export const middleware = async (request: NextRequest) => {
   if (request.nextUrl.pathname === "/report") {
     return;
   }
 
-  let preferredLanguage = Locale.ua;
+  let supportedLanguage;
 
   // @ts-ignore
   const preferredLanguageCookie = request.cookies.preferredLanguage;
@@ -15,42 +22,23 @@ export const middleware = async (request: NextRequest) => {
     try {
       const parsed = JSON.parse(preferredLanguageCookie);
       if (parsed && parsed.value) {
-        preferredLanguage = parsed.value;
+        supportedLanguage = getSupportedLanguage(parsed.value);
       }
     } catch (error) {
       console.error("Error parsing preferredLanguage cookie:", error);
     }
   }
 
-  // const headers = {
-  //   "accept-language": request.headers.get("accept-language"),
-  // };
-
-  // @ts-ignore
-  // const languages = new Negotiator({ headers }).languages();
-
-  let supportedLanguage;
-  if (
-    preferredLanguage &&
-    Object.values(Locale).includes(preferredLanguage as Locales)
-  ) {
-    supportedLanguage = preferredLanguage;
-  } else {
+  if (!supportedLanguage) {
     const headers = {
       "accept-language": request.headers.get("accept-language"),
     };
 
     // @ts-ignore
-    const languages = new Negotiator({ headers }).languages();
-    supportedLanguage =
-      languages.find((lang) =>
-        Object.values(Locale).includes(lang as Locales),
-      ) || Locale.ua;
+    const language = new Negotiator({ headers }).languages()[0];
+
+    supportedLanguage = getSupportedLanguage(language);
   }
-  //
-  // const supportedLanguage =
-  //   languages.find((lang) => Object.values(Locale).includes(lang as Locales)) ||
-  //   Locale.ua;
 
   if (
     !(

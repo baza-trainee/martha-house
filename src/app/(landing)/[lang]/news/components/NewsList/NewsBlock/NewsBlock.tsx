@@ -33,7 +33,7 @@ const NewsBlock: React.FC<NewsBlockProps> = ({
         <div className={styles.title}>
           <h2>{title}</h2>
           <div className={styles.link}>
-            <Link href={`/news/${slug}`}>
+            <Link href={`/${lang}/news/${slug}`}>
               <Image
                 src="/images/icons/vector.svg"
                 alt="vector"

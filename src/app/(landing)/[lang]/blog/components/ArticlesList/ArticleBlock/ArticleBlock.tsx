@@ -8,6 +8,7 @@ interface ArticleBlockProps {
   title: string;
   description: string;
   slug: string;
+  locale: string;
 }
 
 const ArticleBlock = ({
@@ -15,6 +16,7 @@ const ArticleBlock = ({
   title,
   description,
   slug,
+  locale,
 }: ArticleBlockProps) => (
   <div className={styles.block}>
     <div className={styles.image}>
@@ -24,7 +26,7 @@ const ArticleBlock = ({
       <div className={styles.title}>
         <h2>{title}</h2>
         <div className={styles.link}>
-          <Link href={`/blog/${slug}`}>
+          <Link href={`/${locale}/blog/${slug}`}>
             <Image
               src="/images/icons/vector.svg"
               alt="vector"

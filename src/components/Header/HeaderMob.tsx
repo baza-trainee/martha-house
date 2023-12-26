@@ -46,7 +46,7 @@ export const HeaderMob: NextPage<HeaderProps> = ({ lang, data }) => {
     <MenuContext.Provider value={contextValue}>
       <div className={isOpen ? styles.burger : styles.container} ref={menuRef}>
         <div className={styles.main}>
-          <Link href={`/${lang}`}>
+          <Link href={`/${lang}`} onClick={handleToggle}>
             <CustomImage
               src="/images/logo/site_logo.png"
               width={65}

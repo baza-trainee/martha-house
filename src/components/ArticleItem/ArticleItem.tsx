@@ -48,7 +48,16 @@ const ArticleItem = ({ url, lang, page }: ArticleItemProps) => {
 
   if (!clientReady) return null;
 
-  const linkText = isMobile || isTablet ? "" : "Назад";
+  let btnText;
+  if (lang === "en-US") {
+    btnText = "Back";
+  } else if (lang === "pl-PL") {
+    btnText = "Wstecz";
+  } else {
+    btnText = "Назад";
+  }
+
+  const linkText = isMobile || isTablet ? "" : btnText;
 
   const styleForButton = isMobile || isTablet ? "" : styles["button-back"];
 
@@ -76,7 +85,7 @@ const ArticleItem = ({ url, lang, page }: ArticleItemProps) => {
             <div
               className={`${styles["article-wrapper"]} ${gapFromTitleAndButton}`}
             >
-              <Link href={page === "blog" ? "/blog" : "/news"}>
+              <Link href={page === "blog" ? `/${lang}/blog` : `/${lang}/news`}>
                 <div className={styleForButton}>
                   <Image
                     src="/images/blog-details/icon-arrow.svg"

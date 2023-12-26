@@ -98,3 +98,18 @@
   --padding-xxl: 64px;
   --padding-xxxl: 80px;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(16, 24, 40, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(53, 53, 53, 0.6);
+  border-radius: 18px;
+}

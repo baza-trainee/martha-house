@@ -1,0 +1,26 @@
+.scroll {
+  position: fixed;
+  bottom: 134px;
+  right: 16px;
+  z-index: 999;
+  cursor: pointer;
+  transition: transform 2s ease;
+}
+
+.scroll:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 834px) {
+  .scroll {
+    bottom: 40px;
+    right: 64px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .scroll {
+    bottom: 96px;
+    right: 41px;
+  }
+}
