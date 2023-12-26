@@ -71,7 +71,8 @@
   },
   "news": {
     "title": "News Page",
-    "text": "This block contains news of the City of Good project"
+    "text": "This block contains news of the City of Good project",
+    "button": "Download more"
   },
   "values": [
     {
