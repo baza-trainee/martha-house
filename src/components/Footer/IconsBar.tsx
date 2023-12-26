@@ -28,6 +28,14 @@ const IconsBar = () => (
         height={24}
       />
     </a>
+    <a href="https://www.linkedin.com/company/city-of-goodness/">
+      <Image
+        src="/images/icons/linkedin.svg"
+        alt="linkedin"
+        width={24}
+        height={24}
+      />
+    </a>
     <a href="https://t.me/mistodobra1">
       <Image
         src="/images/icons/telegram.svg"
