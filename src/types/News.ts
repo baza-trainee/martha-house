@@ -1,56 +1,3 @@
-export interface News {
-  title: string;
-  date: string;
-  author: string;
-  description: string;
-  slug: string;
-  createdAt: string;
-  updatedAt: string;
-  publishedAt: string;
-  locale: string;
-  image: {
-    data: {
-      id: number;
-      attributes: ImageAttributes;
-    };
-  };
-  localizations: {
-    data: [
-      {
-        id: number;
-        attributes: {
-          title: string;
-          date: string;
-          author: string;
-          description: string;
-          slug: string;
-          createdAt: string;
-          updatedAt: string;
-          publishedAt: string;
-          locale: string;
-        };
-      },
-    ];
-  };
-}
-
-export interface NewsData {
-  id: number;
-  attributes: News;
-}
-
-export interface NewsResponse {
-  data: NewsData[];
-  meta: {
-    pagination: {
-      page: number;
-      pageSize: number;
-      pageCount: number;
-      total: number;
-    };
-  };
-}
-
 export interface ImageAttributes {
   name: string;
   alternativeText: string;
@@ -132,4 +79,58 @@ export interface ImageAttributes {
   };
   createdAt: string;
   updatedAt: string;
+}
+
+export interface News {
+  title: string;
+  date: string;
+  text: string;
+  author: string;
+  description: string;
+  slug: string;
+  createdAt: string;
+  updatedAt: string;
+  publishedAt: string;
+  locale: string;
+  image: {
+    data: {
+      id: number;
+      attributes: ImageAttributes;
+    };
+  };
+  localizations: {
+    data: [
+      {
+        id: number;
+        attributes: {
+          title: string;
+          date: string;
+          author: string;
+          description: string;
+          slug: string;
+          createdAt: string;
+          updatedAt: string;
+          publishedAt: string;
+          locale: string;
+        };
+      },
+    ];
+  };
+}
+
+export interface NewsData {
+  id: number;
+  attributes: News;
+}
+
+export interface NewsResponse {
+  data: NewsData[];
+  meta: {
+    pagination: {
+      page: number;
+      pageSize: number;
+      pageCount: number;
+      total: number;
+    };
+  };
 }

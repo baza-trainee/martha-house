@@ -7,16 +7,50 @@ export const middleware = async (request: NextRequest) => {
     return;
   }
 
-  const headers = {
-    "accept-language": request.headers.get("accept-language"),
-  };
+  let preferredLanguage = Locale.ua;
 
   // @ts-ignore
-  const languages = new Negotiator({ headers }).languages();
+  const preferredLanguageCookie = request.cookies.preferredLanguage;
+  if (preferredLanguageCookie) {
+    try {
+      const parsed = JSON.parse(preferredLanguageCookie);
+      if (parsed && parsed.value) {
+        preferredLanguage = parsed.value;
+      }
+    } catch (error) {
+      console.error("Error parsing preferredLanguage cookie:", error);
+    }
+  }
 
-  const supportedLanguage =
-    languages.find((lang) => Object.values(Locale).includes(lang as Locales)) ||
-    Locale.ua;
+  // const headers = {
+  //   "accept-language": request.headers.get("accept-language"),
+  // };
+
+  // @ts-ignore
+  // const languages = new Negotiator({ headers }).languages();
+
+  let supportedLanguage;
+  if (
+    preferredLanguage &&
+    Object.values(Locale).includes(preferredLanguage as Locales)
+  ) {
+    supportedLanguage = preferredLanguage;
+  } else {
+    const headers = {
+      "accept-language": request.headers.get("accept-language"),
+    };
+
+    // @ts-ignore
+    const languages = new Negotiator({ headers }).languages();
+    supportedLanguage =
+      languages.find((lang) =>
+        Object.values(Locale).includes(lang as Locales),
+      ) || Locale.ua;
+  }
+  //
+  // const supportedLanguage =
+  //   languages.find((lang) => Object.values(Locale).includes(lang as Locales)) ||
+  //   Locale.ua;
 
   if (
     !(

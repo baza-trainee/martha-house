@@ -1,3 +1,9 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
 .articles {
   display: flex;
   flex-direction: column;
@@ -5,12 +11,12 @@
   align-items: center;
   min-height: 50vh;
   position: relative;
+  width: 100%;
 }
 
 .spinner {
   position: absolute;
   top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
 }
 
@@ -89,6 +95,13 @@
     flex-wrap: wrap;
     width: 706px;
     margin: auto;
+  }
+
+  .spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .block {
