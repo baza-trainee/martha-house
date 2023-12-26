@@ -3,6 +3,15 @@
   flex-direction: column;
   gap: 16px;
   align-items: center;
+  min-height: 50vh;
+  position: relative;
+}
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .block {
@@ -15,6 +24,7 @@
   background: var(--white);
   box-shadow: var(--shadowS);
   width: 343px;
+  height: 436px;
 }
 
 .image {
@@ -31,6 +41,7 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+  width: 100%;
 }
 
 .title {

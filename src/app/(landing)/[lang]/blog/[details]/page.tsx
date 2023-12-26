@@ -7,18 +7,19 @@ import ArticleItem from "../components/ArticleItem/ArticleItem";
 interface IDetailPageProps {
   params: {
     lang: Locales;
+    details: string;
   };
 }
 
 const DetailsPage: NextPage<IDetailPageProps> = async ({
-  params: { lang },
+  params: { lang, details },
 }) => {
   const language = await getAllTranslations(lang);
   const t = getTranslation(language);
 
   return (
     <section>
-      <ArticleItem data={t("details")} />
+      <ArticleItem url={details} lang={lang} />
       <HowToHelp data={t("howToHelp")} />
     </section>
   );
