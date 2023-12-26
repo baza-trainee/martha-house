@@ -1,0 +1,7 @@
+.newsList {
+  display: flex;
+  flex-direction: column;
+  .loader {
+    display: flex;
+  }
+}
