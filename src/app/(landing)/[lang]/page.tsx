@@ -1,4 +1,4 @@
-import { NextPage } from "next";
+import { Metadata, NextPage } from "next";
 import HeroSection from "@/components/HeroSection";
 import NeedHelp from "@/components/NeedHelp";
 import CoreValuesSection from "@/components/CoreValuesSection";
@@ -17,6 +17,38 @@ import WhyNeed from "@/components/WhyNeed/WhyNeed";
 interface IHomePageProps {
   params: {
     lang: Locales;
+  };
+}
+
+const metaTags = {
+  "en-US": {
+    title: "City of Goodness - Women and Children International Support Center",
+    description:
+      "In the City of Goodness, we will fight for every mom for a child. Homeless mothers, mothers from orphanages, mothers crushed by domestic violence and indifference will find shelter and support there.",
+  },
+  "uk-UA": {
+    title: "Місто Добра - Притулок Для Мам з Дітьми",
+    description:
+      'Кризовий центр "Місто Добра" для жінок та їхніх дітей пропонує не лише безпечне укриття від домашнього насильства, а й всебічну програму, яка допомагає жінкам соціалізуватися. Після завершення цієї програми, вони навчаються самостійно забезпечувати себе та своїх дітей.',
+  },
+  "pl-PL": {
+    title: "Międzynarodowe Centrum Wsparcia Kobiet i Dzieci",
+    description:
+      "W Miasto Jest Dobre będziemy walczyć o każdą mamę dla dziecka. Bezdomne matki, matki z domów dziecka, matki zdruzgotane przemocą domową i obojętnością znajdą tam schronienie i wsparcie.",
+  },
+};
+
+// eslint-disable-next-line prefer-arrow/prefer-arrow-functions
+export async function generateMetadata({
+  params: { lang },
+}: {
+  params: {
+    lang: Locales;
+  };
+}): Promise<Metadata> {
+  return {
+    title: metaTags[lang].title,
+    description: metaTags[lang].description,
   };
 }
 
