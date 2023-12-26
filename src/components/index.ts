@@ -8,3 +8,4 @@ export * from "./HowToHelp";
 // export * from "./AngelDoll";
 export * from "./NeedHelp";
 export * from "./HeroSection";
+export * from "./Loader";
