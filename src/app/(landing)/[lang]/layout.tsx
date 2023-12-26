@@ -8,6 +8,7 @@ import "../../styles/_normalize.css";
 import { Locales } from "@/types";
 import { getAllTranslations, getTranslation } from "@/utils/dictionary";
 import Header from "@/components/Header";
+import ScrollToTop from "@/components/ScrollToTop/ScrollToTop";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -46,6 +47,7 @@ const RootLayout: NextPage<IProps> = async ({ params: { lang }, children }) => {
         <Header data={t("nav")} lang={lang} />
         <main>{children}</main>
         <Footer data={t("footer")} />
+        <ScrollToTop />
       </body>
     </html>
   );

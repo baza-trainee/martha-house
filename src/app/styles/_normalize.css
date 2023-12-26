@@ -47,6 +47,7 @@ ol[role="list"] {
 
 body {
   overflow-y: auto;
+  position: relative;
 }
 
 /* Set core root defaults
