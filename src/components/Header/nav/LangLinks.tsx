@@ -22,6 +22,10 @@ const LangLinks = () => {
     },
   ];
 
+  const handleLanguageChange = (selectedLanguage: string) => {
+    document.cookie = `preferredLanguage=${selectedLanguage}; path=/; max-age=31536000`;
+  };
+
   return (
     <div className={styles["nav-lang"]}>
       {langLinks.map((link, index) => (
@@ -29,6 +33,7 @@ const LangLinks = () => {
           key={index}
           className={pathname === link.href ? `${styles.active}` : ""}
           href={link.href}
+          onClick={() => handleLanguageChange(link.anchor)}
         >
           {link.anchor}
         </Link>
