@@ -1,6 +1,8 @@
 "use client";
 
 import { FC, useState } from "react";
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { useMedia } from "@/hooks/useMedia";
 import { Button } from "../Button";
@@ -45,20 +47,16 @@ const AngelDoll: FC<AngelDollProps> = ({
               }`}
             >
               {!isHiddenText ? buttonUp : buttonDown}
-              <Image
-                src={img}
-                alt={alt}
-                width={24}
-                height={24}
-                className={
-                  !isHiddenText
-                    ? styles["arrow-transform"]
-                    : styles["arrow-back"]
-                }
-              />
+              <motion.span animate={{ rotate: !isHiddenText ? 180 : 0 }}>
+                <Image src={img} alt={alt} width={24} height={24} />
+              </motion.span>
             </Button>
           </div>
-          {!isHiddenText && isMobile && <HiddenText hiddenText={hiddenText} />}
+          <AnimatePresence>
+            {!isHiddenText && isMobile && (
+              <HiddenText hiddenText={hiddenText} />
+            )}
+          </AnimatePresence>
           <Button
             variant="yellow"
             onClick={toggleHandler}
@@ -69,20 +67,15 @@ const AngelDoll: FC<AngelDollProps> = ({
             }`}
           >
             {!isHiddenText ? buttonUp : buttonDown}
-            <Image
-              src={img}
-              alt={alt}
-              width={24}
-              height={24}
-              className={
-                !isHiddenText ? styles["arrow-transform"] : styles["arrow-back"]
-              }
-            />
+            <motion.span animate={{ rotate: !isHiddenText ? 180 : 0 }}>
+              <Image src={img} alt={alt} width={24} height={24} />
+            </motion.span>
           </Button>
-
-          {!isHiddenText && (isDesktop || isTablet) && (
-            <HiddenText hiddenText={hiddenText} />
-          )}
+          <AnimatePresence>
+            {!isHiddenText && (isDesktop || isTablet) && (
+              <HiddenText hiddenText={hiddenText} />
+            )}
+          </AnimatePresence>
         </div>
       </Container>
     </section>

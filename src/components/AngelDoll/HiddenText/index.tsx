@@ -1,3 +1,5 @@
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { motion } from "framer-motion";
 /* eslint-disable import/no-extraneous-dependencies */
 import { FC } from "react";
 import { CustomImage } from "@/components/CustomImage";
@@ -17,7 +19,17 @@ export interface HiddenTextProps {
 const HiddenText: FC<{ hiddenText: HiddenTextProps }> = ({
   hiddenText: { img, alt, text, title, subtitle1, text1, subtitle2, text2 },
 }) => (
-  <div className={styles["hiddenContext-wrapper"]}>
+  <motion.div
+    variants={{
+      hidden: { opacity: 0, y: 30 },
+      visible: { opacity: 1, y: 0 },
+    }}
+    initial="hidden"
+    animate="visible"
+    transition={{ ease: "easeOut", duration: 1 }}
+    exit="hidden"
+    className={styles["hiddenContext-wrapper"]}
+  >
     <div className={styles["hiddenImg-wrapper"]}>
       <CustomImage
         src={img}
@@ -47,7 +59,7 @@ const HiddenText: FC<{ hiddenText: HiddenTextProps }> = ({
         </div>
       </div>
     </div>
-  </div>
+  </motion.div>
 );
 
 export default HiddenText;
