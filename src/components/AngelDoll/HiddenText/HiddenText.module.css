@@ -4,8 +4,8 @@
   align-items: center;
   gap: 16px;
   opacity: 1;
-  animation-name: slowlyOpen;
-  animation-duration: 2s;
+  /* animation-name: slowlyOpen;
+  animation-duration: 2s; */
 }
 
 @keyframes slowlyOpen {
