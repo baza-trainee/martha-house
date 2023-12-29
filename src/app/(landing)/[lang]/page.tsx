@@ -13,6 +13,7 @@ import History from "@/components/CreationHistory/History";
 import { AboutComponent } from "@/components/About/AboutComponent";
 import AngelDoll from "@/components/AngelDoll";
 import WhyNeed from "@/components/WhyNeed/WhyNeed";
+import { ToggleProvider } from "@/components/AngelDoll/ToggleContext";
 
 interface IHomePageProps {
   params: {
@@ -57,7 +58,7 @@ const HomePage: NextPage<IHomePageProps> = async ({ params: { lang } }) => {
   const t = getTranslation(language);
 
   return (
-    <>
+    <ToggleProvider>
       <HeroSection data={t("hero")} />
       <NeedHelp data={t("needHelp")} />
       <AboutComponent data={t("about")} />
@@ -70,7 +71,7 @@ const HomePage: NextPage<IHomePageProps> = async ({ params: { lang } }) => {
       <FAQSection data={t("faqSection")} />
       <HowToHelp data={t("howToHelp")} />
       <AngelDoll data={t("angelDoll")} />
-    </>
+    </ToggleProvider>
   );
 };
 
