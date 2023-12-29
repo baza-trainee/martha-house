@@ -1,6 +1,6 @@
 "use client";
 
-import { FC, useState } from "react";
+import { FC } from "react";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
@@ -8,6 +8,7 @@ import { useMedia } from "@/hooks/useMedia";
 import { Button } from "../Button";
 import Container from "../Container";
 import HiddenText, { HiddenTextProps } from "./HiddenText";
+import { useToggle } from "./ToggleContext";
 import styles from "./AngelDoll.module.css";
 
 interface AngelDollProps {
@@ -24,12 +25,13 @@ interface AngelDollProps {
 const AngelDoll: FC<AngelDollProps> = ({
   data: { title, buttonUp, buttonDown, img, alt, hiddenText },
 }) => {
-  const [isHiddenText, setIsHiddenText] = useState(true);
+  // const [isHiddenText, setIsHiddenText] = useState(true);
+  const { isHiddenText, toggleHandler } = useToggle();
   const { isMobile, isTablet, isDesktop } = useMedia();
 
-  const toggleHandler = () => {
-    setIsHiddenText(!isHiddenText);
-  };
+  // const toggleHandler = () => {
+  //   setIsHiddenText((isHiddenText) => !isHiddenText);
+  // };
 
   return (
     <section className={styles.angelDoll}>
