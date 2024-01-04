@@ -28,3 +28,11 @@
     line-height: var(--title2-lh);
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .wrapper {
+    width: 1200px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
