@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding: 32px 16px;
 }
 
 .history h2 {
@@ -48,9 +49,13 @@
   line-height: var(--body-medium-mb-lh);
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
   .history {
     gap: 32px;
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 96px 0;
   }
 
   .history h2 {
@@ -63,5 +68,19 @@
     font-size: var(--body-medium-web-fs);
     font-weight: var(--body-medium-web-fw);
     line-height: var(--body-medium-web-lh);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .history {
+    gap: 32px;
+    width: 888px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .history {
+    width: 1200px;
+    max-width: 1200px;
   }
 }
