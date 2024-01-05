@@ -2,6 +2,7 @@
 
 import React, { FC, useState } from "react";
 import Image from "next/image";
+import { motion, AnimatePresence } from "framer-motion";
 
 import { Button } from "@/components/Button";
 import { AccordionDataProps, AccordionSectionProps } from "@/types";
@@ -166,7 +167,22 @@ const AccordionSection: FC<AccordionSectionProps> = ({
           }
         />
       </div>
-      {isActiveSection && accordionContent}
+      <AnimatePresence>
+        {isActiveSection && (
+          <motion.div
+            variants={{
+              hidden: { opacity: 0, y: 10, height: 0 },
+              visible: { opacity: 1, y: 0, height: "auto" },
+            }}
+            initial="hidden"
+            animate="visible"
+            transition={{ ease: "linear", duration: 0.7 }}
+            exit="hidden"
+          >
+            {accordionContent}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };
