@@ -56,7 +56,9 @@ const AngelDoll: FC<AngelDollProps> = ({
           </div>
           <AnimatePresence>
             {!isHiddenText && isMobile && (
+              // <motion.div initial={{ height: 0 }} animate={{ height: "auto" }}>
               <HiddenText hiddenText={hiddenText} />
+              // </motion.div>
             )}
           </AnimatePresence>
           <Button

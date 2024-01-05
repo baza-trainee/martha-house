@@ -21,16 +21,20 @@ const HiddenText: FC<{ hiddenText: HiddenTextProps }> = ({
 }) => (
   <motion.div
     variants={{
-      hidden: { opacity: 0, y: 30 },
-      visible: { opacity: 1, y: 0 },
+      hidden: { opacity: 0, y: 30, height: 0 },
+      visible: { opacity: 1, y: 0, height: "auto" },
     }}
     initial="hidden"
     animate="visible"
-    transition={{ ease: "easeOut", duration: 1 }}
+    transition={{ ease: "linear", duration: 1 }}
     exit="hidden"
     className={styles["hiddenContext-wrapper"]}
   >
-    <div className={styles["hiddenImg-wrapper"]}>
+    <motion.div
+      className={styles["hiddenImg-wrapper"]}
+      initial={{ height: "auto" }}
+      animate={{ height: "auto" }}
+    >
       <CustomImage
         src={img}
         alt={alt}
@@ -38,7 +42,7 @@ const HiddenText: FC<{ hiddenText: HiddenTextProps }> = ({
         height={400}
         className={styles["angelDoll-img"]}
       />
-    </div>
+    </motion.div>
     <div className={styles.hiddenDescription}>
       <div className={styles.hiddenText}>
         {text.map((paragraph, index) => (
