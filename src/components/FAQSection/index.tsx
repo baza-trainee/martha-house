@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import Container from "@/components/Container";
 import { CustomImage as Icon } from "@/components/CustomImage";
 import styles from "./FAQSection.module.css";
@@ -40,38 +41,60 @@ const FAQSection: React.FC<FAQSectionProps> = ({ data }) => {
               onClick={() => toggleChecked(index)}
             >
               <h3>{item.query}</h3>
-              <span className={styles.button}>
-                {checkedStates[index] ? (
-                  <Icon
-                    src="/images/icons/close.svg"
-                    alt="close-icon"
-                    width="24"
-                    height="24"
-                  />
-                ) : (
-                  <Icon
-                    src="/images/icons/add.svg"
-                    alt="add-icon"
-                    width="24"
-                    height="24"
-                  />
-                )}
-              </span>
+              <motion.span
+                className={styles.button}
+                animate={{ rotate: checkedStates[index] ? 45 : 0 }}
+              >
+                <Icon
+                  src="/images/icons/add.svg"
+                  alt="add-icon"
+                  width="24"
+                  height="24"
+                />
+                {/* <AnimatePresence>
+                  {checkedStates[index] ? (
+                    <Icon
+                      src="/images/icons/close.svg"
+                      alt="close-icon"
+                      width="24"
+                      height="24"
+                    />
+                  ) : (
+                    <Icon
+                      src="/images/icons/add.svg"
+                      alt="add-icon"
+                      width="24"
+                      height="24"
+                    />
+                  )}
+                </AnimatePresence> */}
+              </motion.span>
             </div>
-            {checkedStates[index] && (
-              <>
-                <ul className={styles.responseList}>
-                  {item.responses.map((response) => (
-                    <li key={response} className={styles.responseItem}>
-                      {response}
-                    </li>
-                  ))}
-                </ul>
-                {item.description && (
-                  <p className={styles.responseItem}>{item.description}</p>
-                )}
-              </>
-            )}
+            <AnimatePresence>
+              {checkedStates[index] && (
+                <motion.div
+                  variants={{
+                    hidden: { opacity: 0, y: 10, height: 0 },
+                    visible: { opacity: 1, y: 0, height: "auto" },
+                  }}
+                  initial="hidden"
+                  animate="visible"
+                  transition={{ ease: "linear", duration: 0.7 }}
+                  exit="hidden"
+                >
+                  <ul className={styles.responseList}>
+                    {item.responses.map((response) => (
+                      <li key={response} className={styles.responseItem}>
+                        {response}
+                      </li>
+                    ))}
+                  </ul>
+                  {item.description && (
+                    <p className={styles.responseItem}>{item.description}</p>
+                  )}
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
         ))}
       </Container>
