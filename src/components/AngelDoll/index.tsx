@@ -1,6 +1,6 @@
 "use client";
 
-import { FC } from "react";
+import { FC, useState, useEffect } from "react";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
@@ -25,13 +25,15 @@ interface AngelDollProps {
 const AngelDoll: FC<AngelDollProps> = ({
   data: { title, buttonUp, buttonDown, img, alt, hiddenText },
 }) => {
-  // const [isHiddenText, setIsHiddenText] = useState(true);
   const { isHiddenText, toggleHandler } = useToggle();
   const { isMobile, isTablet, isDesktop } = useMedia();
 
-  // const toggleHandler = () => {
-  //   setIsHiddenText((isHiddenText) => !isHiddenText);
-  // };
+  const [deviceType, setDeviceType] = useState("");
+  useEffect(() => {
+    if (isDesktop) setDeviceType("desktop");
+    else if (isTablet) setDeviceType("tablet");
+    else setDeviceType("mobile");
+  }, [isDesktop, isTablet, isMobile]);
 
   return (
     <section className={styles.angelDoll}>
@@ -43,7 +45,7 @@ const AngelDoll: FC<AngelDollProps> = ({
               variant="yellow"
               onClick={toggleHandler}
               className={`${
-                !isMobile
+                deviceType !== "mobile"
                   ? styles["angelDoll-btn-mb"]
                   : styles["angelDoll-btn-hidden-mb"]
               }`}
@@ -55,7 +57,7 @@ const AngelDoll: FC<AngelDollProps> = ({
             </Button>
           </div>
           <AnimatePresence>
-            {!isHiddenText && isMobile && (
+            {!isHiddenText && deviceType === "mobile" && (
               <HiddenText hiddenText={hiddenText} />
             )}
           </AnimatePresence>
@@ -63,7 +65,7 @@ const AngelDoll: FC<AngelDollProps> = ({
             variant="yellow"
             onClick={toggleHandler}
             className={`${
-              isMobile
+              deviceType === "mobile"
                 ? styles["angelDoll-btn-mb"]
                 : styles["angelDoll-btn-hidden-mb"]
             }`}
@@ -74,9 +76,10 @@ const AngelDoll: FC<AngelDollProps> = ({
             </motion.span>
           </Button>
           <AnimatePresence>
-            {!isHiddenText && (isDesktop || isTablet) && (
-              <HiddenText hiddenText={hiddenText} />
-            )}
+            {!isHiddenText &&
+              (deviceType === "desktop" || deviceType === "tablet") && (
+                <HiddenText hiddenText={hiddenText} />
+              )}
           </AnimatePresence>
         </div>
       </Container>
