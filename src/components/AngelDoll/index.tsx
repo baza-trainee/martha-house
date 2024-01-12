@@ -41,40 +41,36 @@ const AngelDoll: FC<AngelDollProps> = ({
         <div className={styles["angelDoll-wrapper"]}>
           <div className={styles["hiddenText-isDesktop"]}>
             <h2 className={styles["angelDoll-title"]}>{title}</h2>
-            <Button
-              variant="yellow"
-              onClick={toggleHandler}
-              className={`${
-                deviceType !== "mobile"
-                  ? styles["angelDoll-btn-mb"]
-                  : styles["angelDoll-btn-hidden-mb"]
-              }`}
-            >
-              {!isHiddenText ? buttonUp : buttonDown}
-              <motion.span animate={{ rotate: !isHiddenText ? 180 : 0 }}>
-                <Image src={img} alt={alt} width={24} height={24} />
-              </motion.span>
-            </Button>
+            {deviceType !== "mobile" && (
+              <Button
+                variant="yellow"
+                onClick={toggleHandler}
+                className={styles["angelDoll-btn-mb"]}
+              >
+                {!isHiddenText ? buttonUp : buttonDown}
+                <motion.span animate={{ rotate: !isHiddenText ? 180 : 0 }}>
+                  <Image src={img} alt={alt} width={24} height={24} />
+                </motion.span>
+              </Button>
+            )}
           </div>
           <AnimatePresence>
             {!isHiddenText && deviceType === "mobile" && (
               <HiddenText hiddenText={hiddenText} />
             )}
           </AnimatePresence>
-          <Button
-            variant="yellow"
-            onClick={toggleHandler}
-            className={`${
-              deviceType === "mobile"
-                ? styles["angelDoll-btn-mb"]
-                : styles["angelDoll-btn-hidden-mb"]
-            }`}
-          >
-            {!isHiddenText ? buttonUp : buttonDown}
-            <motion.span animate={{ rotate: !isHiddenText ? 180 : 0 }}>
-              <Image src={img} alt={alt} width={24} height={24} />
-            </motion.span>
-          </Button>
+          {deviceType === "mobile" && (
+            <Button
+              variant="yellow"
+              onClick={toggleHandler}
+              className={styles["angelDoll-btn-mb"]}
+            >
+              {!isHiddenText ? buttonUp : buttonDown}
+              <motion.span animate={{ rotate: !isHiddenText ? 180 : 0 }}>
+                <Image src={img} alt={alt} width={24} height={24} />
+              </motion.span>
+            </Button>
+          )}
           <AnimatePresence>
             {!isHiddenText &&
               (deviceType === "desktop" || deviceType === "tablet") && (
